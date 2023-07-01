@@ -5,7 +5,7 @@ function showLandingPage() {
     document.getElementById("result-container").style.display = "none";
 }
 
-// Function for image slider and fade effect on lading page
+// Function for image slider and fade effect on landing page
 
 window.addEventListener("DOMContentLoaded", function (e) {
     var stage = document.getElementById("image-slider");
