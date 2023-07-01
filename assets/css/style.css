@@ -146,10 +146,11 @@ button:hover {
 }
 
 .instructions-landing:hover {
-    text-decoration: underline;
-    color: #D87E4E;
+    color: white;
     cursor: pointer;
+    border-bottom: 2px solid white;
 }
+
 
 .instructions-landing p.zoom-effect,
 .start-quiz-btn.zoom-effect {
