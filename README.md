@@ -18,3 +18,7 @@ German Shepherd: https://www.pexels.com/de-de/foto/tier-hund-haustier-gahnen-166
 Flaticon:
 
 Foot icons created by Freepik: https://www.flaticon.com/free-icon/footprint-shape_58840
+
+Code:
+
+Favicon: https://www.w3schools.com/html/html_favicon.asp
