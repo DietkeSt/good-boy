@@ -133,8 +133,8 @@ button {
 
 button:hover {
     background-color: #D87E4E;
-    border-color: #353839;
-    color: #353839;
+    border-color: white;
+    color: white;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
 }
@@ -222,7 +222,10 @@ button:hover {
     padding: 10px;
     margin: 5px;
     border-radius: 13px;
-    background-color: #f0f0f0;
+    border: solid 2px white;
+    color: white;
+    font-weight: bold;
+    background-color: #D87E4E;
     cursor: pointer;
 }
 
@@ -231,17 +234,14 @@ button:hover {
 #feedback {
     margin-top: 20px;
     font-weight: bold;
+    font-family: "Indie Flower", Open-Sans;
 }
 
 #next-btn {
     margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    cursor: pointer;
 }
 
 #result {
     margin-top: 50px;
+    font-family: "Indie Flower", Open-Sans;
 }
