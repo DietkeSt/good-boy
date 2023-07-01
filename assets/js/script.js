@@ -251,8 +251,8 @@ function showResult() {
     document.getElementById("result-score").textContent = score;
     document.getElementById("result-total").textContent = totalQuestions;
 
-    // Add your image source for the result
-    document.getElementById("result-image").src = "placeholder.jpg";
+    // Result image needs to be added at a later stage
+    document.getElementById("result-image").src = "./assets/footpringt-logo.png";
 }
 
 // Retake the quiz
