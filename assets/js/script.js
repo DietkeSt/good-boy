@@ -24,14 +24,22 @@ window.addEventListener("DOMContentLoaded", function (e) {
     setTimeout(fadeToNextImage, slideInterval);
 }, false);
 
-// Function to show alert box when clicking on the instructions on the landing page
-function showAlertBox() {
-    var instructions = "This is how the quiz works: 1. Please enter your name. 2. Click on the 'Start Quiz' button. 3. Guess the correct dog breed by clicking on the option with the correct breed name displayed. 4. Click the 'Next' button. 5. Repeat until the Quiz is finished and you see your final score!";
-
-    // Display the instructions in an alert box
-    alert(instructions);
+// Modal functons for the landing page
+// Function to open the modal
+function openModal() {
+    var modal = document.getElementById("instructions-modal");
+    modal.style.display = "block";
 }
 
-// Add a click event listener to the instructions element
+// Function to close the modal
+function closeModal() {
+    var modal = document.getElementById("instructions-modal");
+    modal.style.display = "none";
+}
+
+// Add event listeners to open and close the modal
 var instructionsElement = document.querySelector(".instructions-landing");
-instructionsElement.addEventListener("click", showAlertBox);
+instructionsElement.addEventListener("click", openModal);
+
+var closeButton = document.querySelector(".close-button");
+closeButton.addEventListener("click", closeModal);
