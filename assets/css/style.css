@@ -8,29 +8,32 @@ h1 {
 
 #image-slider {
     margin: 1em auto;
-    width: 450px;
-    height: 437.5px;
+    width: 472px;
+    height: 459.5px;
 }
 
-#image-slider img {
+#image-slider a {
     position: absolute;
+}
+
+#image-slider a img {
     padding: 10px;
     border: 1px solid #ccc;
     background: #fff;
 }
 
-#stage img:nth-of-type(1) {
+#image-slider a:nth-of-type(1) {
     animation-name: fader;
     animation-delay: 4s;
     animation-duration: 1s;
     z-index: 20;
 }
 
-#stage img:nth-of-type(2) {
+#image-slider a:nth-of-type(2) {
     z-index: 10;
 }
 
-#stage img:nth-of-type(n+3) {
+#image-slider a:nth-of-type(n+3) {
     display: none;
 }
 
