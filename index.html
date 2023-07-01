@@ -24,25 +24,39 @@
             Good Boy Quiz
         </h1>
     </header>
-    <div id="landing-page">
-        <h2>Welcome to the Good Boy Quiz</h2>
-        <p>Can you differentiate between all the different good boys out there? Test your knowledge!</p>
-        <div id="image-slider">
-            <a href="assets/images/dog-1.png"><img src="assets/images/dog-1.png" width="450px" height="437.5px"
-                    alt="French bulldog being pulled by the ears"></a>
-            <a href="assets/images/dog-10.png"><img src="assets/images/dog-10.png" width="450px" height="437.5px"
-                    alt="German shepherd yawning"></a>
-            <a href="assets/images/dog-7.png"><img src="assets/images/dog-7.png" width="450px" height="437.5px"
-                    alt="Shar Pei receives a love heart"></a>
-            <a href="assets/images/dog-2.png"><img src="assets/images/dog-2.png" width="450px" height="437.5px"
-                    alt="Shiba Inu wearing a hat"></a>
+    <main>
+        <div id="landing-page">
+            <h2>Welcome to the Good Boy Quiz</h2>
+            <p>Can you differentiate between all the different good boys out there? Test your knowledge!</p>
+            <div id="image-slider">
+                <a href="assets/images/dog-1.png"><img src="assets/images/dog-1.png" width="450px" height="437.5px"
+                        alt="French bulldog being pulled by the ears"></a>
+                <a href="assets/images/dog-10.png"><img src="assets/images/dog-10.png" width="450px" height="437.5px"
+                        alt="German shepherd yawning"></a>
+                <a href="assets/images/dog-7.png"><img src="assets/images/dog-7.png" width="450px" height="437.5px"
+                        alt="Shar Pei receives a love heart"></a>
+                <a href="assets/images/dog-2.png"><img src="assets/images/dog-2.png" width="450px" height="437.5px"
+                        alt="Shiba Inu wearing a hat"></a>
+            </div>
+            <form id="username-form">
+                <label for="username">Enter your username:</label>
+                <input type="text" id="username" required>
+                <button type="submit" class="start-quiz-btn">Start Quiz</button>
+            </form>
         </div>
-        <form id="username-form">
-            <label for="username">Enter your username:</label>
-            <input type="text" id="username" required>
-            <button type="submit" class="start-quiz-btn">Start Quiz</button>
-        </form>
-    </div>
+
+    </main>
+    <footer>
+        <div class="copyright-container">
+            <p class="copyright-text">
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear())</script> All Rights Reserved by <a
+                    href="https://github.com/DietkeSt/" target="_blank" rel="noopener"
+                    aria-label="Visit my Github page (opens in new window)" title="Visit the GitHub repository">Dietke
+                    Steindel</a>
+            </p>
+        </div>
+    </footer>
 
     <script src="assets/js/script.js"></script>
 </body>
