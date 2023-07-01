@@ -145,6 +145,7 @@ const quiz = [
 let currentQuestion = 0;
 let score = 0;
 let username = "";
+var selectedOptionIndex = -1;
 
 // Start Quiz event
 
