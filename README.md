@@ -26,6 +26,7 @@ Image slider with JS fading animation: https://stackoverflow.com/questions/24344
 Sticky footer: https://materializecss.com/footer.html
 Modal: https://www.youtube.com/watch?v=ywtkJkxJsdg
 https://www.w3schools.com/howto/howto_css_modals.asp
+Event listener: https://www.w3schools.com/js/js_htmldom_eventlistener.asp
 
 Styling:
 
