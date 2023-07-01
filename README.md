@@ -32,3 +32,8 @@ Hide and display elements with the help of JS: https://www.geeksforgeeks.org/hid
 Styling:
 
 Color palette: https://coolors.co/palette/353839-fbceb1-d87e4e-a8c3bc-83a0a0
+
+
+Bug:
+
+Upon submission the quiz would not start due to a missing result container in the HTML code, after adding it, it was working as expected again.
