@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:wght@300&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1b4f98b43d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Good Boy Quiz</title>
 </head>
@@ -41,8 +42,14 @@
             <form id="username-form">
                 <label for="username">Enter your username:</label>
                 <input type="text" id="username" required>
-                <button type="submit" class="start-quiz-btn">Start Quiz</button>
+                <button type="submit" class="start-quiz-btn"
+                    aria-label="By clicking this button the Quiz is started after you entered your username (opens in the same page)">Start
+                    Quiz</button>
             </form>
+            <div class="instructions-landing">
+                <p tooltip="Click here for further instructions on how the quiz works."><i
+                        class="fa-solid fa-circle-info"></i> Quiz Instructions</p>
+            </div>
         </div>
 
     </main>
