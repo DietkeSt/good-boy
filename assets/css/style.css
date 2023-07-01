@@ -145,10 +145,9 @@ button:hover {
     margin-top: 2.5em;
 }
 
-.instructions-landing:hover {
-    color: white;
+.instructions-landing:hover p {
     cursor: pointer;
-    border-bottom: 2px solid white;
+    color: white;
 }
 
 

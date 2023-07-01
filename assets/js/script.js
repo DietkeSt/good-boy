@@ -56,6 +56,8 @@ closeButton.addEventListener("click", closeModal);
 document.addEventListener('DOMContentLoaded', function () {
     var instructionsText = document.querySelector('.instructions-landing p');
     var startQuizButton = document.querySelector('.start-quiz-btn');
+    var nextQuizButton = document.querySelector('#next-btn');
+    var quizOptions = document.querySelectorAll('.option');
 
     function applyZoomEffect(element) {
         element.addEventListener('mouseover', function () {
@@ -69,6 +71,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     applyZoomEffect(instructionsText);
     applyZoomEffect(startQuizButton);
+    applyZoomEffect(nextQuizButton);
+    applyZoomEffect(quizOptions);
 });
 
 // Quiz questions and options
@@ -145,7 +149,6 @@ const quiz = [
 let currentQuestion = 0;
 let score = 0;
 let username = "";
-var selectedOptionIndex = -1;
 
 // Start Quiz event
 
