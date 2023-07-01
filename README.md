@@ -16,7 +16,7 @@ German Shepherd: https://www.pexels.com/de-de/foto/tier-hund-haustier-gahnen-166
 
 Flaticon:
 
-Foot icons created by Freepik: https://www.flaticon.com/free-icon/footprint-shape_58840
+Paw icons created by Freepik: https://www.flaticon.com/free-icon/footprint-shape_58840
 
 Code:
 
@@ -24,3 +24,7 @@ Favicon: https://www.w3schools.com/html/html_favicon.asp
 Image slider with fade animation: https://stackoverflow.com/questions/51238836/css-image-slider-with-fade-in
 Image slider with JS fading animation: https://stackoverflow.com/questions/24344805/animating-multiple-objects-simultaneously-in-angularjs-produces-choppy-animation
 Sticky footer: https://materializecss.com/footer.html
+
+Styling:
+
+Color palette: https://coolors.co/palette/353839-fbceb1-d87e4e-a8c3bc-83a0a0
