@@ -4,8 +4,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
+}
+
+main {
+    flex: 1 0 auto;
 }
 
 h1 {
@@ -42,8 +46,8 @@ header {
 .heading {
     display: flex;
     align-items: center;
-    margin-left: 10px;
-    font-size: 3em;
+    margin: 1em;
+    font-size: 42px;
 }
 
 .logo {
@@ -58,6 +62,7 @@ header {
     background-color: #FBCEB1;
     border-radius: 13px;
     padding: 2em;
+    margin: 2em;
 }
 
 /* Image slider for landing page */
