@@ -1,3 +1,10 @@
+// Function to show the landing page
+function showLandingPage() {
+    document.getElementById("landing-page").style.display = "block";
+    document.getElementById("quiz-container").style.display = "none";
+    document.getElementById("result-container").style.display = "none";
+}
+
 // Function for image slider and fade effect on lading page
 
 window.addEventListener("DOMContentLoaded", function (e) {
