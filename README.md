@@ -23,3 +23,4 @@ Code:
 
 Favicon: https://www.w3schools.com/html/html_favicon.asp
 Image slider with fade animation: https://stackoverflow.com/questions/51238836/css-image-slider-with-fade-in
+Image slider with JS fading animation: https://stackoverflow.com/questions/24344805/animating-multiple-objects-simultaneously-in-angularjs-produces-choppy-animation
