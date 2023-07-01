@@ -77,13 +77,67 @@ const quiz = [
     {
         question: "Which breed of dog is this?",
         image: "./assets/images/dog-1.png",
-        options: ["French Bulldog", "Poodle", "Labrador Retriever", "Beagle"],
+        options: ["French Bulldog", "Poodle", "Labrador Retriever"],
         answer: 0
     },
     {
-        question: "Identify the breed of this dog",
-        image: "image2.jpg",
-        options: ["Bulldog", "Dalmatian", "German Shepherd", "Boxer"],
+        question: "What type of dog is this?",
+        image: "./assets/images/dog-2.png",
+        options: ["Alsation", "Husky", "Shiba Inu"],
+        answer: 2
+    },
+    {
+        question: "Can you identify the breed of this dog?",
+        image: "./assets/images/dog-3.png",
+        options: ["Alsation", "Husky", "Shiba Inu"],
+        answer: 2
+    },
+    {
+        question: "I'm curious about the breed of this dog. Any idea?",
+        image: "./assets/images/dog-4.png",
+        options: ["Alsation", "Husky", "Shiba Inu"],
+        answer: 2
+    },
+    {
+        question: "Do you know which dog breed this is?",
+        image: "./assets/images/dog-5.png",
+        options: ["Alsation", "Husky", "Shiba Inu"],
+        answer: 2
+    },
+    {
+        question: "Could you tell me the specific breed of this dog?",
+        image: "./assets/images/dog-6.png",
+        options: ["Alsation", "Husky", "Shiba Inu"],
+        answer: 2
+    },
+    {
+        question: "I'm wondering about the breed of this particular dog. Any thoughts?",
+        image: "./assets/images/dog-7.png",
+        options: ["Alsation", "Husky", "Shiba Inu"],
+        answer: 2
+    },
+    {
+        question: "Can you help me determine the breed of this adorable dog?",
+        image: "./assets/images/dog-8.png",
+        options: ["Alsation", "Husky", "Shiba Inu"],
+        answer: 2
+    },
+    {
+        question: "What is the breed of this lovely canine?",
+        image: "./assets/images/dog-9.png",
+        options: ["Alsation", "Husky", "Shiba Inu"],
+        answer: 2
+    },
+    {
+        question: "I'd love to know the breed of this dog. Any guesses?",
+        image: "./assets/images/dog-10.png",
+        options: ["Alsation", "Husky", "Shiba Inu"],
+        answer: 2
+    },
+    {
+        question: "Could you please enlighten me about the breed of this dog?",
+        image: "./assets/images/dog-11.png",
+        options: ["Alsation", "Husky", "Shiba Inu"],
         answer: 2
     },
     // More questions follow...
