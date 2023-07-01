@@ -50,11 +50,16 @@ document.addEventListener('DOMContentLoaded', function () {
     var instructionsText = document.querySelector('.instructions-landing p');
     var startQuizButton = document.querySelector('.start-quiz-btn');
 
-    instructionsText.addEventListener('mouseover', function () {
-        instructionsText.classList.add('zoom-effect');
-    });
+    function applyZoomEffect(element) {
+        element.addEventListener('mouseover', function () {
+            element.classList.add('zoom-effect');
+        });
 
-    instructionsText.addEventListener('mouseout', function () {
-        instructionsText.classList.remove('zoom-effect');
-    });
+        element.addEventListener('mouseout', function () {
+            element.classList.remove('zoom-effect');
+        });
+    }
+
+    applyZoomEffect(instructionsText);
+    applyZoomEffect(startQuizButton);
 });
