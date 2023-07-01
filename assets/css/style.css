@@ -4,7 +4,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     height: 100vh;
     text-align: center;
 }
@@ -26,14 +25,29 @@ p,
 
 /* Heading */
 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
 .heading {
-    text-align: center;
-    font-size: 2.5em;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 3em;
 }
 
 .logo {
+    width: 50px;
     height: 50px;
-    padding-right: 5px;
+    margin-right: 10px;
 }
 
 /* Image slider for landing page */
