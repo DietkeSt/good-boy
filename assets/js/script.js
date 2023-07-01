@@ -48,16 +48,13 @@ closeButton.addEventListener("click", closeModal);
 
 document.addEventListener('DOMContentLoaded', function () {
     var instructionsText = document.querySelector('.instructions-landing p');
-    var instructionsModal = document.getElementById('instructions-modal');
-    var closeBtn = document.querySelector('.close-button');
+    var startQuizButton = document.querySelector('.start-quiz-btn');
 
-    instructionsText.addEventListener('click', function () {
+    instructionsText.addEventListener('mouseover', function () {
         instructionsText.classList.add('zoom-effect');
-        instructionsModal.style.display = 'block';
     });
 
-    closeBtn.addEventListener('click', function () {
+    instructionsText.addEventListener('mouseout', function () {
         instructionsText.classList.remove('zoom-effect');
-        instructionsModal.style.display = 'none';
     });
 });
