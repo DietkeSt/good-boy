@@ -56,9 +56,11 @@ header {
     margin-right: 0.5em;
 }
 
-/* Landing Page */
+/* Container styling*/
 
-#landing-page {
+#landing-page,
+#result-container,
+#quiz-container {
     background-color: #FBCEB1;
     border-radius: 13px;
     padding: 2em;
@@ -114,7 +116,7 @@ input {
 
 /* Button */
 
-.start-quiz-btn {
+button {
     font-family: "Indie Flower", Open-Sans;
     color: #353839;
     border-color: #353839;
@@ -129,7 +131,7 @@ input {
     vertical-align: middle;
 }
 
-.start-quiz-btn:hover {
+button:hover {
     background-color: #D87E4E;
     border-color: #353839;
     color: #353839;
