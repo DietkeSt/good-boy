@@ -16,11 +16,13 @@ h1,
 h2,
 h3 {
     font-family: "Indie Flower", Open-Sans;
+    color: #353839;
 }
 
 p,
 label {
     font-family: Open-Sans, sans-serif;
+    color: #353839;
 }
 
 /* Heading */
@@ -92,10 +94,17 @@ form {
     margin: 1em auto;
 }
 
+input {
+    font-size: 16px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
 /* Button */
 
 .start-quiz-btn {
     font-family: "Indie Flower", Open-Sans;
+    color: #353839;
     border-color: #353839;
     background-color: #FBCEB1;
     border-radius: 13px;
