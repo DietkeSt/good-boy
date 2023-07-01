@@ -37,9 +37,27 @@ function closeModal() {
     modal.style.display = "none";
 }
 
-// Add event listeners to open and close the modal
+// Event listeners to open and close the modal
 var instructionsElement = document.querySelector(".instructions-landing");
 instructionsElement.addEventListener("click", openModal);
 
 var closeButton = document.querySelector(".close-button");
 closeButton.addEventListener("click", closeModal);
+
+// Event listener for zoom effect
+
+document.addEventListener('DOMContentLoaded', function () {
+    var instructionsText = document.querySelector('.instructions-landing p');
+    var instructionsModal = document.getElementById('instructions-modal');
+    var closeBtn = document.querySelector('.close-button');
+
+    instructionsText.addEventListener('click', function () {
+        instructionsText.classList.add('zoom-effect');
+        instructionsModal.style.display = 'block';
+    });
+
+    closeBtn.addEventListener('click', function () {
+        instructionsText.classList.remove('zoom-effect');
+        instructionsModal.style.display = 'none';
+    });
+});
