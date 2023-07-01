@@ -22,3 +22,4 @@ Foot icons created by Freepik: https://www.flaticon.com/free-icon/footprint-shap
 Code:
 
 Favicon: https://www.w3schools.com/html/html_favicon.asp
+Image slider with fade animation: https://stackoverflow.com/questions/51238836/css-image-slider-with-fade-in
