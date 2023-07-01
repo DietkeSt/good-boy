@@ -146,7 +146,7 @@ input {
 .instructions-landing:hover {
     text-decoration: underline;
     color: #D87E4E;
-    text-transform: #D87E4E;
+    cursor: pointer;
 }
 
 .instructions-landing p.zoom-effect,
