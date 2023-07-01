@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
 const quiz = [
     {
         question: "Which breed of dog is this?",
-        image: "./images/dog-1.png",
+        image: "./assets/images/dog-1.png",
         options: ["French Bulldog", "Poodle", "Labrador Retriever", "Beagle"],
         answer: 0
     },
