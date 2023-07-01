@@ -1,4 +1,4 @@
-/* Global styling */
+/* Global Styles */
 
 body {
     display: flex;
@@ -78,4 +78,27 @@ header {
     height: auto;
     padding: 10px;
     background: #fff;
+}
+
+/* Button */
+
+.start-quiz-btn {
+    font-family: "Indie Flower", Open-Sans;
+    border-color: #353839;
+    background-color: #FBCEB1;
+    border-radius: 13px;
+    border: 2px solid;
+    font-weight: bold;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 5px;
+    letter-spacing: 2px;
+}
+
+.start-quiz-btn:hover {
+    background-color: #D87E4E;
+    border-color: #353839;
+    color: #353839;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
 }
