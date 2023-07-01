@@ -1,21 +1,15 @@
 // Fading effect for image slider on lading page
 
-const images = document.querySelectorAll("#image-slider img");
-let currentIndex = 0;
+window.addEventListener("DOMContentLoaded", function (e) {
 
-function showImage(index) {
-    images.forEach((image, i) => {
-        if (i === index) {
-            image.classList.add("fade-in");
-        } else {
-            image.classList.remove("fade-in");
-        }
-    });
-}
+    // Original JavaScript code by Chirp Internet: www.chirpinternet.eu
+    // Please acknowledge use of this code by including this header.
 
-function nextImage() {
-    currentIndex = (currentIndex + 1) % images.length;
-    showImage(currentIndex);
-}
+    var stage = document.getElementById("stage");
+    var fadeComplete = function (e) { stage.appendChild(arr[0]); };
+    var arr = stage.getElementsByTagName("a");
+    for (var i = 0; i < arr.length; i++) {
+        arr[i].addEventListener("animationend", fadeComplete, false);
+    }
 
-setInterval(nextImage, 5000); 
+}, false);
