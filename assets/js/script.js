@@ -111,3 +111,99 @@ function startQuiz(event) {
         displayQuestion();
     }
 }
+
+// Display the current question and options
+function displayQuestion() {
+    const questionElement = document.getElementById("question");
+    const imageElement = document.getElementById("question-image");
+    const optionsElement = document.getElementById("options");
+    const feedbackElement = document.getElementById("feedback");
+    const nextButton = document.getElementById("next-btn");
+
+    // Clear previous options
+    optionsElement.innerHTML = "";
+
+    // Display current question and image
+    const currentQuiz = quiz[currentQuestion];
+    questionElement.textContent = currentQuiz.question;
+    imageElement.src = currentQuiz.image;
+
+    // Create and display options
+    currentQuiz.options.forEach((option, index) => {
+        const li = document.createElement("li");
+        li.textContent = option;
+        li.classList.add("option");
+        li.setAttribute("onclick", `checkAnswer(${index})`);
+        optionsElement.appendChild(li);
+    });
+
+    // Clear feedback
+    feedbackElement.textContent = "";
+
+    // Disable next button until an option is selected
+    nextButton.disabled = true;
+}
+
+// Check the selected answer
+function checkAnswer(selectedIndex) {
+    const currentQuiz = quiz[currentQuestion];
+    const correctIndex = currentQuiz.answer;
+    const options = document.getElementsByClassName("option");
+
+    // Highlight the selected option
+    for (let i = 0; i < options.length; i++) {
+        if (i === selectedIndex) {
+            options[i].classList.add("selected");
+        } else {
+            options[i].classList.remove("selected");
+        }
+    }
+
+    // Check if the selected answer is correct
+    if (selectedIndex === correctIndex) {
+        document.getElementById("feedback").textContent = "Correct!";
+        score++;
+    } else {
+        document.getElementById("feedback").textContent = "Wrong!";
+    }
+
+    // Enable the next button
+    document.getElementById("next-btn").disabled = false;
+}
+
+// Proceed to the next question
+function nextQuestion() {
+    currentQuestion++;
+
+    // Check if the quiz is completed
+    if (currentQuestion >= quiz.length) {
+        showResult();
+    } else {
+        displayQuestion();
+    }
+}
+
+// Show the quiz result
+function showResult() {
+    document.getElementById("quiz-container").classList.add("complete");
+    document.getElementById("quiz-container").style.display = "none";
+    document.getElementById("result-container").style.display = "block";
+
+    const totalQuestions = quiz.length;
+    document.getElementById("result-username").textContent = username;
+    document.getElementById("result-score").textContent = score;
+    document.getElementById("result-total").textContent = totalQuestions;
+
+    // Add your image source for the result
+    document.getElementById("result-image").src = "placeholder.jpg";
+}
+
+// Retake the quiz
+function retakeQuiz() {
+    showLandingPage();
+}
+
+// Initialize the quiz
+window.onload = function () {
+    showLandingPage();
+};
