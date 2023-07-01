@@ -1,3 +1,5 @@
+/* Global styling */
+
 body {
     display: flex;
     flex-direction: column;
@@ -10,6 +12,31 @@ body {
 h1 {
     margin-top: 30px;
 }
+
+h1,
+h2,
+h3 {
+    font-family: "Indie Flower", Open-Sans;
+}
+
+p,
+#username-form {
+    font-family: Open-Sans, sans-serif;
+}
+
+/* Heading */
+
+.heading {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.logo {
+    height: 50px;
+    padding-right: 5px;
+}
+
+/* Image slider for landing page */
 
 #image-slider {
     position: relative;
