@@ -86,5 +86,28 @@ const quiz = [
         options: ["Bulldog", "Dalmatian", "German Shepherd", "Boxer"],
         answer: 2
     },
-    // Add more questions here...
+    // More questions follow...
 ];
+
+let currentQuestion = 0;
+let score = 0;
+let username = "";
+
+// Start Quiz event
+
+function startQuiz(event) {
+    event.preventDefault();
+    username = document.getElementById("username").value;
+    if (username.trim() !== "") {
+        document.getElementById("result-username").textContent = username;
+        document.getElementById("result-score").textContent = "";
+        document.getElementById("result-total").textContent = "";
+        document.getElementById("result-image").src = "";
+        document.getElementById("quiz-container").style.display = "block";
+        document.getElementById("landing-page").style.display = "none";
+        document.getElementById("result-container").style.display = "none";
+        currentQuestion = 0;
+        score = 0;
+        displayQuestion();
+    }
+}
