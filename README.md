@@ -14,3 +14,7 @@ Cat: https://www.pexels.com/de-de/foto/tier-haustier-bezaubernd-tierfotografie-4
 Brown Saluki: https://www.pexels.com/de-de/foto/brown-saluki-1573919/
 Dalmation: https://www.pexels.com/de-de/foto/nahaufnahmefoto-des-dalmatinischen-hundes-3117157/
 German Shepherd: https://www.pexels.com/de-de/foto/tier-hund-haustier-gahnen-16634310/
+
+Flaticon:
+
+Foot icons created by Freepik: https://www.flaticon.com/free-icon/footprint-shape_58840
