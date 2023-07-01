@@ -39,7 +39,7 @@
                 <a href="assets/images/dog-2.png"><img src="assets/images/dog-2.png" width="450px" height="437.5px"
                         alt="Shiba Inu wearing a hat"></a>
             </div>
-            <form id="username-form">
+            <form id="username-form" onsubmit="startQuiz(event)">
                 <label for="username"></label>
                 <input type="text" id="username" required placeholder="Enter your name here...">
                 <button type="submit" class="start-quiz-btn"
@@ -72,7 +72,17 @@
                 </div>
             </div>
         </div>
-
+        <div id="quiz-container" style="display: none;">
+            <h2 id="question">Question</h2>
+            <div id="image-container">
+                <img id="question-image" src="">
+            </div>
+            <ul id="options">
+                <!-- Options will be dynamically added here -->
+            </ul>
+            <div id="feedback"></div>
+            <button id="next-btn" onclick="nextQuestion()">Next</button>
+        </div>
     </main>
     <footer>
         <div class="copyright-container">
