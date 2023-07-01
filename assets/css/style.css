@@ -50,6 +50,14 @@ header {
     margin-right: 0.5em;
 }
 
+/* Landing Page */
+
+#landing-page {
+    background-color: #FBCEB1;
+    border-radius: 13px;
+    padding: 2em;
+}
+
 /* Image slider for landing page */
 
 #image-slider {
@@ -76,8 +84,12 @@ header {
 #image-slider a img {
     width: 100%;
     height: auto;
-    padding: 10px;
-    background: #fff;
+}
+
+/* Form */
+
+form {
+    margin: 1em auto;
 }
 
 /* Button */
