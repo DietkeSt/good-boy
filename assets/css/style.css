@@ -137,6 +137,18 @@ input {
     cursor: pointer;
 }
 
+/* Instructions section */
+
+.instructions-landing {
+    margin-top: 2.5em;
+}
+
+.instructions-landing:hover {
+    text-decoration: underline;
+    color: #D87E4E;
+    text-transform: #D87E4E;
+}
+
 /* Modal styles */
 
 .modal {
