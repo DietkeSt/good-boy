@@ -70,3 +70,21 @@ document.addEventListener('DOMContentLoaded', function () {
     applyZoomEffect(instructionsText);
     applyZoomEffect(startQuizButton);
 });
+
+// Quiz questions and options
+
+const quiz = [
+    {
+        question: "Which breed of dog is this?",
+        image: "./images/dog-1.png",
+        options: ["French Bulldog", "Poodle", "Labrador Retriever", "Beagle"],
+        answer: 0
+    },
+    {
+        question: "Identify the breed of this dog",
+        image: "image2.jpg",
+        options: ["Bulldog", "Dalmatian", "German Shepherd", "Boxer"],
+        answer: 2
+    },
+    // Add more questions here...
+];
