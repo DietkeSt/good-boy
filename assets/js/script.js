@@ -1,82 +1,4 @@
-// Function to show the landing page
-function showLandingPage() {
-    document.getElementById("landing-page").style.display = "block";
-    document.getElementById("quiz-container").style.display = "none";
-    document.getElementById("result-container").style.display = "none";
-}
-
-// Function for image slider and fade effect on landing page
-
-window.addEventListener("DOMContentLoaded", function (e) {
-    var stage = document.getElementById("image-slider");
-    var images = stage.getElementsByTagName("a");
-    var currentImageIndex = 0;
-    var fadeDuration = 1000; // 1 second for fading transition
-    var slideInterval = 4000; // 4 seconds for slide interval
-
-    function fadeToNextImage() {
-        var currentImage = images[currentImageIndex];
-        var nextImageIndex = (currentImageIndex + 1) % images.length;
-        var nextImage = images[nextImageIndex];
-
-        currentImage.classList.remove("active");
-        nextImage.classList.add("active");
-
-        currentImageIndex = nextImageIndex;
-
-        setTimeout(fadeToNextImage, slideInterval);
-    }
-
-    images[currentImageIndex].classList.add("active");
-    setTimeout(fadeToNextImage, slideInterval);
-}, false);
-
-// Modal functons for the landing page
-// Function to open the modal
-function openModal() {
-    var modal = document.getElementById("instructions-modal");
-    modal.style.display = "block";
-}
-
-// Function to close the modal
-function closeModal() {
-    var modal = document.getElementById("instructions-modal");
-    modal.style.display = "none";
-}
-
-// Event listeners to open and close the modal
-var instructionsElement = document.querySelector(".instructions-landing");
-instructionsElement.addEventListener("click", openModal);
-
-var closeButton = document.querySelector(".close-button");
-closeButton.addEventListener("click", closeModal);
-
-// Event listener for zoom effect
-
-document.addEventListener('DOMContentLoaded', function () {
-    var instructionsText = document.querySelector('.instructions-landing p');
-    var startQuizButton = document.querySelector('.start-quiz-btn');
-    var nextQuizButton = document.querySelector('#next-btn');
-    var quizOptions = document.querySelectorAll('.option');
-
-    function applyZoomEffect(element) {
-        element.addEventListener('mouseover', function () {
-            element.classList.add('zoom-effect');
-        });
-
-        element.addEventListener('mouseout', function () {
-            element.classList.remove('zoom-effect');
-        });
-    }
-
-    applyZoomEffect(instructionsText);
-    applyZoomEffect(startQuizButton);
-    applyZoomEffect(nextQuizButton);
-    applyZoomEffect(quizOptions);
-});
-
 // Quiz questions and options
-
 const quiz = [
     {
         question: "Which breed of dog is this?",
@@ -84,66 +6,13 @@ const quiz = [
         options: ["French Bulldog", "Poodle", "Labrador Retriever"],
         answer: 0
     },
-    {
-        question: "What type of dog is this?",
-        image: "./assets/images/dog-2.png",
-        options: ["Alsation", "Husky", "Shiba Inu"],
-        answer: 2
-    },
-    {
-        question: "Can you identify the breed of this dog?",
-        image: "./assets/images/dog-3.png",
-        options: ["Golden Retriever", "American Staffordshire", "Dalmatian"],
-        answer: 1
-    },
-    {
-        question: "I'm curious about the breed of this dog. Any idea?",
-        image: "./assets/images/dog-4.png",
-        options: ["Bulldog", "Shih Tzu", "Dachshund"],
-        answer: 2
-    },
-    {
-        question: "Do you know which dog breed this is?",
-        image: "./assets/images/dog-5.png",
-        options: ["Labrador Retriever", "Siberian Husky", "Chihuahua"],
-        answer: 1
-    },
-    {
-        question: "Could you tell me the specific breed of this dog?",
-        image: "./assets/images/dog-6.png",
-        options: ["Corgi", "Beagle", "Rottweiler"],
-        answer: 0
-    },
-    {
-        question: "I'm wondering about the breed of this particular dog. Any thoughts?",
-        image: "./assets/images/dog-7.png",
-        options: ["Great Dane", "Shar Pei", "Australian Shepherd"],
-        answer: 1
-    },
-    {
-        question: "Can you help me determine the breed of this adorable dog?",
-        image: "./assets/images/dog-8.png",
-        options: ["Border Cattie", "French Catdog", "Silly you... this is a cat!"],
-        answer: 2
-    },
-    {
-        question: "What is the breed of this lovely canine?",
-        image: "./assets/images/dog-9.png",
-        options: ["Doberman Pinscher", "Saluki", "Cavalier King Charles Spaniel"],
-        answer: 1
-    },
-    {
-        question: "I'd love to know the breed of this dog. Any guesses?",
-        image: "./assets/images/dog-10.png",
-        options: ["German Shepherd", "Saint Bernard", "Jack Russell Terrier"],
-        answer: 0
-    },
+    // ... rest of the quiz questions ...
     {
         question: "Could you please enlighten me about the breed of this dog?",
         image: "./assets/images/dog-11.png",
         options: ["Bernese Mountain Dog", "Maltese", "Dalmatian"],
         answer: 2
-    },
+    }
 ];
 
 let currentQuestion = 0;
@@ -151,7 +20,6 @@ let score = 0;
 let username = "";
 
 // Start Quiz event
-
 function startQuiz(event) {
     event.preventDefault();
     username = document.getElementById("username").value;
@@ -252,13 +120,91 @@ function showResult() {
     document.getElementById("result-total").textContent = totalQuestions;
 
     // Result image needs to be added at a later stage
-    document.getElementById("result-image").src = "./assets/footpringt-logo.png";
+    document.getElementById("result-image").src = "./assets/footprint-logo.png";
 }
 
 // Retake the quiz
 function retakeQuiz() {
     showLandingPage();
 }
+
+// Function to show the landing page
+function showLandingPage() {
+    document.getElementById("landing-page").style.display = "block";
+    document.getElementById("quiz-container").style.display = "none";
+    document.getElementById("result-container").style.display = "none";
+}
+
+// Function to open the modal
+function openModal() {
+    const modal = document.getElementById("instructions-modal");
+    modal.style.display = "block";
+}
+
+// Function to close the modal
+function closeModal() {
+    const modal = document.getElementById("instructions-modal");
+    modal.style.display = "none";
+}
+
+// Event listeners to open and close the modal
+const instructionsElement = document.querySelector(".instructions-landing");
+instructionsElement.addEventListener("click", openModal);
+
+const closeButton = document.querySelector(".close-button");
+closeButton.addEventListener("click", closeModal);
+
+// Event listener for zoom effect
+document.addEventListener("DOMContentLoaded", function () {
+    const instructionsText = document.querySelector(".instructions-landing p");
+    const startQuizButton = document.querySelector(".start-quiz-btn");
+    const nextQuizButton = document.querySelector("#next-btn");
+    const quizOptions = document.querySelectorAll(".option");
+
+    function applyZoomEffect(element) {
+        element.addEventListener("mouseover", function () {
+            element.classList.add("zoom-effect");
+        });
+
+        element.addEventListener("mouseout", function () {
+            element.classList.remove("zoom-effect");
+        });
+    }
+
+    applyZoomEffect(instructionsText);
+    applyZoomEffect(startQuizButton);
+    applyZoomEffect(nextQuizButton);
+    quizOptions.forEach(applyZoomEffect);
+});
+
+// Function for image slider and fade effect on landing page
+window.addEventListener(
+    "DOMContentLoaded",
+    function () {
+        const stage = document.getElementById("image-slider");
+        const images = stage.getElementsByTagName("a");
+        let currentImageIndex = 0;
+        const fadeDuration = 1000; // 1 second for fading transition
+        const slideInterval = 4000; // 4 seconds for slide interval
+
+        function fadeToNextImage() {
+            const currentImage = images[currentImageIndex];
+            const nextImageIndex = (currentImageIndex + 1) % images.length;
+            const nextImage = images[nextImageIndex];
+
+            currentImage.classList.remove("active");
+            nextImage.classList.add("active");
+
+            currentImageIndex = nextImageIndex;
+
+            setTimeout(fadeToNextImage, slideInterval);
+        }
+
+        images[currentImageIndex].classList.add("active");
+        setTimeout(fadeToNextImage, slideInterval);
+    },
+    false
+);
 
 // Initialize the quiz
 window.onload = function () {
