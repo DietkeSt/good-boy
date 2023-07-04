@@ -61,7 +61,6 @@ header {
 #landing-page,
 #result-container,
 #quiz-container {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #FBCEB1;
@@ -260,7 +259,7 @@ button:disabled {
     background-color: #D87E4E;
 }
 
-/* Feedback & Next & Result */
+/* Feedback */
 
 #feedback {
     margin-top: 20px;
@@ -268,11 +267,22 @@ button:disabled {
     font-family: "Indie Flower", Open-Sans;
 }
 
+/* Next button */
+
 #next-btn {
     margin-top: 20px;
 }
 
-#result {
+/* Result */
+
+#result-container {
     margin-top: 50px;
     font-family: "Indie Flower", Open-Sans;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#result-container button {
+    width: 50%;
+    margin-top: 20px;
 }
