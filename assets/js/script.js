@@ -277,8 +277,3 @@ window.addEventListener(
     },
     false
 );
-
-// Initialize the quiz
-window.onload = function () {
-    showLandingPage();
-};
