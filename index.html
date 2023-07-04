@@ -59,8 +59,10 @@
                 <!-- Options will be dynamically added here -->
             </ul>
             <div id="feedback"></div>
-            <button id="next-btn" onclick="nextQuestion()">Next</button>
-            <button id="restart-btn" onclick="retakeQuiz()">Retake Quiz</button>
+            <div class="quiz-buttons">
+                <button id="restart-btn" onclick="retakeQuiz()">Retake Quiz</button>
+                <button id="next-btn" onclick="nextQuestion()">Next</button>
+            </div>
         </div>
         <!-- Confirmation modal to confirm whether or not to retake the quiz -->
         <div id="confirmation-modal" class="modal">
