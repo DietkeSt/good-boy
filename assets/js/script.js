@@ -188,7 +188,7 @@ function showLandingPage() {
     document.getElementById("result-container").style.display = "none";
 }
 
-// Function to open the modal
+// Function to open the instructions modal
 function openModal() {
     const modal = document.getElementById("instructions-modal");
     modal.style.display = "block";
