@@ -210,12 +210,6 @@ button:disabled {
 
 /* Quiz container */
 
-#quiz-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #quiz-container button {
     margin-top: 20px;
     margin-left: 10px;
