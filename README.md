@@ -28,6 +28,7 @@ Modal: https://www.youtube.com/watch?v=ywtkJkxJsdg
 https://www.w3schools.com/howto/howto_css_modals.asp
 Event listener: https://www.w3schools.com/js/js_htmldom_eventlistener.asp
 Hide and display elements with the help of JS: https://www.geeksforgeeks.org/hide-or-show-elements-in-html-using-display-property/
+Confirmation modal function: https://stackoverflow.com/questions/51863334/something-like-confirmare-u-sure-javascript
 
 Styling:
 
