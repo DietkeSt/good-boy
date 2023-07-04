@@ -176,17 +176,16 @@ function showResult() {
     document.getElementById("result-image").src = "./assets/footprint-logo.png";
 }
 
-// Retake the quiz function
+// Retake the quiz
 function retakeQuiz() {
     const modal = document.getElementById("confirmation-modal");
     modal.style.display = "block";
+}
 
-    const yesButton = document.getElementById("yes-button");
-    const noButton = document.getElementById("no-button");
-
-    // Eevent listeners for the modal buttons
-    yesButton.addEventListener("click", restartQuiz);
-    noButton.addEventListener("click", closeModal);
+// Function to close the modal
+function closeModal() {
+    const modal = document.getElementById("confirmation-modal");
+    modal.style.display = "none";
 }
 
 // Function to restart the quiz
@@ -195,6 +194,14 @@ function restartQuiz() {
     modal.style.display = "none";
     showLandingPage();
 }
+
+// Event listener for "No" option in the modal
+const noButton = document.getElementById("no-button");
+noButton.addEventListener("click", closeModal);
+
+// Event listener for "Yes" option in the modal
+const yesButton = document.getElementById("yes-button");
+yesButton.addEventListener("click", restartQuiz);
 
 // Function to show the landing page
 function showLandingPage() {
