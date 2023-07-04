@@ -87,6 +87,18 @@
             <button id="next-btn" onclick="nextQuestion()">Next</button>
             <button id="restart-btn" onclick="retakeQuiz()">Retake Quiz</button>
         </div>
+        <!-- Confirmation modal to confirm whether or not to retake the quiz -->
+        <div id="confirmation-modal" class="modal">
+            <div class="modal-content">
+                <h2>Are you sure you want to re-take the quiz?</h2>
+                <p>All progress will be lost upon re-taking the quiz and you will need to enter your name again to start
+                    the quiz from the beginning.</p>
+                <div class="modal-buttons">
+                    <button id="yes-button">Yes</button>
+                    <button id="no-button">No</button>
+                </div>
+            </div>
+        </div>
         <!-- Results section -->
         <div id="result-container" style="display: none;">
             <h2>Quiz Result</h2>
