@@ -165,7 +165,7 @@ function nextQuestion() {
 function showResult() {
     document.getElementById("quiz-container").classList.add("complete");
     document.getElementById("quiz-container").style.display = "none";
-    document.getElementById("result-container").style.display = "block";
+    document.getElementById("result-container").style.display = "flex";
 
     const totalQuestions = quiz.length;
     document.getElementById("result-username").textContent = username;
@@ -179,7 +179,7 @@ function showResult() {
 // Retake the quiz
 function retakeQuiz() {
     const modal = document.getElementById("confirmation-modal");
-    modal.style.display = "block";
+    modal.style.display = "flex";
 }
 
 // Function to close the modal
