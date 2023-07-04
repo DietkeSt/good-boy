@@ -183,9 +183,8 @@ function retakeQuiz() {
 }
 
 // Function to close the modal
-
-function closeModal(modalId) {
-    var modal = document.getElementById(modalId);
+function closeModal() {
+    const modal = document.getElementById("confirmation-modal");
     modal.style.display = "none";
 }
 
@@ -197,8 +196,9 @@ function restartQuiz() {
 }
 
 // Event listener for "No" option in the modal
-var noButton = document.getElementById("no-button");
+const noButton = document.getElementById("no-button");
 noButton.addEventListener("click", closeModal);
+
 
 // Event listener for "Yes" option in the modal
 const yesButton = document.getElementById("yes-button");
@@ -218,8 +218,8 @@ function openModal() {
 }
 
 // Function to close the modal
-function closeModal(modalId) {
-    var modal = document.getElementById(modalId);
+function closeModal() {
+    const modal = document.getElementById("instructions-modal");
     modal.style.display = "none";
 }
 
