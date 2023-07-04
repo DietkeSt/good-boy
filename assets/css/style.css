@@ -209,10 +209,26 @@ button:disabled {
 
 /* Quiz container */
 
-.quiz-buttons {
+#quiz-section2 {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.quiz-restart,
+.quiz-options,
+.quiz-next {
+    display: flex;
     align-items: center;
+    width: 33.33%;
+    padding: 1em;
+}
+
+#next-btn,
+#restart-btn {
+    width: 100%;
+    padding: 5px;
+    line-height: 90%;
 }
 
 /* Questions */
@@ -224,6 +240,10 @@ button:disabled {
 
 /* Options */
 
+.quiz-options {
+    flex-direction: column;
+}
+
 #options {
     list-style-type: none;
     padding: 0;
@@ -231,10 +251,11 @@ button:disabled {
     flex-direction: column;
     align-items: center;
     font-family: "Open Sans", sans-serif;
+    line-height: 90%;
 }
 
 .option {
-    width: 50%;
+    width: 100%;
     padding: 10px;
     margin: 5px;
     border-radius: 13px;
@@ -256,7 +277,7 @@ button:disabled {
 /* Feedback */
 
 #feedback {
-    margin-top: 20px;
+    margin-top: 24px;
     font-weight: bold;
     font-family: "Indie Flower", Open-Sans;
 }
