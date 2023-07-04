@@ -183,7 +183,7 @@ function retakeQuiz() {
 }
 
 // Function to close the modal
-function closeModal() {
+function closeConfirmationModal() {
     const modal = document.getElementById("confirmation-modal");
     modal.style.display = "none";
 }
@@ -197,7 +197,7 @@ function restartQuiz() {
 
 // Event listener for "No" option in the modal
 const noButton = document.getElementById("no-button");
-noButton.addEventListener("click", closeModal);
+noButton.addEventListener("click", closeConfirmationModal);
 
 
 // Event listener for "Yes" option in the modal
