@@ -236,7 +236,8 @@ button:disabled {
     cursor: pointer;
 }
 
-.option:hover {
+.option:hover,
+.option.selected {
     border-radius: 13px;
     border: solid 2px white;
     color: white;
