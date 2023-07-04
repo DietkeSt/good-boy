@@ -160,7 +160,6 @@ button:disabled {
     color: #D87E4E;
 }
 
-
 .instructions-landing p.zoom-effect,
 .start-quiz-btn.zoom-effect {
     transform: scale(1.1);
@@ -210,9 +209,10 @@ button:disabled {
 
 /* Quiz container */
 
-#quiz-container button {
-    margin-top: 20px;
-    margin-left: 10px;
+.quiz-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Questions */
@@ -259,12 +259,6 @@ button:disabled {
     margin-top: 20px;
     font-weight: bold;
     font-family: "Indie Flower", Open-Sans;
-}
-
-/* Next button */
-
-#next-btn {
-    margin-top: 20px;
 }
 
 /* Result */
