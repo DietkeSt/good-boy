@@ -48,13 +48,13 @@
                     aria-label="By clicking this button the Quiz is started after you entered your username (opens in the same page)">Start
                     Quiz</button>
             </form>
-
-            <!-- Instructions section for the landing page -->
+            <!-- Clickable text that opens the instructions modal -->
             <div class="instructions-landing">
                 <p title="Click here for further instructions on How To Play.">
                     <i class="fa-solid fa-circle-info"></i> How To Play
                 </p>
             </div>
+            <!-- Instructions modal -->
             <div class="modal" id="instructions-modal">
                 <div class="modal-content">
                     <span class="close-button">&times;</span>
@@ -86,6 +86,12 @@
             <div id="feedback"></div>
             <button id="next-btn" onclick="nextQuestion()">Next</button>
             <button id="restart-btn" onclick="retakeQuiz()">Retake Quiz</button>
+        </div>
+        <!-- Clickable text that opens the instructions modal -->
+        <div class="instructions-quiz">
+            <p title="Click here for further instructions on How To Play.">
+                <i class="fa-solid fa-circle-info"></i> How To Play
+            </p>
         </div>
         <!-- Confirmation modal to confirm whether or not to retake the quiz -->
         <div id="confirmation-modal" class="modal">
