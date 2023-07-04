@@ -230,6 +230,10 @@ instructionsElement.addEventListener("click", openModal);
 const closeButton = document.querySelector(".close-button");
 closeButton.addEventListener("click", closeModal);
 
+// Event listener for opening the modal on the quiz section
+const openModalButton = document.querySelector(".instructions-quiz");
+openModalButton.addEventListener("click", openModal);
+
 // Event listener for zoom effect
 document.addEventListener("DOMContentLoaded", function () {
     const instructionsText = document.querySelector(".instructions-landing p");
