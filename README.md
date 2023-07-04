@@ -38,3 +38,5 @@ Color palette: https://coolors.co/palette/353839-fbceb1-d87e4e-a8c3bc-83a0a0
 Bug:
 
 Upon submission the quiz would not start due to a missing result container in the HTML code, after adding it, it was working as expected again.
+
+After adding a confirmation modal, the "No" option did not work as expected. Tried adding similar functions as for the instructions modal to close it and had to add an event listener for the "No" option and that resolved the issue.
