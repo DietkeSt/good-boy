@@ -176,8 +176,23 @@ function showResult() {
     document.getElementById("result-image").src = "./assets/footprint-logo.png";
 }
 
-// Retake the quiz
+// Retake the quiz function
 function retakeQuiz() {
+    const modal = document.getElementById("confirmation-modal");
+    modal.style.display = "block";
+
+    const yesButton = document.getElementById("yes-button");
+    const noButton = document.getElementById("no-button");
+
+    // Eevent listeners for the modal buttons
+    yesButton.addEventListener("click", restartQuiz);
+    noButton.addEventListener("click", closeModal);
+}
+
+// Function to restart the quiz
+function restartQuiz() {
+    const modal = document.getElementById("confirmation-modal");
+    modal.style.display = "none";
     showLandingPage();
 }
 
