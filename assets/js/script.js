@@ -173,7 +173,7 @@ function showResult() {
     document.getElementById("result-total").textContent = totalQuestions;
 
     // Result image needs to be added at a later stage
-    document.getElementById("result-image").src = "./assets/footprint-logo.png";
+    document.getElementById("result-image").src = "./assets/images/results-puppy.png ";
 }
 
 // Retake the quiz
