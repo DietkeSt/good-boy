@@ -51,17 +51,19 @@
         </div>
         <!-- Quiz section -->
         <div id="quiz-container" style="display: none;">
-            <h2 id="question">Question</h2>
-            <div id="image-container">
-                <img id="question-image" src="">
-            </div>
-            <ul id="options">
-                <!-- Options will be dynamically added here -->
-            </ul>
-            <div id="feedback"></div>
-            <div class="quiz-buttons">
-                <button id="restart-btn" onclick="retakeQuiz()">Retake Quiz</button>
-                <button id="next-btn" onclick="nextQuestion()">Next</button>
+            <div class="quiz-questions">
+                <h2 id="question">Question</h2>
+                <div id="image-container">
+                    <img id="question-image" src="">
+                </div>
+                <ul id="options">
+                    <!-- Options will be dynamically added here -->
+                </ul>
+                <div id="feedback"></div>
+                <div class="quiz-buttons">
+                    <button id="restart-btn" onclick="retakeQuiz()">Retake Quiz</button>
+                    <button id="next-btn" onclick="nextQuestion()">Next</button>
+                </div>
             </div>
         </div>
         <!-- Confirmation modal to confirm whether or not to retake the quiz -->
