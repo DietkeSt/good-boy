@@ -158,8 +158,6 @@ closeButton.addEventListener("click", closeModal);
 document.addEventListener("DOMContentLoaded", function () {
     const instructionsText = document.querySelector(".instructions-landing p");
     const startQuizButton = document.querySelector(".start-quiz-btn");
-    const nextQuizButton = document.querySelector("#next-btn");
-    const quizOptions = document.querySelectorAll(".option");
 
     function applyZoomEffect(element) {
         element.addEventListener("mouseover", function () {
@@ -173,8 +171,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     applyZoomEffect(instructionsText);
     applyZoomEffect(startQuizButton);
-    applyZoomEffect(nextQuizButton);
-    quizOptions.forEach(applyZoomEffect);
 });
 
 // Function for image slider and fade effect on landing page
