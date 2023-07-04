@@ -48,31 +48,6 @@
                     aria-label="By clicking this button the Quiz is started after you entered your username (opens in the same page)">Start
                     Quiz</button>
             </form>
-            <!-- Clickable text that opens the instructions modal -->
-            <div class="instructions-landing">
-                <p title="Click here for further instructions on How To Play.">
-                    <i class="fa-solid fa-circle-info"></i> How To Play
-                </p>
-            </div>
-            <!-- Instructions modal -->
-            <div class="modal" id="instructions-modal">
-                <div class="modal-content">
-                    <span class="close-button">&times;</span>
-                    <h2>Instructions on How To Play</h2>
-                    <p>
-                        1. Please enter your <strong>Name</strong>.
-                        <br>
-                        2. Click on the <strong>Start Quiz</strong> button.
-                        <br>
-                        3. Guess the correct dog breed by clicking on the option with the correct <strong>Breed
-                            Name</strong>.
-                        <br>
-                        4. Click the <strong>Next</strong> button.
-                        <br>
-                        5. Repeat until the Quiz is finished and you see your final score!
-                    </p>
-                </div>
-            </div>
         </div>
         <!-- Quiz section -->
         <div id="quiz-container" style="display: none;">
@@ -111,6 +86,31 @@
             <br>
             <p>Your Score: <span id="result-score"></span>/<span id="result-total"></span></p>
             <button onclick="retakeQuiz()">Retake Quiz</button>
+        </div>
+        <!-- Clickable text that opens the instructions modal -->
+        <div class="instructions-landing">
+            <p title="Click here for further instructions on How To Play.">
+                <i class="fa-solid fa-circle-info"></i> How To Play
+            </p>
+        </div>
+        <!-- Instructions modal -->
+        <div class="modal" id="instructions-modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Instructions on How To Play</h2>
+                <p>
+                    1. Please enter your <strong>Name</strong>.
+                    <br>
+                    2. Click on the <strong>Start Quiz</strong> button.
+                    <br>
+                    3. Guess the correct dog breed by clicking on the option with the correct <strong>Breed
+                        Name</strong>.
+                    <br>
+                    4. Click the <strong>Next</strong> button.
+                    <br>
+                    5. Repeat until the Quiz is finished and you see your final score!
+                </p>
+            </div>
         </div>
     </main>
     <footer>
