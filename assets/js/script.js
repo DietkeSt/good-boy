@@ -237,6 +237,7 @@ openModalButton.addEventListener("click", openModal);
 // Event listener for zoom effect
 document.addEventListener("DOMContentLoaded", function () {
     const instructionsText = document.querySelector(".instructions-landing p");
+    const instructionsTextQuiz = document.querySelector(".instructions-quiz p");
     const startQuizButton = document.querySelector(".start-quiz-btn");
 
     function applyZoomEffect(element) {
@@ -250,6 +251,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     applyZoomEffect(instructionsText);
+    applyZoomEffect(instructionsTextQuiz);
     applyZoomEffect(startQuizButton);
 });
 
