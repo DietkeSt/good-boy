@@ -55,13 +55,17 @@
             <div id="image-container">
                 <img id="question-image" src="">
             </div>
-            <div class="quiz-options-container">
-                <ul id="options">
-                    <!-- Options will be dynamically added here -->
-                </ul>
-                <div id="feedback"></div>
-                <div class="quiz-buttons">
+            <div id="quiz-section2">
+                <div class="quiz-restart">
                     <button id="restart-btn" onclick="retakeQuiz()">Retake Quiz</button>
+                </div>
+                <div class="quiz-options">
+                    <ul id="options">
+                        <!-- Options will be dynamically added here -->
+                    </ul>
+                    <div id="feedback"></div>
+                </div>
+                <div class="quiz-next">
                     <button id="next-btn" onclick="nextQuestion()">Next</button>
                 </div>
             </div>
