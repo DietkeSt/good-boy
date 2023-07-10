@@ -322,25 +322,29 @@ window.addEventListener(
     false
 );
 
-// Event listener for click on Feedback
+// Event listener for submitting feedback
+document.addEventListener("DOMContentLoaded", function () {
+    const feedbackBtn = document.getElementById("send");
+    const feedbackModal = document.getElementById("feedback-modal");
+    const feedbackForm = document.getElementById("feedback-form");
+    const feedbackSubmitBtn = document.getElementById("feedback-submit");
 
-const feedbackButton = document.querySelector(".feedback-btn");
-feedbackButton.addEventListener("click", openFeedbackModal);
+    feedbackBtn.addEventListener("click", function () {
+        feedbackModal.style.display = "block";
+    });
 
-function openFeedbackModal() {
-    const feedbackPanel = document.getElementById("panel");
-    feedbackPanel.style.display = "block";
-}
+    feedbackForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        feedbackModal.style.display = "none";
+        showThankYouMessage();
+    });
 
-// Event listener for feedback submission
+    feedbackSubmitBtn.addEventListener("click", function () {
+        feedbackForm.submit();
+    });
+});
 
-const feedbackSubmitButton = document.getElementById("feedback-submit");
-feedbackSubmitButton.addEventListener("click", submitFeedback);
-
-function submitFeedback() {
-    const feedbackPanel = document.getElementById("feedback-form");
-    feedbackPanel.innerHTML = `
-        <h3>Thank You!</h3>
-        <p>We appreciate your feedback.</p>
-    `;
+function showThankYouMessage() {
+    const panel = document.getElementById("panel");
+    panel.innerHTML = "<p>Thank you for your feedback!</p>";
 }
