@@ -301,7 +301,6 @@ window.addEventListener(
         const stage = document.getElementById("image-slider");
         const images = stage.getElementsByTagName("a");
         let currentImageIndex = 0;
-        const fadeDuration = 1000; // 1 second for fading transition
         const slideInterval = 4000; // 4 seconds for slide interval
 
         function fadeToNextImage() {
