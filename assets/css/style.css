@@ -345,7 +345,7 @@ li.option.inactive {
     cursor: not-allowed;
 }
 
-/* Feedback */
+/* Quiz feedback */
 
 #feedback {
     font-weight: bold;
@@ -379,4 +379,60 @@ li.option.inactive {
 #result-container button {
     width: 50%;
     margin: 1em 0;
+}
+
+/* Feedback section */
+
+.panel-container {
+    background-color: #FBCEB1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    max-width: 400px;
+    color: #353839;
+    margin: 10% auto 2% auto;
+}
+
+.ratings-container {
+    display: flex;
+    margin: 20px 0;
+}
+
+.rating {
+    flex: 1;
+    cursor: pointer;
+    padding: 20px;
+    margin: 10px 5px;
+}
+
+.rating:hover,
+.rating.active {
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rating i {
+    width: 40px;
+}
+
+.rating small {
+    color: white;
+    display: inline-block;
+    margin: 10px 0 0;
+}
+
+.rating:hover small,
+.rating.active small {
+    color: #D87E4E;
+}
+
+.fa-heart {
+    color: red;
+    font-size: 30px;
+    margin-bottom: 10px;
 }

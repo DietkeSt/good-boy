@@ -322,14 +322,12 @@ window.addEventListener(
     false
 );
 
-// Feedback box event listener
-var post = document.getElementById("feedback-box");
-post.addEventListener("click", function () {
-    var commentBoxValue = document.getElementById("feedback-box").value;
+// contact form
 
-    var li = document.createElement("li");
-    var text = document.createTextNode(commentBoxValue);
-    li.appendChild(text);
-    document.getElementById("unordered").appendChild(li);
-
-});
+function toggle_visibility() {
+    var e = document.getElementById('feedback-main');
+    if (e.style.display == 'block')
+        e.style.display = 'none';
+    else
+        e.style.display = 'block';
+}
