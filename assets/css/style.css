@@ -268,9 +268,10 @@ button:disabled {
 #progress-bar-container {
     width: 100%;
     height: 20px;
-    background-color: #ddd;
-    border-radius: 10px;
+    background-color: white;
+    border-radius: 12px;
     margin-bottom: 10px;
+    border: solid #353839 1px;
 }
 
 #progress-bar {
@@ -330,6 +331,7 @@ button:disabled {
     font-weight: bold;
     font-family: "Indie Flower", Open-Sans;
     font-size: 24px;
+    margin-bottom: 1em;
 }
 
 /* Result */
