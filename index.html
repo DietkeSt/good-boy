@@ -132,13 +132,22 @@
             </div>
         </div>
         <!-- Feedback section -->
-        <div id="feedback-container">
-            <h3>Any comments or feedback?</h3>
-            <input type="text" id="feedback-box" placeholder="Enter comment or feedback">
-            <button id="feedback-btn">Post</button>
-            <ul id="unordered">
+        <div id="panel" class="panel-container">
+            <strong>How happy are you with the <br /> quiz?</strong>
+            <div class="ratings-container">
+                <div class="rating">
+                    <p><i class="fa-regular fa-face-angry"></i> Unhappy</p>
+                </div>
 
-            </ul>
+                <div class="rating">
+                    <p><i class="fa-regular fa-face-meh"></i> Neutral</p>
+                </div>
+
+                <div class="rating active">
+                    <p><i class="fa-regular fa-face-smile"></i> Happy</p>
+                </div>
+            </div>
+            <button class="feedback-btn" id="send">Send Review</button>
         </div>
     </main>
     <footer>
