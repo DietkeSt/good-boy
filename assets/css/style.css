@@ -207,7 +207,7 @@ button:disabled {
 .modal-content {
     background-color: #FBCEB1;
     border-radius: 20px;
-    border: solid 2px #353839;
+    border: solid 1px #353839;
     padding: 2em;
     margin: 2em;
     width: 400px;
