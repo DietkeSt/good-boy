@@ -72,6 +72,15 @@ let currentQuestion = 0;
 let score = 0;
 let username = "";
 
+// Shuffle function for the quiz questions
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
 // Start Quiz event
 function startQuiz(event) {
     event.preventDefault();
@@ -86,17 +95,15 @@ function startQuiz(event) {
         document.getElementById("result-container").style.display = "none";
         currentQuestion = 0;
         score = 0;
+
+        // Shuffle the quiz questions array
+        shuffle(quiz);
+
+        // Limit the questions to a maximum of 10
+        quiz.splice(10);
+
         displayQuestion();
     }
-}
-
-// Shuffle the quiz questions array
-function shuffle(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
 }
 
 // Display the current question and options
