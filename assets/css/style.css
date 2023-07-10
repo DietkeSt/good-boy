@@ -354,6 +354,12 @@ button:disabled {
     align-items: center;
 }
 
+#result-container span {
+    font-family: "Indie Flower", Open-Sans;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 #result-container img {
     max-width: 450px;
 }
