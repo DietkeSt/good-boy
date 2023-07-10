@@ -138,7 +138,7 @@ function displayQuestion() {
     nextButton.disabled = true;
 
     // Display current score and question progress
-    scoreElement.textContent = `Score: ${score}`;
+    scoreElement.textContent = `Correct Answers: ${score}`;
     questionProgressElement.textContent = `Question: ${currentQuestion + 1}/${quiz.length}`;
 
     // Display question progress as a progress bar
