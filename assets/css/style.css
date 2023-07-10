@@ -147,6 +147,7 @@ button:hover {
     color: white;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 button:disabled {
@@ -172,6 +173,7 @@ button:disabled {
     transform: scale(1.1);
     transition: transform 0.3s ease;
     box-shadow: none;
+    transition: all 0.2s ease;
 }
 
 /* Instructions section */
@@ -183,6 +185,7 @@ button:disabled {
 .instructions-landing:hover p {
     cursor: pointer;
     color: #D87E4E;
+    transition: all 0.2s ease;
 }
 
 .instructions-landing p.zoom-effect,
@@ -253,6 +256,7 @@ button:disabled {
 
 .close-button:hover {
     color: #D87E4E;
+    transition: all 0.2s ease;
 }
 
 /* Quiz container */
@@ -337,6 +341,7 @@ button:disabled {
     color: white;
     font-weight: bold;
     background-color: #D87E4E;
+    transition: all 0.2s ease;
 }
 
 li.option.inactive {
@@ -414,4 +419,32 @@ li.option.inactive {
 .rating-icons input#rating4:checked~label {
     color: white;
     text-shadow: 0 0 20px #D87E4E;
+}
+
+.rating-icons form p {
+    margin: 1em 0;
+    transition: all 0.2s ease;
+}
+
+.rating-icons form .textarea {
+    height: 7.5vh;
+}
+
+.rating-icons form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #353839;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Open-Sans", sans-serif;
+    resize: none;
+}
+
+.feedback-btn {
+    margin: 2.5em 0 0 0;
+}
+
+.feedback-btn button {
+    width: 100%;
 }
