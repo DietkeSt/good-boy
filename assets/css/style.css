@@ -100,13 +100,11 @@ header {
 /* Form */
 
 form {
-    margin: 1em auto;
+    margin-top: 1em;
 }
 
 input {
     font-size: 16px;
-    margin-right: 10px;
-    margin-left: 5px;
     border: 1px solid #353839;
     border-radius: 13px;
     height: 40px;
@@ -114,6 +112,11 @@ input {
     box-sizing: border-box;
     vertical-align: middle;
     text-align: center;
+}
+
+#username,
+.start-quiz-btn {
+    margin: 1em;
 }
 
 /* Buttons */
