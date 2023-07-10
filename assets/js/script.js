@@ -295,29 +295,40 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Function for image slider and fade effect on landing page
-window.addEventListener(
-    "DOMContentLoaded",
-    function () {
-        const stage = document.getElementById("image-slider");
-        const images = stage.getElementsByTagName("a");
-        let currentImageIndex = 0;
-        const slideInterval = 4000; // 4 seconds for slide interval
+window.addEventListener("DOMContentLoaded", function () {
+    const stage = document.getElementById("image-slider");
+    const images = stage.getElementsByTagName("a");
+    let currentImageIndex = 0;
+    const slideInterval = 4000; // 4 seconds for slide interval
 
-        function fadeToNextImage() {
-            const currentImage = images[currentImageIndex];
-            const nextImageIndex = (currentImageIndex + 1) % images.length;
-            const nextImage = images[nextImageIndex];
+    function fadeToNextImage() {
+        const currentImage = images[currentImageIndex];
+        const nextImageIndex = (currentImageIndex + 1) % images.length;
+        const nextImage = images[nextImageIndex];
 
-            currentImage.classList.remove("active");
-            nextImage.classList.add("active");
+        currentImage.classList.remove("active");
+        nextImage.classList.add("active");
 
-            currentImageIndex = nextImageIndex;
+        currentImageIndex = nextImageIndex;
 
-            setTimeout(fadeToNextImage, slideInterval);
-        }
-
-        images[currentImageIndex].classList.add("active");
         setTimeout(fadeToNextImage, slideInterval);
-    },
+    }
+
+    images[currentImageIndex].classList.add("active");
+    setTimeout(fadeToNextImage, slideInterval);
+},
     false
 );
+
+//Function for feedback submission
+window.addEventListener("DOMContentLoaded", function () {
+    const feedbackBtn = document.querySelector(".feedback-btn");
+    const ratingThanks = stage.querySelector(".rating-thanks");
+    const ratingIcons = stage.querySelector(".rating-icons");
+
+    feedbackBtn.onclick = () => {
+        ratingIcons.style.display = "none";
+        ratingThanks.style.display = "block";
+        return false;
+    };
+});
