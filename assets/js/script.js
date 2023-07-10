@@ -169,12 +169,17 @@ function checkAnswer(selectedIndex) {
         return;
     }
 
+    // Mark the question as guessed
+    currentQuiz.guessed = true;
+
     // Highlight the selected option
     for (let i = 0; i < options.length; i++) {
         if (i === selectedIndex) {
             options[i].classList.add("selected");
         } else {
             options[i].classList.remove("selected");
+            options[i].classList.add("inactive");
+            options[i].removeAttribute("onclick");
         }
     }
 
@@ -184,14 +189,6 @@ function checkAnswer(selectedIndex) {
         score++;
     } else {
         document.getElementById("feedback").textContent = "Wrong!";
-    }
-
-    // Mark the question as guessed
-    currentQuiz.guessed = true;
-
-    // Disable the options
-    for (let i = 0; i < options.length; i++) {
-        options[i].disabled = true;
     }
 
     // Enable the next button
