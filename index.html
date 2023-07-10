@@ -132,22 +132,24 @@
             </div>
         </div>
         <!-- Feedback section -->
-        <div id="panel" class="panel-container">
-            <h3>How happy are you with the quiz?</h3>
-            <div class="ratings-container">
-                <div class="rating">
-                    <p><i class="fa-regular fa-face-angry"></i> Unhappy</p>
-                </div>
-
-                <div class="rating">
-                    <p><i class="fa-regular fa-face-meh"></i> Neutral</p>
-                </div>
-
-                <div class="rating active">
-                    <p><i class="fa-regular fa-face-smile"></i> Happy</p>
+        <div id="feedback-modal" class="modal">
+            <div class="modal-content" id="feedback-form">
+                <div id="panel" class="panel-container">
+                    <h3>How happy are you with the quiz?</h3>
+                    <div class="ratings-container">
+                        <div class="rating">
+                            <p><i class="fa-regular fa-face-angry"></i> Unhappy</p>
+                        </div>
+                        <div class="rating">
+                            <p><i class="fa-regular fa-face-meh"></i> Neutral</p>
+                        </div>
+                        <div class="rating active">
+                            <p><i class="fa-regular fa-face-smile"></i> Happy</p>
+                        </div>
+                    </div>
+                    <button class="feedback-btn" id="send">Send Feedback</button>
                 </div>
             </div>
-            <button class="feedback-btn" id="send">Send Feedback</button>
         </div>
     </main>
     <footer>
