@@ -398,6 +398,7 @@ li.option.inactive {
     font-size: 40px;
     color: #353839;
     padding: 10px;
+    float: right;
     transition: all 0.2s ease;
 }
 
@@ -408,4 +409,9 @@ li.option.inactive {
 
 .rating-icons input:checked~label {
     color: white;
+}
+
+.rating-icons input#rating4:checked~label {
+    color: white;
+    text-shadow: 0 0 20px #D87E4E;
 }
