@@ -339,6 +339,12 @@ button:disabled {
     background-color: #D87E4E;
 }
 
+li.option.inactive {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
 /* Feedback */
 
 #feedback {
