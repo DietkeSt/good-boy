@@ -322,12 +322,37 @@ window.addEventListener(
     false
 );
 
-// contact form
+// Function for feedback
 
-function toggle_visibility() {
-    var e = document.getElementById('feedback-main');
-    if (e.style.display == 'block')
-        e.style.display = 'none';
-    else
-        e.style.display = 'block';
+const ratings = document.querySelectorAll('.rating');
+const ratingsContainer = document.querySelector('.ratings-container');
+const sendBtn = document.querySelector('#send');
+const panel = document.querySelector('#panel');
+let selectedRating = 'Happy';
+
+ratingsContainer.addEventListener('click', (e) => {
+    if (e.target.parentNode.classList.contains('rating')) {
+        removeActive();
+        e.target.parentNode.classList.add('active');
+        selectedRating = e.target.parentNode.querySelector('p').textContent.trim();
+    }
+    if (e.target.classList.contains('rating')) {
+        removeActive();
+        e.target.classList.add('active');
+        selectedRating = e.target.querySelector('p').textContent.trim();
+    }
+});
+
+sendBtn.addEventListener('click', (e) => {
+    panel.innerHTML = `
+        Thank You!
+        Feedback: ${selectedRating}
+        We'll use your feedback to improve our quiz.
+    `;
+});
+
+function removeActive() {
+    ratings.forEach((rating) => {
+        rating.classList.remove('active');
+    });
 }
