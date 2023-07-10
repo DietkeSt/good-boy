@@ -4,67 +4,78 @@ const quiz = [
         question: "Which breed of dog is this?",
         image: "./assets/images/dog-1.png",
         options: ["French Bulldog", "Poodle", "Labrador Retriever"],
-        answer: 0
+        answer: 0,
+        guessed: false
     },
     {
         question: "What type of dog is this?",
         image: "./assets/images/dog-2.png",
         options: ["Alsation", "Husky", "Shiba Inu"],
-        answer: 2
+        answer: 2,
+        guessed: false
     },
     {
         question: "Can you identify the breed of this dog?",
         image: "./assets/images/dog-3.png",
         options: ["Golden Retriever", "American Staffordshire", "Dalmatian"],
-        answer: 1
+        answer: 1,
+        guessed: false
     },
     {
         question: "I'm curious about the breed of this dog. Any idea?",
         image: "./assets/images/dog-4.png",
         options: ["Bulldog", "Shih Tzu", "Dachshund"],
-        answer: 2
+        answer: 2,
+        guessed: false
     },
     {
         question: "Do you know which dog breed this is?",
         image: "./assets/images/dog-5.png",
         options: ["Labrador Retriever", "Siberian Husky", "Chihuahua"],
-        answer: 1
+        answer: 1,
+        guessed: false
     },
     {
         question: "Could you tell me the specific breed of this dog?",
         image: "./assets/images/dog-6.png",
         options: ["Corgi", "Beagle", "Rottweiler"],
-        answer: 0
+        answer: 0,
+        guessed: false
     },
     {
         question: "I'm wondering about the breed of this particular dog. Any thoughts?",
         image: "./assets/images/dog-7.png",
         options: ["Great Dane", "Shar Pei", "Australian Shepherd"],
-        answer: 1
+        answer: 1,
+        guessed: false
     },
     {
         question: "Can you help me determine the breed of this adorable dog?",
         image: "./assets/images/dog-8.png",
         options: ["Border Cattie", "French Catdog", "Silly you... this is a cat!"],
-        answer: 2
+        answer: 2,
+        guessed: false
     },
     {
         question: "What is the breed of this lovely canine?",
         image: "./assets/images/dog-9.png",
         options: ["Doberman Pinscher", "Saluki", "Cavalier King Charles Spaniel"],
-        answer: 1
+        answer: 1,
+        guessed: false
     },
     {
         question: "I'd love to know the breed of this dog. Any guesses?",
         image: "./assets/images/dog-10.png",
         options: ["German Shepherd", "Saint Bernard", "Jack Russell Terrier"],
-        answer: 0
+        answer: 0,
+        guessed: false
     },
     {
         question: "Could you please enlighten me about the breed of this dog?",
         image: "./assets/images/dog-11.png",
         options: ["Bernese Mountain Dog", "Maltese", "Dalmatian"],
-        answer: 2
+        answer: 2,
+        guessed: false
     },
 ];
 
