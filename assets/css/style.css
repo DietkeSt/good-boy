@@ -388,6 +388,10 @@ li.option.inactive {
 
 /* Feedback section */
 
+#feedback-form {
+    margin: 5em 0;
+}
+
 .ratings-container {
     display: flex;
     flex-direction: column;
@@ -413,16 +417,12 @@ li.option.inactive {
 
 .rating-icons input:not(:checked)~label:hover,
 .rating-icons input:not(:checked)~label:hover~label {
-    color: white;
+    color: #FBCEB1;
 }
 
 .rating-icons input:checked~label {
-    color: white;
-}
-
-.rating-icons input:checked~label {
-    color: white;
-    text-shadow: 0 0 20px #D87E4E;
+    color: #FBCEB1;
+    text-shadow: 0 0 20px #353839;
 }
 
 #rating-1:checked~form p:before {
@@ -469,6 +469,7 @@ li.option.inactive {
     padding: 10px;
     font-size: 16px;
     font-family: "Open-Sans", sans-serif;
+    text-align: center;
 }
 
 .feedback-btn {
@@ -476,5 +477,12 @@ li.option.inactive {
 }
 
 .feedback-btn button {
-    width: 50%;
+    width: 75%;
+    background-color: white;
+}
+
+.feedback-btn button:hover {
+    background-color: #FBCEB1;
+    border-color: #353839;
+    color: #353839;
 }
