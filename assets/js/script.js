@@ -322,37 +322,25 @@ window.addEventListener(
     false
 );
 
-// Function for feedback
+// Event listener for click on Feedback
 
-const ratings = document.querySelectorAll('.rating');
-const ratingsContainer = document.querySelector('.ratings-container');
-const sendBtn = document.querySelector('#send');
-const panel = document.querySelector('#panel');
-let selectedRating = 'Happy';
+const feedbackButton = document.querySelector(".feedback-btn");
+feedbackButton.addEventListener("click", openFeedbackModal);
 
-ratingsContainer.addEventListener('click', (e) => {
-    if (e.target.parentNode.classList.contains('rating')) {
-        removeActive();
-        e.target.parentNode.classList.add('active');
-        selectedRating = e.target.parentNode.querySelector('p').textContent.trim();
-    }
-    if (e.target.classList.contains('rating')) {
-        removeActive();
-        e.target.classList.add('active');
-        selectedRating = e.target.querySelector('p').textContent.trim();
-    }
-});
+function openFeedbackModal() {
+    const feedbackPanel = document.getElementById("panel");
+    feedbackPanel.style.display = "block";
+}
 
-sendBtn.addEventListener('click', (e) => {
-    panel.innerHTML = `
-        Thank You!
-        Feedback: ${selectedRating}
-        We'll use your feedback to improve our quiz.
+// Event listener for feedback submission
+
+const feedbackSubmitButton = document.getElementById("feedback-submit");
+feedbackSubmitButton.addEventListener("click", submitFeedback);
+
+function submitFeedback() {
+    const feedbackPanel = document.getElementById("feedback-form");
+    feedbackPanel.innerHTML = `
+        <h3>Thank You!</h3>
+        <p>We appreciate your feedback.</p>
     `;
-});
-
-function removeActive() {
-    ratings.forEach((rating) => {
-        rating.classList.remove('active');
-    });
 }
