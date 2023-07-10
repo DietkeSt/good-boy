@@ -126,6 +126,11 @@ function displayQuestion() {
     // Display current score and question progress
     scoreElement.textContent = `Score: ${score}`;
     questionProgressElement.textContent = `Question: ${currentQuestion + 1}/${quiz.length}`;
+
+    // Display question progress as a progress bar
+    const progressBarElement = document.getElementById("progress-bar");
+    const progress = ((currentQuestion + 1) / quiz.length) * 100;
+    progressBarElement.style.width = progress + "%";
 }
 
 // Check the selected answer
