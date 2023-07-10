@@ -323,8 +323,8 @@ window.addEventListener("DOMContentLoaded", function () {
 //Function for feedback submission
 window.addEventListener("DOMContentLoaded", function () {
     const feedbackBtn = document.querySelector(".feedback-btn");
-    const ratingThanks = stage.querySelector(".rating-thanks");
-    const ratingIcons = stage.querySelector(".rating-icons");
+    const ratingThanks = document.querySelector(".rating-thanks");
+    const ratingIcons = document.querySelector(".rating-icons");
 
     feedbackBtn.onclick = () => {
         ratingIcons.style.display = "none";
