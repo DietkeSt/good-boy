@@ -188,7 +188,7 @@ button:disabled {
 /* Modal styles */
 
 .modal {
-    display: none;
+    display: flexbox;
     position: fixed;
     z-index: 9999;
     top: 0;
@@ -210,6 +210,17 @@ button:disabled {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 1em 0;
+}
+
+#yes-button,
+#no-button {
+    width: 33%;
 }
 
 .close-button {
