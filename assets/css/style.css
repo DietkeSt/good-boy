@@ -6,6 +6,7 @@ body {
     align-items: center;
     min-height: 100vh;
     text-align: center;
+    margin: 0;
 }
 
 main {
@@ -485,4 +486,31 @@ li.option.inactive {
     background-color: #FBCEB1;
     border-color: #353839;
     color: #353839;
+}
+
+/* Footer */
+
+footer {
+    background-color: #FBCEB1;
+    border-top: 1px solid #353839;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    font-family: Open-Sans, sans-serif;
+    color: #353839;
+    font-size: 14px;
+    margin: 0;
+}
+
+footer a {
+    color: #D87E4E;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
