@@ -395,6 +395,10 @@ li.option.inactive {
     align-items: center;
 }
 
+.rating-thanks {
+    display: none;
+}
+
 .ratings-container .rating-icons input {
     display: none;
 }
@@ -448,7 +452,6 @@ li.option.inactive {
 .rating-icons input:checked~form {
     display: block;
 }
-
 
 .rating-icons form p {
     margin: 1em 0;
