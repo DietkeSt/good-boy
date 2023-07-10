@@ -116,7 +116,7 @@ input {
     text-align: center;
 }
 
-/* Button */
+/* Buttons */
 
 button {
     font-family: "Indie Flower", Open-Sans;
@@ -147,6 +147,25 @@ button:disabled {
     opacity: 0.5;
     pointer-events: none;
     cursor: not-allowed;
+}
+
+#next-btn,
+#restart-btn {
+    width: 100%;
+    padding: 5px;
+    line-height: 90%;
+    border: none;
+
+}
+
+#next-btn:hover,
+#restart-btn:hover {
+    border: none;
+    background-color: unset;
+    text-decoration: underline;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    box-shadow: none;
 }
 
 /* Instructions section */
@@ -222,25 +241,6 @@ button:disabled {
     align-items: center;
     width: 33.33%;
     padding: 1em;
-}
-
-#next-btn,
-#restart-btn {
-    width: 100%;
-    padding: 5px;
-    line-height: 90%;
-    border: none;
-
-}
-
-#next-btn:hover,
-#restart-btn:hover {
-    border: none;
-    background-color: unset;
-    text-decoration: underline;
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-    box-shadow: none;
 }
 
 /* Questions */
