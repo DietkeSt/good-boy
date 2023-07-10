@@ -90,6 +90,15 @@ function startQuiz(event) {
     }
 }
 
+// Shuffle the quiz questions array
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
 // Display the current question and options
 function displayQuestion() {
     const questionElement = document.getElementById("question");
