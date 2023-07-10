@@ -195,11 +195,12 @@ function showResult() {
     document.getElementById("result-container").style.display = "flex";
 
     const totalQuestions = quiz.length;
+    const percentage = Math.round((score / totalQuestions) * 100);
+
     document.getElementById("result-username").textContent = username;
     document.getElementById("result-score").textContent = score;
     document.getElementById("result-total").textContent = totalQuestions;
-
-    // Result image needs to be added at a later stage
+    document.getElementById("result-percentage").textContent = ` (${percentage}%)`;
     document.getElementById("result-image").src = "./assets/images/result-puppy.png ";
 }
 
