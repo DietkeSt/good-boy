@@ -324,10 +324,10 @@ window.addEventListener("DOMContentLoaded", function () {
 window.addEventListener("DOMContentLoaded", function () {
     const feedbackBtn = document.querySelector(".feedback-btn");
     const ratingThanks = document.querySelector(".rating-thanks");
-    const ratingIcons = document.querySelector(".rating-icons");
+    const ratingsContainer = document.querySelector(".ratings-container");
 
     feedbackBtn.onclick = () => {
-        ratingIcons.style.display = "none";
+        ratingsContainer.style.display = "none";
         ratingThanks.style.display = "block";
         return false;
     };
