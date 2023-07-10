@@ -65,7 +65,8 @@ header {
     flex-direction: column;
     justify-content: center;
     background-color: #FBCEB1;
-    border-radius: 13px;
+    border-radius: 20px;
+    border: 1px solid #353839;
     padding: 2em;
     margin: 2em;
 }
@@ -107,7 +108,7 @@ form {
 input {
     font-size: 16px;
     border: 1px solid #353839;
-    border-radius: 13px;
+    border-radius: 20px;
     height: 40px;
     font-family: Open-Sans, sans-serif;
     box-sizing: border-box;
@@ -127,7 +128,7 @@ button {
     color: #353839;
     border-color: #353839;
     background-color: #FBCEB1;
-    border-radius: 13px;
+    border-radius: 20px;
     height: 40px;
     border: 2px solid;
     font-weight: bold;
@@ -204,7 +205,7 @@ button:disabled {
 
 .modal-content {
     background-color: #FBCEB1;
-    border-radius: 13px;
+    border-radius: 20px;
     border: solid 2px #353839;
     padding: 2em;
     margin: 2em;
@@ -309,7 +310,7 @@ button:disabled {
     width: 100%;
     padding: 10px;
     margin: 5px;
-    border-radius: 13px;
+    border-radius: 20px;
     border: solid 2px #353839;
     color: #353839;
     font-weight: bold;
@@ -318,7 +319,7 @@ button:disabled {
 
 .option:hover,
 .option.selected {
-    border-radius: 13px;
+    border-radius: 20px;
     border: solid 2px white;
     color: white;
     font-weight: bold;
