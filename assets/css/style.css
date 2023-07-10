@@ -258,6 +258,13 @@ button:disabled {
     padding: 1em;
 }
 
+/* Score & Progress */
+
+#score-question-section {
+    display: flex;
+        justify-content: space-between;
+}
+
 /* Questions */
 
 #question-image {
