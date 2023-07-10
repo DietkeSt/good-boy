@@ -416,10 +416,39 @@ li.option.inactive {
     color: white;
 }
 
-.rating-icons input#rating4:checked~label {
+.rating-icons input:checked~label {
     color: white;
     text-shadow: 0 0 20px #D87E4E;
 }
+
+#rating-1:checked~form p:before {
+    content: "I hate it!";
+}
+
+#rating-2:checked~form p:before {
+    content: "I don't like it.";
+}
+
+#rating-3:checked~form p:before {
+    content: "It's okay.";
+}
+
+#rating-4:checked~form p:before {
+    content: "It's awesome!";
+}
+
+#rating-5:checked~form p:before {
+    content: "I love it!";
+}
+
+.ratings-container form {
+    display: none;
+}
+
+.rating-icons input:checked~form {
+    display: block;
+}
+
 
 .rating-icons form p {
     margin: 1em 0;
@@ -432,13 +461,11 @@ li.option.inactive {
 
 .rating-icons form .textarea textarea {
     height: 100%;
-    width: 100%;
     border: 1px solid #353839;
     border-radius: 20px;
     padding: 10px;
     font-size: 16px;
     font-family: "Open-Sans", sans-serif;
-    resize: none;
 }
 
 .feedback-btn {
@@ -446,5 +473,5 @@ li.option.inactive {
 }
 
 .feedback-btn button {
-    width: 100%;
+    width: 50%;
 }
