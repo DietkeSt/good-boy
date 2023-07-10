@@ -164,6 +164,11 @@ function checkAnswer(selectedIndex) {
     const correctIndex = currentQuiz.answer;
     const options = document.getElementsByClassName("option");
 
+    // Check if the question has already been guessed
+    if (currentQuiz.guessed) {
+        return;
+    }
+
     // Highlight the selected option
     for (let i = 0; i < options.length; i++) {
         if (i === selectedIndex) {
@@ -179,6 +184,14 @@ function checkAnswer(selectedIndex) {
         score++;
     } else {
         document.getElementById("feedback").textContent = "Wrong!";
+    }
+
+    // Mark the question as guessed
+    currentQuiz.guessed = true;
+
+    // Disable the options
+    for (let i = 0; i < options.length; i++) {
+        options[i].disabled = true;
     }
 
     // Enable the next button
