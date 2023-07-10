@@ -321,20 +321,3 @@ window.addEventListener(
     },
     false
 );
-
-// Event listener for submitting feedback
-document.addEventListener("DOMContentLoaded", function () {
-    const feedbackBtn = document.getElementById("send");
-    const feedbackModal = document.getElementById("feedback-modal");
-    const feedbackSubmitBtn = document.getElementById("feedback-submit");
-    const thankYouMessage = document.getElementById("thank-you-message");
-
-    feedbackBtn.addEventListener("click", function () {
-        feedbackModal.style.display = "block";
-    });
-
-    feedbackSubmitBtn.addEventListener("click", function () {
-        feedbackModal.style.display = "none";
-        thankYouMessage.style.display = "block";
-    });
-});
