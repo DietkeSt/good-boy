@@ -33,6 +33,7 @@ Confirmation modal function: https://stackoverflow.com/questions/51863334/someth
 Progress bar guide: https://www.w3schools.com/howto/howto_js_progressbar.asp
 How to make a quiz video guide by James Quick: https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&ab_channel=JamesQQuick
 Transform CSS: https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate
+Shuffle Quiz: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 
 Styling:
 
