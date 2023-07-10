@@ -124,7 +124,7 @@ function displayQuestion() {
     nextButton.disabled = true;
 
     // Display current score and question progress
-    scoreElement.textContent = `Score: ${score}/${quiz.length}`;
+    scoreElement.textContent = `Score: ${score}`;
     questionProgressElement.textContent = `Question: ${currentQuestion + 1}/${quiz.length}`;
 }
 
