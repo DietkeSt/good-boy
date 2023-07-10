@@ -97,6 +97,8 @@ function displayQuestion() {
     const optionsElement = document.getElementById("options");
     const feedbackElement = document.getElementById("feedback");
     const nextButton = document.getElementById("next-btn");
+    const scoreElement = document.getElementById("score");
+    const questionProgressElement = document.getElementById("question-progress");
 
     // Clear previous options
     optionsElement.innerHTML = "";
@@ -120,6 +122,10 @@ function displayQuestion() {
 
     // Disable next button until an option is selected
     nextButton.disabled = true;
+
+    // Display current score and question progress
+    scoreElement.textContent = `Score: ${score}/${quiz.length}`;
+    questionProgressElement.textContent = `Question: ${currentQuestion + 1}/${quiz.length}`;
 }
 
 // Check the selected answer
