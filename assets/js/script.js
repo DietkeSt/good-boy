@@ -326,25 +326,15 @@ window.addEventListener(
 document.addEventListener("DOMContentLoaded", function () {
     const feedbackBtn = document.getElementById("send");
     const feedbackModal = document.getElementById("feedback-modal");
-    const feedbackForm = document.getElementById("feedback-form");
     const feedbackSubmitBtn = document.getElementById("feedback-submit");
+    const thankYouMessage = document.getElementById("thank-you-message");
 
     feedbackBtn.addEventListener("click", function () {
         feedbackModal.style.display = "block";
     });
 
-    feedbackForm.addEventListener("submit", function (event) {
-        event.preventDefault();
-        feedbackModal.style.display = "none";
-        showThankYouMessage();
-    });
-
     feedbackSubmitBtn.addEventListener("click", function () {
-        feedbackForm.submit();
+        feedbackModal.style.display = "none";
+        thankYouMessage.style.display = "block";
     });
 });
-
-function showThankYouMessage() {
-    const panel = document.getElementById("panel");
-    panel.innerHTML = "<p>Thank you for your feedback!</p>";
-}
