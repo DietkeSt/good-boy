@@ -42,4 +42,4 @@ Upon submission the quiz would not start due to a missing result container in th
 After adding a confirmation modal, the "No" option did not work as expected. Tried adding similar functions as for the instructions modal to close it and had to add an event listener for the "No" option, however, this did not resolve the issue.
 Upon testing, found out that the issue is that two modals are being used and try to access the same closeModal function. I had to rename the function for the confirmation modal and adjust the call for the No button and that resolved the issue. The confirmation modal is now closing as expected when clicking the "no" option.
 
-Upon adding styling for the modal buttons, the modals kept on opening on page load.
+Upon adding styling for the modal buttons, the modals kept on opening on page load. The issue was that I added the wrong display type to the modal class which causes the event listeners not to work anymore. Fixing the display type to none solved the issue.
