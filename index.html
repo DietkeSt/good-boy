@@ -21,9 +21,18 @@
 <body>
     <header>
         <!-- Heading section -->
-        <h1 class="heading">
-            <img class="logo" src="assets/images/footprint-logo.png" alt="Good Boy logo displays a paw print"> Good Boy Quiz
-        </h1>
+        <div class="logo-container">
+            <h1 class="heading">
+                <img class="logo" src="assets/images/footprint-logo.png" alt="Good Boy logo displays a paw print">
+                 Good Boy Quiz
+            </h1>
+        </div>
+        <!-- Clickable text that opens the instructions modal -->
+        <div class="instructions-landing">
+            <p title="Click here for further instructions on How To Play.">
+                <i class="fa-solid fa-circle-info"></i> How To Play
+            </p>
+        </div>
     </header>
     <main>
         <!-- Landing page section -->
@@ -62,9 +71,9 @@
                     </ul>
                 </div>
                 <div class="quiz-next">
-                    <button id="next-btn" onclick="nextQuestion()" title="Click here to progress in the quiz">Next <i class="fa-solid fa-arrow-right"></i></button>
+                    <button id="next-btn" onclick="nextQuestion()" title="Click here to progress in the quiz">Next <i class="fa-solid fa-arrow-right"></i>></button>
                 </div>
-            </div>
+           </div>
             <div id="feedback"></div>
             <div id="progress-bar-container">
                 <div id="progress-bar"></div>
@@ -104,12 +113,6 @@
                 of all questions correctly!
             </p>
             <button onclick="retakeQuiz()"><i class="fa-solid fa-repeat"></i>Retake Quiz</button>
-        </div>
-        <!-- Clickable text that opens the instructions modal -->
-        <div class="instructions-landing">
-            <p title="Click here for further instructions on How To Play.">
-                <i class="fa-solid fa-circle-info"></i> How To Play
-            </p>
         </div>
         <!-- Instructions modal -->
         <div class="modal" id="instructions-modal">
