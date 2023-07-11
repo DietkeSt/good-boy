@@ -99,7 +99,7 @@ function startQuiz(event) {
     if (username.trim() !== "") {
         document.getElementById("result-username").textContent = username;
         document.getElementById("result-image").src = "";
-        document.getElementById("quiz-container").style.display = "block";
+        document.getElementById("quiz-container").style.display = "flex";
         document.getElementById("landing-page").style.display = "none";
         document.getElementById("result-container").style.display = "none";
         currentQuestion = 0;
