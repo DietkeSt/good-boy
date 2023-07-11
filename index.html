@@ -28,24 +28,24 @@
                  Good Boy Quiz
             </h1>
         </div>
-        <!-- Clickable text that opens the instructions modal -->
-        <div class="instructions-landing">
-            <p title="Click to find out How To Play.">
-                <i class="fa-solid fa-circle-info"></i>
-            </p>
-        </div>
     </header>
     <main>
         <!-- Landing page section -->
         <div id="landing-page">
+            <!-- Clickable text that opens the instructions modal -->
+            <div class="instructions-landing">
+                <p title="Click to find out How To Play.">
+                    <i class="fa-solid fa-circle-info"></i>
+                </p>
+            </div>
             <h2>Welcome to the Good Boy Quiz</h2>
             <p>You think you know all of the Good Boys out there? Test your knowledge now!</p>
             <div class="image-container">
                 <div id="image-slider">
-                    <img src="assets/images/dog-1.png" alt="French bulldog being pulled by the ears">
-                    <img src="assets/images/dog-10.png" alt="German shepherd yawning">
-                    <img src="assets/images/dog-7.png" alt="Shar Pei receives a love heart">
-                    <img src="assets/images/dog-2.png" alt="Shiba Inu wearing a hat">
+                    <a href="assets/images/dog-1.png" class=""><img src="assets/images/dog-1.png" width="450px" height="437.5px" alt="French bulldog being pulled by the ears"></a>
+                    <a href="assets/images/dog-10.png" class="active"><img src="assets/images/dog-10.png" width="450px" height="437.5px" alt="German shepherd yawning"></a>
+                    <a href="assets/images/dog-7.png" class=""><img src="assets/images/dog-7.png" width="450px" height="437.5px" alt="Shar Pei receives a love heart"></a>
+                    <a href="assets/images/dog-2.png" class=""><img src="assets/images/dog-2.png" width="450px" height="437.5px" alt="Shiba Inu wearing a hat"></a>
                 </div>
             </div>
             <form id="username-form" onsubmit="startQuiz(event)">
@@ -58,6 +58,12 @@
         </div>
         <!-- Quiz section -->
         <div id="quiz-container" style="display: none;">
+            <!-- Clickable text that opens the instructions modal -->
+            <div class="instructions-landing">
+                <p title="Click to find out How To Play.">
+                    <i class="fa-solid fa-circle-info"></i>
+                </p>
+            </div>
             <h2 id="question">Question</h2>
             <div id="image-container">
                 <img id="question-image" src="">
@@ -72,7 +78,7 @@
                     </ul>
                 </div>
                 <div class="quiz-next">
-                    <button id="next-btn" onclick="nextQuestion()" title="Click here to progress in the quiz">Next <i class="fa-solid fa-arrow-right"></i>></button>
+                    <button id="next-btn" onclick="nextQuestion()" title="Click here to progress in the quiz">Next <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
            </div>
             <div id="feedback"></div>
@@ -98,6 +104,12 @@
         </div>
         <!-- Results section -->
         <div id="result-container" style="display: none;">
+            <!-- Clickable text that opens the instructions modal -->
+            <div class="instructions-landing">
+                <p title="Click to find out How To Play.">
+                    <i class="fa-solid fa-circle-info"></i>
+                </p>
+            </div>
             <h2>Quiz Result</h2>
             <p>
                 You did it, <span id="result-username"></span> !
@@ -107,13 +119,13 @@
             </p>
             <img id="result-image" src="" alt="Result Image">
             <br>
-            <p>Your answered
+            <p>You answered
                 <br>
                 <span id="result-percentage"></span>
                 <br>
                 of all questions correctly!
             </p>
-            <button onclick="retakeQuiz()"><i class="fa-solid fa-repeat"></i>Retake Quiz</button>
+            <button onclick="retakeQuiz()"><i class="fa-solid fa-repeat"></i> Retake Quiz</button>
         </div>
         <!-- Instructions modal -->
         <div class="modal" id="instructions-modal">
