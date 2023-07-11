@@ -20,8 +20,6 @@ main {
     flex: 1 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
 }
 
 h1 {
@@ -48,7 +46,6 @@ label {
 }
 
 /* Heading */
-
 header {
     display: flex;
     flex-direction: row;
@@ -56,7 +53,6 @@ header {
     align-items: center;
     height: 10vh;
     width: 100%;
-    padding-top: 2em;
 }
 
 .placeholder-container {
@@ -74,6 +70,7 @@ header {
     font-size: 4vh;
     justify-content: center;
     align-items: center;
+    margin: 2vh 0;
 }
 
 .logo {
@@ -82,16 +79,15 @@ header {
 }
 
 /* Instructions section */
-
 .instructions-landing {
-    width: 33%;
     display: flex;
-    flex-flow: row-reverse
+    width: 33%;
+    justify-content: flex-end;
 }
 
 .instructions-landing p {
-    width: 33%;
     padding: 0;
+    padding-right: 1vw;
 }
 
 .instructions-landing:hover p {
@@ -108,7 +104,6 @@ header {
 }
 
 /* Container styling*/
-
 #landing-page,
 #result-container,
 #quiz-container {
@@ -117,6 +112,7 @@ header {
     border: 1px solid #353839;
     padding: 1em;
     min-height: 50vh;
+    min-width: 50vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -124,7 +120,6 @@ header {
 }
 
 /* Image slider for landing page */
-
 #image-slider {
     position: relative;
     height: 20vh;
@@ -155,7 +150,6 @@ header {
 
 
 /* Form */
-
 form {
     margin-top: 1em;
 }
@@ -177,7 +171,6 @@ input {
 }
 
 /* Buttons */
-
 button {
     font-family: "Indie Flower", Open-Sans;
     color: #353839;
@@ -234,7 +227,6 @@ button:disabled {
 }
 
 /* Modal styles */
-
 .modal {
     display: none;
     position: fixed;
@@ -299,7 +291,6 @@ button:disabled {
 }
 
 /* Quiz container */
-
 #image-container {
     height: 20vh;
     display: flex;
@@ -331,7 +322,6 @@ button:disabled {
 }
 
 /* Options */
-
 .quiz-options {
     flex-direction: column;
 }
@@ -374,7 +364,6 @@ li.option.inactive {
 }
 
 /* Quiz feedback */
-
 #feedback {
     font-weight: bold;
     font-family: "Indie Flower", Open-Sans;
@@ -383,7 +372,6 @@ li.option.inactive {
 }
 
 /* Score & Progress */
-
 #score-question-section {
     display: flex;
     justify-content: space-between;
@@ -442,7 +430,6 @@ li.option.inactive {
 }
 
 /* Feedback section */
-
 .ratings-container {
     display: flex;
     flex-direction: column;
@@ -539,7 +526,6 @@ li.option.inactive {
 }
 
 /* Footer */
-
 footer {
     display: flex;
     align-items: center;
