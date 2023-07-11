@@ -431,10 +431,6 @@ li.option.inactive {
 
 /* Feedback section */
 
-#feedback-form {
-    margin: 5em 0;
-}
-
 .ratings-container {
     display: flex;
     flex-direction: column;
