@@ -400,9 +400,31 @@ li.option.inactive {
 }
 
 /* Result */
-
 #result-container {
-    align-items: center;
+    display: flex;
+    flex-flow: column;
+    align-content: center;   
+}
+
+.result-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-content: center;
+}
+
+.result-intro {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.result-reward {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 
 #result-username {
