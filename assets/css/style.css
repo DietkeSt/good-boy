@@ -51,21 +51,58 @@ label {
 
 header {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     height: 10vh;
-    margin-top: 1em;
+    width: 100%;
+}
+
+.placeholder-container {
+    width: 33%;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
 }
 
 .heading {
     display: flex;
+    font-size: 4vh;
+    justify-content: center;
     align-items: center;
-    font-size: 5vh;
 }
 
 .logo {
     height: 5vh;
     padding-right: 1vw;
+}
+
+/* Instructions section */
+
+.instructions-landing {
+    width: 33%;
+    display: flex;
+    flex-flow: row-reverse
+}
+
+.instructions-landing p {
+    width: 33%;
+    padding: 0;
+}
+
+.instructions-landing:hover p {
+    cursor: pointer;
+    color: #D87E4E;
+    transition: all 0.2s ease;
+}
+
+.instructions-landing p.zoom-effect,
+.start-quiz-btn.zoom-effect {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 /* Container styling*/
@@ -190,24 +227,6 @@ button:disabled {
     transition: transform 0.3s ease;
     box-shadow: none;
     transition: all 0.2s ease;
-}
-
-/* Instructions section */
-
-.instructions-landing {
-    margin-top: 2.5em;
-}
-
-.instructions-landing:hover p {
-    cursor: pointer;
-    color: #D87E4E;
-    transition: all 0.2s ease;
-}
-
-.instructions-landing p.zoom-effect,
-.start-quiz-btn.zoom-effect {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
 }
 
 /* Modal styles */
