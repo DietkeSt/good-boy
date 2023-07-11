@@ -56,6 +56,7 @@ header {
     align-items: center;
     height: 10vh;
     width: 100%;
+    padding-top: 2em;
 }
 
 .placeholder-container {
@@ -400,31 +401,11 @@ li.option.inactive {
 }
 
 /* Result */
-#result-container {
-    display: flex;
-    flex-flow: column;
-    align-content: center;   
-}
-
 .result-box {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     width: 100%;
     align-content: center;
-}
-
-.result-intro {
-    width: 50%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-}
-
-.result-reward {
-    width: 50%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
 }
 
 #result-username {
@@ -440,7 +421,7 @@ li.option.inactive {
 }
 
 #result-container img {
-    max-width: 450px;
+    max-height: 20vh;
 }
 
 #result-container button {
