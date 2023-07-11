@@ -251,7 +251,7 @@ yesButton.addEventListener("click", restartQuiz);
 
 // Function to show the landing page
 function showLandingPage() {
-    document.getElementById("landing-page").style.display = "block";
+    document.getElementById("landing-page").style.display = "flex";
     document.getElementById("quiz-container").style.display = "none";
     document.getElementById("result-container").style.display = "none";
 }
@@ -328,7 +328,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
     feedbackBtn.onclick = () => {
         ratingsContainer.style.display = "none";
-        ratingThanks.style.display = "block";
+        ratingThanks.style.display = "flex";
         return false;
     };
 });
