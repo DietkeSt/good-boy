@@ -122,13 +122,11 @@ header {
 }
 
 /* Image slider for landing page */
+
 #image-slider {
     position: relative;
-    width: 100%;
     height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 1em auto;
 }
 
 #image-slider a {
@@ -139,15 +137,14 @@ header {
     transition: opacity 1s;
 }
 
-#image-slider .active {
+#image-slider a.active {
     opacity: 1;
     z-index: 2;
 }
 
-#image-slider img {
+#image-slider a img {
+    width: 100%;
     height: 20vh;
-    display: block;
-    object-fit: contain;
 }
 
 /* Form */
