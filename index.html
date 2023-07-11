@@ -84,18 +84,6 @@
                 <p id="question-progress"></p>
             </div>
         </div>
-        <!-- Confirmation modal to confirm whether or not to retake the quiz -->
-        <div id="confirmation-modal" class="modal">
-            <div class="modal-content">
-                <h2>Are you sure you want to re-take the quiz?</h2>
-                <p>All progress will be lost upon re-taking the quiz and you will need to enter your name again to start
-                    the quiz from the beginning.</p>
-                <div class="modal-buttons">
-                    <button id="yes-button">Yes</button>
-                    <button id="no-button">No</button>
-                </div>
-            </div>
-        </div>
         <!-- Results section -->
         <div id="result-container" style="display: none;">
             <h2>Quiz Result</h2>
@@ -119,8 +107,43 @@
             <div class="result-button">
                 <button onclick="retakeQuiz()"><i class="fa-solid fa-repeat"></i> Retake Quiz</button>
             </div>
-            <!-- Feedback section -->
-            <div id="feedback-form">
+            <!-- Clickable text that opens the Feedback section modal -->
+            <div class="feedback-icon">
+                <p title="Click to leave Feedback about the Quiz.">
+                    <i class="fa-solid fa-circle-question"></i>
+                </p>
+            </div>
+        </div>
+        <!-- Instructions modal -->
+        <div class="modal" id="instructions-modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Instructions on How To Play</h2>
+                <ol>
+                    <li>Please enter your <strong>Name</strong>.</li>
+                    <li>Click on the <strong>Start Quiz</strong> button.</li>
+                    <li>Guess the correct dog breed by clicking on the option with the correct <strong>Breed
+                            Name</strong>.</li>
+                    <li>Click the <strong>Next</strong> button.</li>
+                    <li>Repeat until the Quiz is finished and you see your final score!</li>
+                </ol>
+            </div>
+        </div>
+        <!-- Confirmation modal to confirm whether or not to retake the quiz -->
+        <div id="confirmation-modal" class="modal">
+            <div class="modal-content">
+                <h2>Are you sure you want to re-take the quiz?</h2>
+                <p>All progress will be lost upon re-taking the quiz and you will need to enter your name again to start
+                    the quiz from the beginning.</p>
+                <div class="modal-buttons">
+                    <button id="yes-button">Yes</button>
+                    <button id="no-button">No</button>
+                </div>
+            </div>
+        </div>
+        <!-- Feedback section -->
+        <div class= "modal" id="feedback-form">
+            <div class="modal-content">
                 <div class="rating-thanks">
                     <h3>Thanks for your feedback!</h3>
                 </div>
@@ -148,21 +171,6 @@
                         </form>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Instructions modal -->
-        <div class="modal" id="instructions-modal">
-            <div class="modal-content">
-                <span class="close-button">&times;</span>
-                <h2>Instructions on How To Play</h2>
-                <ol>
-                    <li>Please enter your <strong>Name</strong>.</li>
-                    <li>Click on the <strong>Start Quiz</strong> button.</li>
-                    <li>Guess the correct dog breed by clicking on the option with the correct <strong>Breed
-                            Name</strong>.</li>
-                    <li>Click the <strong>Next</strong> button.</li>
-                    <li>Repeat until the Quiz is finished and you see your final score!</li>
-                </ol>
             </div>
         </div>
     </main>
