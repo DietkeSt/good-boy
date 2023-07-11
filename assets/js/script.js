@@ -277,7 +277,7 @@ closeButton.addEventListener("click", closeModal);
 
 // Event listener for zoom effect
 document.addEventListener("DOMContentLoaded", function () {
-    const instructionsText = document.querySelector("div .instructions-landing p");
+    const instructionsText = document.querySelector(".instructions-landing p");
     const startQuizButton = document.querySelector(".start-quiz-btn");
 
     function applyZoomEffect(element) {
@@ -332,3 +332,32 @@ window.addEventListener("DOMContentLoaded", function () {
         return false;
     };
 });
+
+// Function to open the feedback modal
+function openFeedbackModal() {
+    const feedbackModal = document.getElementById("feedback-form");
+    feedbackModal.style.display = "block";
+  }
+  
+  // Event listener for the feedback icon
+  const feedbackIcon = document.querySelector(".feedback-icon");
+  feedbackIcon.addEventListener("click", openFeedbackModal);
+  
+  // Function to close the feedback modal
+  function closeFeedbackModal() {
+    const feedbackModal = document.getElementById("feedback-form");
+    feedbackModal.style.display = "none";
+  
+    // Reset the feedback form to its initial state
+    const ratingsContainer = document.querySelector(".ratings-container");
+    const ratingThanks = document.querySelector(".rating-thanks");
+    const feedbackForm = document.querySelector(".ratings-container form");
+  
+    ratingsContainer.style.display = "flex";
+    ratingThanks.style.display = "none";
+    feedbackForm.reset();
+  }
+  
+  // Event listener for the close button in the feedback modal
+  const closeFeedbackButton = document.querySelector("#feedback-form .close-button");
+  closeFeedbackButton.addEventListener("click", closeFeedbackModal);
