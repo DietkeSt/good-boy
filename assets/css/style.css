@@ -100,8 +100,9 @@ header {
     transition: all 0.2s ease;
 }
 
-.instructions-landing p.zoom-effect,
-.start-quiz-btn.zoom-effect {
+.instructions-landing i.zoom-effect,
+.start-quiz-btn.zoom-effect,
+.feedback-icon.zoom-effect {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
@@ -427,6 +428,12 @@ li.option.inactive {
 #result-container button {
     width: 50%;
     margin: 1em 0;
+}
+
+.feedback-icon:hover p {
+    cursor: pointer;
+    color: #D87E4E;
+    transition: all 0.2s ease;
 }
 
 /* Feedback section */
