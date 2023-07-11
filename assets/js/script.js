@@ -277,8 +277,9 @@ closeButton.addEventListener("click", closeModal);
 
 // Event listener for zoom effect
 document.addEventListener("DOMContentLoaded", function () {
-    const instructionsText = document.querySelector(".instructions-landing p");
+    const instructionsText = document.querySelector(".instructions-landing i");
     const startQuizButton = document.querySelector(".start-quiz-btn");
+    const feedbackIcon = document.querySelector(".feedback-icon");
 
     function applyZoomEffect(element) {
         element.addEventListener("mouseover", function () {
@@ -292,6 +293,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     applyZoomEffect(instructionsText);
     applyZoomEffect(startQuizButton);
+    applyZoomEffect(feedbackIcon);
 });
 
 // Function for image slider and fade effect on landing page
@@ -351,7 +353,7 @@ function openFeedbackModal() {
     // Reset the feedback form to its initial state
     const ratingsContainer = document.querySelector(".ratings-container");
     const ratingThanks = document.querySelector(".rating-thanks");
-    const feedbackForm = document.querySelector(".ratings-container form");
+    const feedbackForm = document.querySelector("#feedback-form form");
   
     ratingsContainer.style.display = "flex";
     ratingThanks.style.display = "none";
@@ -361,3 +363,17 @@ function openFeedbackModal() {
   // Event listener for the close button in the feedback modal
   const closeFeedbackButton = document.querySelector("#feedback-form .close-button");
   closeFeedbackButton.addEventListener("click", closeFeedbackModal);
+  
+  // Function for feedback submission
+  function submitFeedback(event) {
+    event.preventDefault();
+    const ratingThanks = document.querySelector(".rating-thanks");
+    const ratingsContainer = document.querySelector(".ratings-container");
+  
+    ratingsContainer.style.display = "none";
+    ratingThanks.style.display = "flex";
+  }
+  
+  // Event listener for the feedback form submission
+  const feedbackForm = document.querySelector("#feedback-form form");
+  feedbackForm.addEventListener("submit", submitFeedback);
