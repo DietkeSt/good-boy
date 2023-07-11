@@ -170,13 +170,15 @@ button:disabled {
     cursor: not-allowed;
 }
 
-#next-btn,
-#restart-btn {
+#next-btn, #restart-btn {
     width: 100%;
-    padding: 5px;
+    padding: 1vw;
     line-height: 90%;
     border: none;
-
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 #next-btn:hover,
