@@ -56,38 +56,37 @@ header {
 }
 
 .placeholder-container {
-    width: 33%;
+    width: 25%;
 }
 
 .logo-container {
     display: flex;
     flex-direction: column;
-    width: 33%;
+    width: 50%;
 }
 
 .heading {
     display: flex;
-    font-size: 4vh;
+    font-size: 3vh;
     justify-content: center;
     align-items: center;
     margin: 2vh 0;
 }
 
 .logo {
-    height: 5vh;
+    height: 3vh;
     padding-right: 1vw;
 }
 
 /* Instructions section */
 .instructions-landing {
     display: flex;
-    width: 33%;
+    width: 25%;
     justify-content: flex-end;
 }
 
 .instructions-landing p {
-    padding: 0;
-    padding-right: 1vw;
+    padding-right: 3vw;
 }
 
 .instructions-landing:hover p {
