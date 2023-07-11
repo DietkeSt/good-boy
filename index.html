@@ -114,6 +114,36 @@
                 of all questions correctly!
             </p>
             <button onclick="retakeQuiz()"><i class="fa-solid fa-repeat"></i> Retake Quiz</button>
+            <!-- Feedback section -->
+            <div id="feedback-form">
+                <div class="rating-thanks">
+                    <h3>Thanks for your feedback!</h3>
+                </div>
+                <div class="ratings-container">
+                    <h3>How happy are you with the quiz?</h3>
+                    <div class="rating-icons">
+                        <input type="radio" name="rating" id="rating-5">
+                        <label for="rating-5" class="fa-solid fa-bone"></label>
+                        <input type="radio" name="rating" id="rating-4">
+                        <label for="rating-4" class="fa-solid fa-bone"></label>
+                        <input type="radio" name="rating" id="rating-3">
+                        <label for="rating-3" class="fa-solid fa-bone"></label>
+                        <input type="radio" name="rating" id="rating-2">
+                        <label for="rating-2" class="fa-solid fa-bone"></label>
+                        <input type="radio" name="rating" id="rating-1">
+                        <label for="rating-1" class="fa-solid fa-bone"></label>
+                        <form action="#">
+                            <p></p>
+                            <div class="textarea">
+                                <textarea cols="30"></textarea>
+                            </div>
+                            <div class="feedback-btn">
+                                <button type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Instructions modal -->
         <div class="modal" id="instructions-modal">
@@ -128,36 +158,6 @@
                     <li>Click the <strong>Next</strong> button.</li>
                     <li>Repeat until the Quiz is finished and you see your final score!</li>
                 </ol>
-            </div>
-        </div>
-        <!-- Feedback section -->
-        <div id="feedback-form">
-            <div class="rating-thanks">
-                <h3>Thanks for your feedback!</h3>
-            </div>
-            <div class="ratings-container">
-                <h3>How happy are you with the quiz?</h3>
-                <div class="rating-icons">
-                    <input type="radio" name="rating" id="rating-5">
-                    <label for="rating-5" class="fa-solid fa-bone"></label>
-                    <input type="radio" name="rating" id="rating-4">
-                    <label for="rating-4" class="fa-solid fa-bone"></label>
-                    <input type="radio" name="rating" id="rating-3">
-                    <label for="rating-3" class="fa-solid fa-bone"></label>
-                    <input type="radio" name="rating" id="rating-2">
-                    <label for="rating-2" class="fa-solid fa-bone"></label>
-                    <input type="radio" name="rating" id="rating-1">
-                    <label for="rating-1" class="fa-solid fa-bone"></label>
-                    <form action="#">
-                        <p></p>
-                        <div class="textarea">
-                            <textarea cols="30"></textarea>
-                        </div>
-                        <div class="feedback-btn">
-                            <button type="submit">Send</button>
-                        </div>
-                    </form>
-                </div>
             </div>
         </div>
     </main>
