@@ -32,10 +32,10 @@
             <p>You think you know all of the Good Boys out there? Test your knowledge now!</p>
             <div class="image-container">
                 <div id="image-slider">
-                    <a href="assets/images/dog-1.png"><img src="assets/images/dog-1.png" alt="French bulldog being pulled by the ears"></a>
-                    <a href="assets/images/dog-10.png"><img src="assets/images/dog-10.png" alt="German shepherd yawning"></a>
-                    <a href="assets/images/dog-7.png"><img src="assets/images/dog-7.png" alt="Shar Pei receives a love heart"></a>
-                    <a href="assets/images/dog-2.png"><img src="assets/images/dog-2.png" alt="Shiba Inu wearing a hat"></a>
+                    <img src="assets/images/dog-1.png" alt="French bulldog being pulled by the ears">
+                    <img src="assets/images/dog-10.png" alt="German shepherd yawning">
+                    <img src="assets/images/dog-7.png" alt="Shar Pei receives a love heart">
+                    <img src="assets/images/dog-2.png" alt="Shiba Inu wearing a hat">
                 </div>
             </div>
             <form id="username-form" onsubmit="startQuiz(event)">
@@ -54,8 +54,7 @@
             </div>
             <div id="quiz-section2">
                 <div class="quiz-restart">
-                    <button id="restart-btn" onclick="retakeQuiz()" title="Click here to retake the quiz">&lt;&lt;
-                        Retake</button>
+                    <button id="restart-btn" onclick="retakeQuiz()" title="Click here to retake the quiz"><i class="fa-solid fa-repeat"></i> Retake</button>
                 </div>
                 <div class="quiz-options">
                     <ul id="options">
@@ -63,8 +62,7 @@
                     </ul>
                 </div>
                 <div class="quiz-next">
-                    <button id="next-btn" onclick="nextQuestion()" title="Click here to progress in the quiz">Next
-                        >></button>
+                    <button id="next-btn" onclick="nextQuestion()" title="Click here to progress in the quiz">Next <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
             <div id="feedback"></div>
@@ -105,7 +103,7 @@
                 <br>
                 of all questions correctly!
             </p>
-            <button onclick="retakeQuiz()">Retake Quiz</button>
+            <button onclick="retakeQuiz()"><i class="fa-solid fa-repeat"></i>Retake Quiz</button>
         </div>
         <!-- Clickable text that opens the instructions modal -->
         <div class="instructions-landing">
