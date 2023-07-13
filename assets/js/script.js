@@ -171,14 +171,28 @@ function displayQuestion() {
 }
 
 // Display question image as overlay upon click
-let imageLink = document.getElementById("question-image-link");
-imageLink.onclick = function() {
-  const image = document.getElementById("question-image");
-  const overlay = document.createElement("div");
-  overlay.className = "image-overlay";
-  overlay.appendChild(image);
-  document.body.appendChild(overlay);
-};
+function openImageOverlay() {
+    var image = document.getElementById("question-image");
+    var overlay = document.createElement("div");
+    overlay.className = "image-overlay";
+    overlay.appendChild(image);
+  
+    // Center the overlay
+    overlay.style.position = "absolute";
+    overlay.style.top = "50%";
+    overlay.style.left = "50%";
+    overlay.style.transform = "translate(-50%, -50%)";
+  
+    // Set the opacity of the image to 1
+    image.style.opacity = 1;
+  
+    // Close the overlay when clicked
+    overlay.onclick = function() {
+      overlay.remove();
+    };
+  
+    document.body.appendChild(overlay);
+  }
 
 
 // Check the selected answer
