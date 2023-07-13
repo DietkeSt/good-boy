@@ -133,6 +133,10 @@ button i {
     padding-right: 0.5em;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Footer */
 footer {
     display: flex;
