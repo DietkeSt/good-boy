@@ -23,7 +23,6 @@ main {
 }
 
 h1 {
-    letter-spacing: -1px;
     line-height: 90%;
 }
 
@@ -52,8 +51,8 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
     width: 100%;
+    margin-top: 1em;
 }
 
 .placeholder-container {
@@ -68,7 +67,6 @@ header {
 
 .heading {
     display: flex;
-    font-size: 3vh;
     justify-content: center;
     align-items: center;
     margin: 2vh 0;
@@ -84,10 +82,7 @@ header {
     display: flex;
     width: 25%;
     justify-content: flex-end;
-}
-
-.instructions-landing p {
-    padding-right: 3vw;
+    margin-right: 1em;
 }
 
 .instructions-landing:hover p {
@@ -111,6 +106,7 @@ header {
     border-radius: 20px;
     border: 1px solid #353839;
     padding: 1em;
+    margin: 1em;
     min-height: 50vh;
     min-width: 50vw;
     display: flex;
@@ -127,6 +123,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 1em 0;
 }
 
 #image-slider a {
@@ -150,9 +147,6 @@ header {
 
 
 /* Form */
-form {
-    margin-top: 1em;
-}
 
 input {
     font-size: 16px;
@@ -165,9 +159,9 @@ input {
     text-align: center;
 }
 
-#username,
+#username, 
 .start-quiz-btn {
-    margin: 1em;
+    margin: 1em 0;
 }
 
 /* Buttons */
@@ -207,12 +201,10 @@ button:disabled {
 #next-btn,
 #restart-btn {
     width: 100%;
-    padding: 5px;
-    line-height: 90%;
     border: none;
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 #next-btn {
@@ -221,11 +213,6 @@ button:disabled {
 
 #restart-btn {
     justify-content: flex-start;
-}
-
-#next-btn i,
-#restart-btn i {
-    padding: 0 5px;
 }
 
 #next-btn:hover,
@@ -315,13 +302,12 @@ button:disabled {
     height: 100%;
     display: block;
     object-fit: contain;
-    padding-top: 1em;
+    padding: 1em 0;
 }
 
 #quiz-section2 {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .quiz-restart,
@@ -329,8 +315,7 @@ button:disabled {
 .quiz-next {
     display: flex;
     align-items: center;
-    width: 33.33%;
-    padding: 1em;
+    width: 30%;
 }
 
 /* Options */
@@ -340,7 +325,6 @@ button:disabled {
 
 #options {
     list-style-type: none;
-    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -388,7 +372,7 @@ li.option.inactive {
     font-weight: bold;
     font-family: "Indie Flower", Open-Sans;
     font-size: 24px;
-    margin-bottom: 1em;
+    margin: 0.5em 0;
 }
 
 /* Score & Progress */
@@ -436,6 +420,7 @@ li.option.inactive {
 
 #result-container img {
     max-height: 20vh;
+    max-width: 75vw;
 }
 
 #result-container button {
@@ -450,7 +435,7 @@ li.option.inactive {
     transition: all 0.2s ease;
 }
 
-/* Feedback section */
+/* Feedback section modal */
 .ratings-container {
     display: flex;
     flex-direction: column;
@@ -476,11 +461,11 @@ li.option.inactive {
 
 .rating-icons input:not(:checked)~label:hover,
 .rating-icons input:not(:checked)~label:hover~label {
-    color: #FBCEB1;
+    color: white;
 }
 
 .rating-icons input:checked~label {
-    color: #FBCEB1;
+    color: white;
     text-shadow: 0 0 20px #353839;
 }
 
@@ -553,9 +538,7 @@ footer {
     justify-content: center;
     background-color: #FBCEB1;
     border-top: 1px solid #353839;
-    padding: 1em;
     width: 100%;
-    height: 5vh;
 }
 
 footer p {
