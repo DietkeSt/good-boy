@@ -79,6 +79,25 @@ const quiz = [
     },
 ];
 
+const questionElement = document.getElementById("question");
+const imageElement = document.getElementById("question-image");
+const optionsElement = document.getElementById("options");
+const feedbackElement = document.getElementById("feedback");
+const nextButton = document.getElementById("next-btn");
+const scoreElement = document.getElementById("score");
+const questionProgressElement = document.getElementById("question-progress");
+const imageLink = document.getElementById("question-image-link");
+const progressBarElement = document.getElementById("progress-bar");
+const noButton = document.getElementById("no-button");
+const yesButton = document.getElementById("yes-button");
+const nextButtonText = document.getElementById("next-btn-text");
+const options = document.getElementsByClassName("option");
+const instructionsElement = document.querySelector(".instructions-landing");
+const closeButton = document.querySelector(".close-button");
+const closeFeedbackButton = document.querySelector("#feedback-form .close-button");
+const feedbackIcon = document.querySelector(".feedback-icon");
+const feedbackForm = document.querySelector("#feedback-form form");
+
 let currentQuestion = 0;
 let score = 0;
 let username = "";
@@ -117,13 +136,6 @@ function startQuiz(event) {
 
 // Display the current question and options
 function displayQuestion() {
-    const questionElement = document.getElementById("question");
-    const imageElement = document.getElementById("question-image");
-    const optionsElement = document.getElementById("options");
-    const feedbackElement = document.getElementById("feedback");
-    const nextButton = document.getElementById("next-btn");
-    const scoreElement = document.getElementById("score");
-    const questionProgressElement = document.getElementById("question-progress");
 
     // Clear previous options
     optionsElement.innerHTML = "";
@@ -134,7 +146,6 @@ function displayQuestion() {
     imageElement.src = currentQuiz.image;
 
     // Set the link URL for the question image
-    const imageLink = document.getElementById("question-image-link");
     imageLink.href = currentQuiz.image;
 
     // Create and display options
@@ -157,12 +168,10 @@ function displayQuestion() {
     questionProgressElement.textContent = `Question: ${currentQuestion + 1}/${quiz.length}`;
 
     // Display question progress as a progress bar
-    const progressBarElement = document.getElementById("progress-bar");
     const progress = ((currentQuestion + 1) / quiz.length) * 100;
     progressBarElement.style.width = progress + "%";
 
     // Change next button text to "See Results" on the last question
-    const nextButtonText = document.getElementById("next-btn-text");
     if (currentQuestion === quiz.length - 1) {
         nextButtonText.textContent = "See Results";
     } else {
@@ -170,36 +179,11 @@ function displayQuestion() {
     }
 }
 
-// Display question image as overlay upon click
-function openImageOverlay() {
-    var image = document.getElementById("question-image");
-    var overlay = document.createElement("div");
-    overlay.className = "image-overlay";
-    overlay.appendChild(image);
-  
-    // Center the overlay
-    overlay.style.position = "absolute";
-    overlay.style.top = "50%";
-    overlay.style.left = "50%";
-    overlay.style.transform = "translate(-50%, -50%)";
-  
-    // Set the opacity of the image to 1
-    image.style.opacity = 1;
-  
-    // Close the overlay when clicked
-    overlay.onclick = function() {
-      overlay.remove();
-    };
-  
-    document.body.appendChild(overlay);
-  }
-
 
 // Check the selected answer
 function checkAnswer(selectedIndex) {
     const currentQuiz = quiz[currentQuestion];
     const correctIndex = currentQuiz.answer;
-    const options = document.getElementsByClassName("option");
 
     // Check if the question has already been guessed
     if (currentQuiz.guessed) {
@@ -283,12 +267,10 @@ function restartQuiz() {
 }
 
 // Event listener for "No" option in the modal
-const noButton = document.getElementById("no-button");
 noButton.addEventListener("click", closeConfirmationModal);
 
 
 // Event listener for "Yes" option in the modal
-const yesButton = document.getElementById("yes-button");
 yesButton.addEventListener("click", restartQuiz);
 
 // Function to show the landing page
@@ -311,10 +293,7 @@ function closeModal() {
 }
 
 // Event listeners to open and close the modal
-const instructionsElement = document.querySelector(".instructions-landing");
 instructionsElement.addEventListener("click", openModal);
-
-const closeButton = document.querySelector(".close-button");
 closeButton.addEventListener("click", closeModal);
 
 // Event listener for zoom effect
@@ -381,14 +360,13 @@ window.addEventListener("DOMContentLoaded", function () {
 function openFeedbackModal() {
     const feedbackModal = document.getElementById("feedback-form");
     feedbackModal.style.display = "block";
-  }
+    }
   
-  // Event listener for the feedback icon
-  const feedbackIcon = document.querySelector(".feedback-icon");
-  feedbackIcon.addEventListener("click", openFeedbackModal);
+// Event listener for the feedback icon
+feedbackIcon.addEventListener("click", openFeedbackModal);
   
-  // Function to close the feedback modal
-  function closeFeedbackModal() {
+// Function to close the feedback modal
+function closeFeedbackModal() {
     const feedbackModal = document.getElementById("feedback-form");
     feedbackModal.style.display = "none";
   
@@ -400,27 +378,25 @@ function openFeedbackModal() {
     ratingsContainer.style.display = "flex";
     ratingThanks.style.display = "none";
     feedbackForm.reset();
-  }
+    }
   
-  // Event listener for the close button in the feedback modal
-  const closeFeedbackButton = document.querySelector("#feedback-form .close-button");
-  closeFeedbackButton.addEventListener("click", closeFeedbackModal);
+// Event listener for the close button in the feedback modal
+closeFeedbackButton.addEventListener("click", closeFeedbackModal);
   
-  // Function for feedback submission
-  function submitFeedback(event) {
+// Function for feedback submission
+function submitFeedback(event) {
     event.preventDefault();
     const ratingThanks = document.querySelector(".rating-thanks");
     const ratingsContainer = document.querySelector(".ratings-container");
   
     ratingsContainer.style.display = "none";
     ratingThanks.style.display = "flex";
-  }
+    }
   
-  // Event listener for the feedback form submission
-  const feedbackForm = document.querySelector("#feedback-form form");
-  feedbackForm.addEventListener("submit", submitFeedback);
+// Event listener for the feedback form submission
+feedbackForm.addEventListener("submit", submitFeedback);
 
-  // Close modals when clicking outside
+// Close modals when clicking outside modal content
 document.addEventListener("click", function(event) {
     const modals = document.getElementsByClassName("modal");
     for (let i = 0; i < modals.length; i++) {
