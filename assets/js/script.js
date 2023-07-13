@@ -186,6 +186,7 @@ function checkAnswer(selectedIndex) {
     // Check if the selected answer is correct
     if (selectedIndex === correctIndex) {
         document.getElementById("feedback").textContent = "Correct!";
+        options[selectedIndex].classList.add("correct-answer");
         score++;
     } else {
         document.getElementById("feedback").textContent = "Wrong!";
