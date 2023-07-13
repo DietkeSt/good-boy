@@ -32,7 +32,7 @@ h2,
 h3 {
     font-family: "Indie Flower", Open-Sans;
     color: #353839;
-    max-width: 50vw;
+    max-width: 75vw;
     text-align: center;
     width: 100%;
     margin: 0 auto;
@@ -255,6 +255,7 @@ button:disabled {
     font-size: 16px;
     color: #353839;
     text-align: left;
+    margin-left: 1.5em;
 }
 
 .modal-content li::marker {
