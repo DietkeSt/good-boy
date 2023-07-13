@@ -204,7 +204,8 @@ button:disabled {
     cursor: not-allowed;
 }
 
-#next-btn, #restart-btn {
+#next-btn,
+#restart-btn {
     width: 100%;
     padding: 1vw;
     line-height: 90%;
@@ -215,11 +216,23 @@ button:disabled {
     justify-content: space-evenly;
 }
 
+#next-btn {
+    justify-content: flex-end;
+}
+
+#restart-btn {
+    justify-content: flex-start;
+}
+
+#next-btn i,
+#restart-btn i {
+    padding: 0 0.5em;
+}
+
 #next-btn:hover,
 #restart-btn:hover {
     border: none;
     background-color: unset;
-    text-decoration: underline;
     transform: scale(1.1);
     transition: transform 0.3s ease;
     box-shadow: none;
@@ -427,8 +440,9 @@ li.option.inactive {
 }
 
 #result-container button {
-    width: 50%;
     margin: 1em 0;
+    padding: 10px;
+    height: auto;
 }
 
 .feedback-icon:hover p {
