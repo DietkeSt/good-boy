@@ -362,6 +362,14 @@ li.option.inactive {
     cursor: not-allowed;
 }
 
+.option.selected.wrong-answer {
+    background-color: #d84e63;
+}
+
+.option.selected.correct-answer {
+    background-color: #4ed87e;
+}
+
 /* Quiz feedback */
 #feedback {
     font-weight: bold;
