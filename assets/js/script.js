@@ -189,6 +189,7 @@ function checkAnswer(selectedIndex) {
         score++;
     } else {
         document.getElementById("feedback").textContent = "Wrong!";
+        options[selectedIndex].classList.add("wrong-answer");
     }
 
     // Enable the next button
