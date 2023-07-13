@@ -240,6 +240,9 @@ function restartQuiz() {
     const modal = document.getElementById("confirmation-modal");
     modal.style.display = "none";
     showLandingPage();
+
+    // Reload the page
+    location.reload();
 }
 
 // Event listener for "No" option in the modal
