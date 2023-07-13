@@ -382,3 +382,14 @@ function openFeedbackModal() {
   // Event listener for the feedback form submission
   const feedbackForm = document.querySelector("#feedback-form form");
   feedbackForm.addEventListener("submit", submitFeedback);
+
+  // Close modals when clicking outside
+document.addEventListener("click", function(event) {
+    const modals = document.getElementsByClassName("modal");
+    for (let i = 0; i < modals.length; i++) {
+        const modal = modals[i];
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+});
