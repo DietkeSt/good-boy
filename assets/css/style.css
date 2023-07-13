@@ -207,13 +207,12 @@ button:disabled {
 #next-btn,
 #restart-btn {
     width: 100%;
-    padding: 1vw;
+    padding: 5px;
     line-height: 90%;
     border: none;
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-evenly;
 }
 
 #next-btn {
@@ -226,7 +225,7 @@ button:disabled {
 
 #next-btn i,
 #restart-btn i {
-    padding: 0 0.5em;
+    padding: 0 5px;
 }
 
 #next-btn:hover,
@@ -352,7 +351,7 @@ button:disabled {
 .option {
     width: 100%;
     padding: 10px;
-    margin: 5px;
+    margin: 2.5px;
     border-radius: 20px;
     border: solid 2px #353839;
     color: #353839;
