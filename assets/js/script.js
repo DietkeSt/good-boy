@@ -170,6 +170,16 @@ function displayQuestion() {
     }
 }
 
+// Display question image as overlay upon click
+let imageLink = document.getElementById("question-image-link");
+imageLink.onclick = function() {
+  const image = document.getElementById("question-image");
+  const overlay = document.createElement("div");
+  overlay.className = "image-overlay";
+  overlay.appendChild(image);
+  document.body.appendChild(overlay);
+};
+
 
 // Check the selected answer
 function checkAnswer(selectedIndex) {
