@@ -39,6 +39,7 @@ Rating section: https://www.youtube.com/watch?v=rw3eZ6XodN8&ab_channel=CodingNep
 Styling:
 
 Color palette: https://coolors.co/palette/353839-fbceb1-d87e4e-a8c3bc-83a0a0
+Feedback red and green for options based on the following scheme that fits with the main accent color: https://www.colorhexa.com/d87e4e
 
 Bug:
 
