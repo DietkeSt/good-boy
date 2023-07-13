@@ -107,7 +107,6 @@ header {
     border: 1px solid #353839;
     padding: 1em;
     margin: 1em;
-    min-height: 50vh;
     min-width: 50vw;
     display: flex;
     flex-direction: column;
@@ -161,7 +160,7 @@ input {
 
 #username, 
 .start-quiz-btn {
-    margin: 1em 0;
+    margin: 1em 0.5em;
 }
 
 /* Buttons */
