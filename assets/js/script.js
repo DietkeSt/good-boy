@@ -133,6 +133,10 @@ function displayQuestion() {
     questionElement.textContent = currentQuiz.question;
     imageElement.src = currentQuiz.image;
 
+    // Set the link URL for the question image
+    const imageLink = document.getElementById("question-image-link");
+    imageLink.href = currentQuiz.image;
+
     // Create and display options
     currentQuiz.options.forEach((option, index) => {
         const li = document.createElement("li");
