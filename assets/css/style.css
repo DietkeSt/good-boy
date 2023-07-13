@@ -299,7 +299,7 @@ button:disabled {
 }
 
 #question-image {
-    height: 100%;
+    height: 20vh;
     display: block;
     object-fit: contain;
     padding: 1em 0;
