@@ -156,6 +156,13 @@ function displayQuestion() {
     const progressBarElement = document.getElementById("progress-bar");
     const progress = ((currentQuestion + 1) / quiz.length) * 100;
     progressBarElement.style.width = progress + "%";
+
+    // Change next button text to "See Results" on the last question
+    if (currentQuestion === quiz.length - 1) {
+        nextButton.textContent = "See Results";
+    } else {
+        nextButton.textContent = "Next";
+    }
 }
 
 // Check the selected answer
