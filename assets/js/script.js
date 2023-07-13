@@ -343,19 +343,6 @@ window.addEventListener("DOMContentLoaded", function () {
     false
 );
 
-//Function for feedback submission
-window.addEventListener("DOMContentLoaded", function () {
-    const feedbackBtn = document.querySelector(".feedback-btn");
-    const ratingThanks = document.querySelector(".rating-thanks");
-    const ratingsContainer = document.querySelector(".ratings-container");
-
-    feedbackBtn.onclick = () => {
-        ratingsContainer.style.display = "none";
-        ratingThanks.style.display = "flex";
-        return false;
-    };
-});
-
 // Function to open the feedback modal
 function openFeedbackModal() {
     const feedbackModal = document.getElementById("feedback-form");
@@ -383,15 +370,18 @@ function closeFeedbackModal() {
 // Event listener for the close button in the feedback modal
 closeFeedbackButton.addEventListener("click", closeFeedbackModal);
   
-// Function for feedback submission
-function submitFeedback(event) {
-    event.preventDefault();
+//Function for feedback submission
+window.addEventListener("DOMContentLoaded", function () {
+    const feedbackBtn = document.querySelector(".feedback-btn");
     const ratingThanks = document.querySelector(".rating-thanks");
     const ratingsContainer = document.querySelector(".ratings-container");
-  
-    ratingsContainer.style.display = "none";
-    ratingThanks.style.display = "flex";
-    }
+
+    feedbackBtn.onclick = () => {
+        ratingsContainer.style.display = "none";
+        ratingThanks.style.display = "flex";
+        return false;
+    };
+});
   
 // Event listener for the feedback form submission
 feedbackForm.addEventListener("submit", submitFeedback);
