@@ -158,12 +158,14 @@ function displayQuestion() {
     progressBarElement.style.width = progress + "%";
 
     // Change next button text to "See Results" on the last question
+    const nextButtonText = document.getElementById("next-btn-text");
     if (currentQuestion === quiz.length - 1) {
-        nextButton.textContent = "See Results";
+        nextButtonText.textContent = "See Results";
     } else {
-        nextButton.textContent = "Next";
+        nextButtonText.textContent = "Next";
     }
 }
+
 
 // Check the selected answer
 function checkAnswer(selectedIndex) {
