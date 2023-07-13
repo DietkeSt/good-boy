@@ -31,7 +31,7 @@ h2,
 h3 {
     font-family: "Indie Flower", Open-Sans;
     color: #353839;
-    max-width: 75vw;
+    max-width: 50vw;
     text-align: center;
     width: 100%;
     margin: 0 auto;
@@ -314,7 +314,7 @@ button:disabled {
 .quiz-next {
     display: flex;
     align-items: center;
-    width: 30%;
+    width: 33.33%;
 }
 
 /* Options */
@@ -329,6 +329,7 @@ button:disabled {
     align-items: center;
     font-family: "Open Sans", sans-serif;
     line-height: 90%;
+    width: 100%;
 }
 
 .option {
