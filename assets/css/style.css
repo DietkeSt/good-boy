@@ -241,7 +241,7 @@ button:disabled {
     background-color: #FBCEB1;
     border-radius: 20px;
     border: solid 1px #353839;
-    padding: 2em;
+    padding: 2em 1em;
     width: 400px;
     max-width: 90%;
     position: absolute;
@@ -436,7 +436,7 @@ li.option.inactive {
     transition: all 0.2s ease;
 }
 
-/* Feedback section modal */
+/* Feedback rating container */
 .ratings-container {
     display: flex;
     flex-direction: column;
@@ -452,12 +452,19 @@ li.option.inactive {
     display: none;
 }
 
+.rating-icons {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .rating-icons label {
-    font-size: 40px;
+    font-size: 2em;
     color: #353839;
-    padding: 10px;
-    float: right;
+    padding: 0.5em 0.2em 0 0.2em;
     transition: all 0.2s ease;
+    letter-spacing: -2px;
 }
 
 .rating-icons input:not(:checked)~label:hover,
@@ -467,7 +474,7 @@ li.option.inactive {
 
 .rating-icons input:checked~label {
     color: white;
-    text-shadow: 0 0 20px #353839;
+    text-shadow: 0 0 10px #353839;
 }
 
 #rating-1:checked~form p:before {
@@ -499,7 +506,6 @@ li.option.inactive {
 }
 
 .rating-icons form p {
-    margin: 1em 0;
     transition: all 0.2s ease;
 }
 
@@ -508,7 +514,6 @@ li.option.inactive {
 }
 
 .rating-icons form .textarea textarea {
-    height: 100%;
     border: 1px solid #353839;
     border-radius: 20px;
     padding: 10px;
