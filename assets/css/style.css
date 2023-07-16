@@ -520,10 +520,6 @@ li.option.inactive {
     transition: all 0.2s ease;
 }
 
-.rating-icons form .textarea {
-    height: 7.5vh;
-}
-
 .rating-icons form .textarea textarea {
     border: 1px solid #353839;
     border-radius: 20px;
@@ -531,21 +527,18 @@ li.option.inactive {
     font-size: 16px;
     font-family: "Open-Sans", sans-serif;
     text-align: center;
+    resize: none;
+    width: 100%;
+    min-width: 15em;
+    min-height: 5em; 
 }
 
 .feedback-btn {
-    margin: 2.5em 0 0 0;
+    margin: 1em 0 0 0;
 }
 
 .feedback-btn button {
-    width: 75%;
-    background-color: white;
-}
-
-.feedback-btn button:hover {
-    background-color: #FBCEB1;
-    border-color: #353839;
-    color: #353839;
+    min-width: 50%;
 }
 
 /* Footer */
