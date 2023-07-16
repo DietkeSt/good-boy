@@ -55,3 +55,8 @@ Upon adding styling for the modal buttons, the modals kept on opening on page lo
 After randomizing the quiz questions, I noticed that I could guess several times for one question. To disabled that function, I added the "guessed" property to the quiz and upon option selection the other options are made inactive. This resolved the issue and makes for a more accurate quiz result in the end.
 
 When clicking retake or retake quiz, the page would load the landing page, but not actually restart the quiz. To solve this, I added the reloaded function.
+
+JSHInt:
+
+212	checkAnswer
+-> This is actually being used to check if the answer has been guessed and adds +1 to the score if guess correctly, so this is needed.
