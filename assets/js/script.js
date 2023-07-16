@@ -155,6 +155,7 @@ function displayQuestion() {
     const currentQuiz = quiz[currentQuestion];
     questionElement.textContent = currentQuiz.question;
     imageElement.src = currentQuiz.image;
+    imageElement.alt = currentQuiz.alt;
 
     // Set the link URL for the question image
     imageLink.href = currentQuiz.image;
