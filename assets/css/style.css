@@ -314,6 +314,7 @@ button:disabled {
 
 #question-image-link {
     cursor: pointer;
+    position: relative;
 }
 
 #quiz-section2 {
@@ -334,8 +335,27 @@ button:disabled {
 /* Quiz image zoom */
 #image-container.zoomed #question-image {
     transform: scale(2);
-    z-index: 9999;
+    z-index: 1;
     position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+#image-container .close-button {
+    visibility: hidden;
+    position: absolute;
+    top: -25%;
+    right: -25%;
+    z-index: 2;
+    color: #D87E4E;  
+}
+
+#image-container.zoomed:hover .close-button {
+    visibility: visible;
+}
+
+#image-container .close-button:hover {
+    transform: scale(1.5);
+    color: #FBCEB1;
     transition: all 0.3s ease-in-out;
 }
   
