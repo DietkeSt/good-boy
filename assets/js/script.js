@@ -92,6 +92,7 @@ const quiz = [
 
 const questionElement = document.getElementById("question");
 const imageElement = document.getElementById("question-image");
+const imageContainer = document.getElementById("image-container");
 const optionsElement = document.getElementById("options");
 const feedbackElement = document.getElementById("feedback");
 const nextButton = document.getElementById("next-btn");
@@ -157,9 +158,6 @@ function displayQuestion() {
     imageElement.src = currentQuiz.image;
     imageElement.alt = currentQuiz.alt;
 
-    // Set the link URL for the question image
-    imageLink.href = currentQuiz.image;
-
     // Create and display options
     currentQuiz.options.forEach((option, index) => {
         const li = document.createElement("li");
@@ -191,6 +189,10 @@ function displayQuestion() {
     }
 }
 
+// Event listener to enlarge image and show overlay on click
+imageContainer.addEventListener("click", function () {
+  imageContainer.classList.toggle("zoomed");
+});
 
 // Check the selected answer
 function checkAnswer(selectedIndex) {
