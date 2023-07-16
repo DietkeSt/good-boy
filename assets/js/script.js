@@ -111,6 +111,7 @@ const closeFeedbackButton = document.querySelector("#feedback-form .close-button
 const feedbackIcon = document.querySelector(".feedback-icon");
 const feedbackForm = document.querySelector("#feedback-form form");
 const usernameForm = document.getElementById("username-form");
+const restartButton = document.getElementById("restart-btn");
 
 let currentQuestion = 0;
 let score = 0;
@@ -293,6 +294,9 @@ function closeConfirmationModal() {
     const modal = document.getElementById("confirmation-modal");
     modal.style.display = "none";
 }
+
+// Event listener to handle the restart quiz click event
+restartButton.addEventListener("click", retakeQuiz);
 
 // Function to restart the quiz
 function restartQuiz() {
