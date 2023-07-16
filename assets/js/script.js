@@ -112,6 +112,7 @@ const feedbackIcon = document.querySelector(".feedback-icon");
 const feedbackForm = document.querySelector("#feedback-form form");
 const usernameForm = document.getElementById("username-form");
 const restartButton = document.getElementById("restart-btn");
+const restartResultButton = document.querySelector(".result-button");
 
 let currentQuestion = 0;
 let score = 0;
@@ -257,6 +258,8 @@ function nextQuestion() {
     }
 }
 
+
+
 // Show the quiz result
 function showResult() {
     document.getElementById("quiz-container").classList.add("complete");
@@ -297,6 +300,9 @@ function closeConfirmationModal() {
 
 // Event listener to handle the restart quiz click event
 restartButton.addEventListener("click", retakeQuiz);
+
+// Event listener to handle the restart quiz click event
+restartResultButton.addEventListener("click", retakeQuiz);
 
 // Function to restart the quiz
 function restartQuiz() {
