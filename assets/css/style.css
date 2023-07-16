@@ -38,11 +38,16 @@ h3 {
 }
 
 p,
-label, 
-ol {
+label {
     font-family: Open-Sans, sans-serif;
     color: #353839;
     padding: 1em 0;
+}
+
+ol {
+    font-family: Open-Sans, sans-serif;
+    color: #353839;
+    padding-top: 1em;
 }
 
 /* Heading */
@@ -241,9 +246,9 @@ button:disabled {
     background-color: #FBCEB1;
     border-radius: 20px;
     border: solid 1px #353839;
-    padding: 2em 1em;
-    width: 400px;
-    max-width: 90%;
+    padding: 2em;
+    width: 25em;
+    max-width: 95%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -449,6 +454,10 @@ li.option.inactive {
 
 .ratings-container .rating-icons input {
     display: none;
+}
+
+#feedback-form .modal-content {
+   padding: 2em 1em; 
 }
 
 .rating-icons {
