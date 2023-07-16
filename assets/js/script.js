@@ -110,6 +110,7 @@ const closeInstructionButton = document.querySelector("#instructions-modal .clos
 const closeFeedbackButton = document.querySelector("#feedback-form .close-button");
 const feedbackIcon = document.querySelector(".feedback-icon");
 const feedbackForm = document.querySelector("#feedback-form form");
+const usernameForm = document.getElementById("username-form");
 
 let currentQuestion = 0;
 let score = 0;
@@ -123,6 +124,9 @@ function shuffle(array) {
     }
     return array;
 }
+
+// Event listener for landing page form submission
+usernameForm.addEventListener("submit", startQuiz);
 
 // Start Quiz event
 function startQuiz(event) {
