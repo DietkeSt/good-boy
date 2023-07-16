@@ -106,6 +106,7 @@ const nextButtonText = document.getElementById("next-btn-text");
 const options = document.getElementsByClassName("option");
 const instructionsElement = document.querySelector(".instructions-landing");
 const closeButton = document.querySelector(".close-button");
+const closeInstructionButton = document.querySelector("#instructions-modal .close-button");
 const closeFeedbackButton = document.querySelector("#feedback-form .close-button");
 const feedbackIcon = document.querySelector(".feedback-icon");
 const feedbackForm = document.querySelector("#feedback-form form");
@@ -339,7 +340,7 @@ function closeModal() {
 
 // Event listeners to open and close the modal
 instructionsElement.addEventListener("click", openModal);
-closeButton.addEventListener("click", closeModal);
+closeInstructionButton.addEventListener("click", closeModal);
 
 // Event listener for zoom effect
 document.addEventListener("DOMContentLoaded", function () {
