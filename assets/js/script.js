@@ -93,12 +93,12 @@ const quiz = [
 const questionElement = document.getElementById("question");
 const imageElement = document.getElementById("question-image");
 const imageContainer = document.getElementById("image-container");
+const imageLink = document.getElementById("question-image-link");
 const optionsElement = document.getElementById("options");
 const feedbackElement = document.getElementById("feedback");
 const nextButton = document.getElementById("next-btn");
 const scoreElement = document.getElementById("score");
 const questionProgressElement = document.getElementById("question-progress");
-const imageLink = document.getElementById("question-image-link");
 const progressBarElement = document.getElementById("progress-bar");
 const noButton = document.getElementById("no-button");
 const yesButton = document.getElementById("yes-button");
@@ -191,8 +191,15 @@ function displayQuestion() {
 
 // Event listener to enlarge image and show overlay on click
 imageContainer.addEventListener("click", function () {
-  imageContainer.classList.toggle("zoomed");
-});
+    imageContainer.classList.toggle("zoomed");
+  
+    // Change the title when the image is zoomed
+        if (imageContainer.classList.contains("zoomed")) {
+        imageLink.setAttribute("title", "Click to close enlarged image");
+      } else {
+        imageLink.setAttribute("title", "Click to enlarge image");
+      }
+  });
 
 // Check the selected answer
 function checkAnswer(selectedIndex) {
