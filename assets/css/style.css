@@ -322,6 +322,7 @@ button:disabled {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 33%;
 }
 
 /* Options */
@@ -577,8 +578,13 @@ footer a:hover {
 /* Media queries */
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
+    
     #landing-page, #result-container, #quiz-container {
-        min-width: 60vw;
+        min-width: 70vw;
+    }
+
+    h2, h3 {
+        max-width: 70vw;
     }
 }
 
@@ -590,6 +596,15 @@ footer a:hover {
 
     h2, h3 {
         max-width: none;
+    }
+
+    .quiz-restart,
+    .quiz-next {
+        width: 20%;
+    }
+
+    .quiz-options {
+        width: 40%
     }
 
 }
