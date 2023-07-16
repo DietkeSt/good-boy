@@ -258,7 +258,8 @@ function nextQuestion() {
     }
 }
 
-
+// Event listener to handle the next button click event
+nextButton.addEventListener("click", nextQuestion);
 
 // Show the quiz result
 function showResult() {
