@@ -455,6 +455,3 @@ window.addEventListener("DOMContentLoaded", function () {
         return false;
     };
 });
-  
-// Event listener for the feedback form submission
-feedbackForm.addEventListener("submit", submitFeedback);
