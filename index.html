@@ -79,7 +79,7 @@
                     </ul>
                 </div>
                 <div class="quiz-next">
-                    <button id="next-btn" onclick="nextQuestion()" title="Click here to progress in the quiz" aria-label="Click here to go to the next question, or see results (Opens in the same page)">
+                    <button id="next-btn" title="Click here to progress in the quiz" aria-label="Click here to go to the next question, or see results (Opens in the same page)">
                         <i class="fa-solid fa-arrow-right"></i>
                         <span id="next-btn-text">Next</span>
                     </button>
@@ -191,11 +191,10 @@
     <footer>
         <div class="copyright-container">
             <p class="copyright-text">
-                Copyright &copy;
-                <script>document.write(new Date().getFullYear())</script> All Rights Reserved by <a
-                    href="https://github.com/DietkeSt/" target="_blank" rel="noopener"
-                    aria-label="Visit my Github page (opens in new window)" title="Visit the GitHub repository">Dietke
-                    Steindel</a>
+                Copyright &copy; <span id="current-year"></span> All Rights Reserved by 
+                <a href="https://github.com/DietkeSt/" target="_blank" rel="noopener" aria-label="Visit my Github page (opens in new window)" title="Visit the GitHub repository">
+                    Dietke Steindel
+                </a>
             </p>
         </div>
     </footer>
