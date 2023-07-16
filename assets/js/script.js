@@ -248,6 +248,18 @@ function showResult() {
 function retakeQuiz() {
     const modal = document.getElementById("confirmation-modal");
     modal.style.display = "flex";
+    function addCloseModalClickListener() {
+        document.addEventListener("click", function(event) { 
+            const modals = document.getElementsByClassName("modal"); 
+            for (let i = 0; i < modals.length; i++) { 
+                const modal = modals[i]; 
+                if (event.target === modal) { 
+                    modal.style.display = "none"; 
+                    } 
+                } 
+            });
+        }
+    addCloseModalClickListener();
 }
 
 // Function to close the modal
@@ -284,6 +296,18 @@ function showLandingPage() {
 function openModal() {
     const modal = document.getElementById("instructions-modal");
     modal.style.display = "block";
+    function addCloseModalClickListener() {
+        document.addEventListener("click", function(event) { 
+            const modals = document.getElementsByClassName("modal"); 
+            for (let i = 0; i < modals.length; i++) { 
+                const modal = modals[i]; 
+                if (event.target === modal) { 
+                    modal.style.display = "none"; 
+                    } 
+                } 
+            });
+        }
+    addCloseModalClickListener();
 }
 
 // Function to close the modal
@@ -347,6 +371,18 @@ window.addEventListener("DOMContentLoaded", function () {
 function openFeedbackModal() {
     const feedbackModal = document.getElementById("feedback-form");
     feedbackModal.style.display = "block";
+    function addCloseModalClickListener() {
+        document.addEventListener("click", function(event) { 
+            const modals = document.getElementsByClassName("modal"); 
+            for (let i = 0; i < modals.length; i++) { 
+                const modal = modals[i]; 
+                if (event.target === modal) { 
+                    modal.style.display = "none"; 
+                    } 
+                } 
+            });
+        }
+        addCloseModalClickListener();
     }
   
 // Event listener for the feedback icon
@@ -385,14 +421,3 @@ window.addEventListener("DOMContentLoaded", function () {
   
 // Event listener for the feedback form submission
 feedbackForm.addEventListener("submit", submitFeedback);
-
-// Close modals when clicking outside modal content
-document.addEventListener("click", function(event) {
-    const modals = document.getElementsByClassName("modal");
-    for (let i = 0; i < modals.length; i++) {
-        const modal = modals[i];
-        if (event.target === modal) {
-            modal.style.display = "none";
-        }
-    }
-});
