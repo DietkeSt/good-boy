@@ -173,7 +173,7 @@ function displayQuestion() {
 
     // Change next button text to "See Results" on the last question
     if (currentQuestion === quiz.length - 1) {
-        nextButtonText.textContent = "See Results";
+        nextButtonText.textContent = "Results";
     } else {
         nextButtonText.textContent = "Next";
     }
