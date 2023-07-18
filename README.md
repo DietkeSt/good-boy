@@ -184,6 +184,19 @@ The logo and favicon icon were chosen to reflect the styling of the website, so 
 
 ![Header instructions icon for Good Boy website](/documentation/features/header-icon.gif)
 
+#### Instructions Modal
+
+- The instructions modal can be opened by clicking on the instructions icon on the landing page as well as on the quiz and results page for easy access throughout.
+- It contains a list on how to play the game and even hints towards the option of enlarging images when needed.
+- The user can close the modal by clicking on a closing x icon, or outside of the modal content.
+- The modal can be reopened anytime throughout the quiz experience for better user experience.
+- The outside of the modal content is darkened, so that the user is focused on the modal content for a calmer user experience.
+
+![Instructions modal for Good Boy Quiz on desktop](/documentation/features/instructions-desktop.png)
+![Instructions modal for Good Boy Quiz on tablet](/documentation/features/instructions-tablet.png)
+![Instructions modal for Good Boy Quiz on mobile](/documentation/features/instructions-mobile.png)
+
+
 #### Landing Page
 
 - The page is the first impression for the user and includes a welcome text that explains the purpose of the website.
@@ -200,14 +213,6 @@ The logo and favicon icon were chosen to reflect the styling of the website, so 
 ![Landing Page for Good Boy website on mobile](/documentation/features/landing-mobile.png)
 
 ![Landing Page slider for Good Boy website](/documentation/features/landing-slider.gif)
-
-#### About Section
-
-- The about section gives the user an overview of the background of Kim Steindel, and the services and benefits working with UX Ventures.
-- Upon learning more about the background and benefits, this should entice the user in booking a career coaching call.
-
-  ![About section for UX Ventures website with desktop resolutions](/documentation/about-desktop.png)
-  ![About section for UX Ventures website with different resolutions](/documentation/about-tab-mob.png)
 
 #### Testimonials Section
 
