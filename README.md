@@ -204,6 +204,7 @@ The logo and favicon icon were chosen to reflect the styling of the website, so 
 - It includes a gallary slider effect which has the purpose to grab the user's attention when first visiting the website.
 - The landing page includes a form for the user's name and a "Start Quiz" button.
 - The name is required to be entered before the user can start the quiz. If no name is entered, an error appears indicating the user needs to enter a name first.
+- The start quiz button displays a differend color and shadow upon hover for better accessibility.
 - The content is easy to digest for the user and clear to the point which results in a better user experience.
 
 ![Landing Page for Good Boy website on desktop](/documentation/features/landing-desktop.png)
@@ -212,7 +213,7 @@ The logo and favicon icon were chosen to reflect the styling of the website, so 
 
 ![Landing Page for Good Boy website on mobile](/documentation/features/landing-mobile.png)
 
-![Landing Page slider for Good Boy website](/documentation/features/landing-slider.gif)
+![Landing Page slider for Good Boy website](/documentation/features/landing-animation.gif)
 
 #### Testimonials Section
 
