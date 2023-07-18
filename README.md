@@ -35,7 +35,8 @@ How to make a quiz video guide by James Quick: https://www.youtube.com/watch?v=u
 Transform CSS: https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate
 Shuffle Quiz: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 Rating section: https://www.youtube.com/watch?v=rw3eZ6XodN8&ab_channel=CodingNepal
-Disable textare reasizing: https://www.w3docs.com/snippets/css/how-to-disable-the-resizing-of-the-textarea-element.html
+Disable textarea reasizing: https://www.w3docs.com/snippets/css/how-to-disable-the-resizing-of-the-textarea-element.html
+Set alt for JS image: https://stackoverflow.com/questions/15471688/adding-alt-attribute-to-image-in-javascript
 
 
 Styling:
