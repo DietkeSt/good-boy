@@ -158,6 +158,9 @@ The logo and favicon icon were chosen to reflect the styling of the website, so 
 - [Font Awesome](https://fontawesome.com/): was used for all icons used throughout the website.
 - [Google Drive](https://drive.google.com/): is used to store documentation GIFs and videos.
 - [Flat Icon](https://www.flaticon.com/): is used for website logo, favicon and results reward image.
+- [Snipping Tool](https://support.microsoft.com/en-us/windows/use-snipping-tool-to-capture-screenshots-00246869-1843-655f-f220-97299b865f6b): was used to create snapshots of website and videos.
+- [EzGif](https://ezgif.com/): was used to convert recorded MP4s to GIF format.
+
 
 <br>
 
