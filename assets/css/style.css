@@ -78,8 +78,8 @@ header {
 }
 
 .logo {
-    height: 3vh;
-    padding-right: 1vw;
+    height: 1em;
+    padding-right: 0.5em;
 }
 
 /* Instructions section */
@@ -103,7 +103,7 @@ header {
 }
 
 .instructions-landing i {
-    padding-right: 1em;
+    margin-right: 2em;
 }
 
 /* Container styling*/
