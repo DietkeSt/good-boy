@@ -431,9 +431,23 @@ See followed guide on [YouTube](https://www.youtube.com/watch?v=rw3eZ6XodN8&ab_c
 
 #### HTML
 
-- No errors were returned when passing through the official [W3C validator](https://validator.w3.org/).
+[W3C validator](https://validator.w3.org/)
+
+1. index.html
+
+- Two errors when testing with official HTML W3C validator:
  
-    ![html validator testing image](/documentation/html-validator.png)
+    ![html validator testing image](/documentation/validators/html-error.png)
+
+    The errors appear due to dynamic content created by JS that is filling the source link and the alt for the images. The source and alt must not be empty.
+
+    To resolve that issue, I removed the attributes as they are being added by JS.
+
+2. 404.html
+
+- No errors were found.
+
+
     
 #### CSS
 
