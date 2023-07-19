@@ -218,7 +218,8 @@ The logo and favicon icon were chosen to reflect the styling of the website, so 
 
 ![Landing Page slider for Good Boy website](/documentation/features/landing-animation.gif)
 
-#### Testimonials Section
+
+#### Quiz Page
 
 - This gives the user an overview of career coaching experiences from past students in written form as well as video format.
 - The embedded YouTube playlist will not automatically play, and can be opened directly on YouTube as well, if the user wishes to do so.
@@ -247,12 +248,15 @@ The logo and favicon icon were chosen to reflect the styling of the website, so 
 
 #### Footer
 
-- The footer section includes a link to LinkedIn for UX Ventures, as well as a link to the developer's GitHub repository. The footer also contains the copyright statement to give the user a quick overview of the creator of the website, the owner of the website as well as quick access to Social Media to connect with UX Ventures.
-- When the user clicks on the links, they will open in a new tab for easier navigation, and feature a hover effect for better readability.
+- The footer section includes a link to the developer's GitHub repository. The footer also contains the copyright statement to give the user a quick overview of the creator of the website.
+- When the user clicks on the link, it will open in a new tab for easier navigation, and feature a hover effect for better readability.
 
-  ![Book Call section for UX Ventures website with different resolutions](/documentation/footer-screenshots.png)
+![Footer section for Good Boy Quiz website on desktop](/documentation/features/footer-desktop.png)
+![Footer section for Good Boy Quiz website on desktop](/documentation/features/footer-tablet.png)
+![Footer section for Good Boy Quiz website on desktop](/documentation/features/footer-mobile.png)
+![Footer section for Good Boy Quiz with hover effect](/documentation/features/footer-hover.gif)
 
-#### Thank You Page
+#### 404 Error Page
 
 - The Thank You Page opens after a user submits a message via the contact form, so the user knows that the message was successfully sent.
 - The page includes a separate navigation with only the logo visible and a return to Home page button. This is done on purpose, to not overwhelm the user with too much content on the Thank You page.
