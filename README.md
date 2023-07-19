@@ -244,19 +244,25 @@ The logo and favicon icon were chosen to reflect the styling of the website, so 
 ![Quiz Page for Good Boy website on tablet](/documentation/features/quiz-tablet.png)
 ![Quiz Page for Good Boy website on mobile](/documentation/features/quiz-mobile.png)
 
-![Landing Page slider for Good Boy website](/documentation/features/quiz-animation.gif)
+![Overview of Quiz Page for Good Boy website](/documentation/features/quiz-animation.gif)
 
 
 #### Confirmation Modal
 
-- This section will allow the user to directly book a carrer coaching call, or send a contact message first.
-- The career coaching call booking button is using the primary button design to entice the user to preferably book a call, versus sending a message. 
-- This section also includes a portrait image of the career coach to connect with the user on a personal level.
-- This section also includes a contact form with a secondary button to give the user the option to reach out first, if needed.
-- That contact form includes first name, last name, email and message fields that are required to be filled by the user to be able to submit the form, if not filled, it will not be sent.
-- The contact form fields also require the correct format to be used. If the email field is not filled with an email format, the form cannot be submitted and the user will see an error message to correct the field entry.
+- The confirmation modal is opened upon click on any "Retake" button throughout the quiz experience.
+    - One Retake option is displayed while the quiz is in progress.
+    - Another Retake option is displayed after the user lands on the quiz results page.
+- The modal consist of a short text explaining that the progress of the quiz is lost, if they retake the quiz. Underneath the user will find yes and no options displayed as buttons.
+- Upon clicking on "No" the confirmation modal is closed and the user is at the same page where they left off. This is good user experience, so the user is not restarting the quiz by accident.
+- Upon clicking on the "Yes" button, the user confirms and is guided back to the landing page where the page reloads.
+- The buttons show a hove effect which should give the user a better overview to make it easier to click the right option.
+- By clicking outside the modal, the modal window is closed as well, and the user gets back to the page they left off.
 
-  ![Book Call section for UX Ventures website with different resolutions](/documentation/book-call-screenshots.png)
+![Confirmation modal for Good Boy Quiz on desktop](/documentation/features/confirmation-desktop.png)
+![Confirmation modal for Good Boy Quiz on tablet](/documentation/features/confirmation-tablet.png)
+![Confirmation modal for Good Boy Quiz on mobile](/documentation/features/confirmation-mobile.png)
+![Confirmation modal animationfor Good Boy Quiz](/documentation/features/confirmation-animation.gif)
+
 
 ##### Book Call Button
 
