@@ -372,23 +372,23 @@ See followed guide on [YouTube](https://www.youtube.com/watch?v=rw3eZ6XodN8&ab_c
 
 1. **Browser test for functionality:**
    
-   - [Chrome](https://www.google.com/intl/en_ie/chrome/):
+- [Chrome](https://www.google.com/intl/en_ie/chrome/):
     
-        ![Chrome functionality test](documentation/chrome-test.png)
+    ![Chrome functionality test](documentation/compatibility/chrome-functionality-test.gif)
         
-        Video of the test can be seen [here](https://drive.google.com/file/d/18w4ymGO7tYQHPf4OUAuItKa7JR3buAeZ/view?usp=sharing).
+    Full video test [here](https://drive.google.com/file/d/1iCbe6oLoj01wLUUU6_ZcAJbl_Bo1SPTk/view?usp=sharing).
         
-   - [Firefox](https://www.mozilla.org/en-US/firefox/new/):
+- [Firefox](https://www.mozilla.org/en-US/firefox/new/):
   
-        ![Firefox functionality test](documentation/firefox-test.png)
+    ![Firefox functionality test](documentation/compatibility/firefox-functionality-test.gif)
 
-        Video of the test can be seen [here](https://drive.google.com/file/d/11ZU0RMI1GxsFwoOQk4nOLOciqfwGwOgG/view?usp=sharing).
+    Full video test [here](https://drive.google.com/file/d/1cwq6BHlRM9X3Uc5OltEH9fHm10cu5I13/view?usp=sharing).
         
-   - [Safari](https://www.apple.com/safari/):
+- [Edge](https://www.microsoft.com/en-us/edge/):
   
-        ![Safari functionality test](documentation/safari-test.png)
+    ![Edge functionality test](documentation/compatibility/edge-functionality-test.gif)
 
-        Video of the test can be seen [here](https://drive.google.com/file/d/1356r69spuRjP8KXHbHHpZ3PDtub4Ygx-/view?usp=sharing).
+    Full video [here](https://drive.google.com/file/d/1-nl9UoTvg88eQOFyVCULEOId2qTOHw__/view?usp=sharing).
 
     Everything was working as expected on all three browsers tested.
 
