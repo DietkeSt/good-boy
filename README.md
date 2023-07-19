@@ -457,6 +457,8 @@ See followed guide on [YouTube](https://www.youtube.com/watch?v=rw3eZ6XodN8&ab_c
 
 https://jshint.com/
 
+- Shows that line 210 function is not used, however, its is used in line 171 for the displayQuestion function.
+
 <br>
 
 ### Lighthouse
