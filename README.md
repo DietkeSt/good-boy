@@ -221,14 +221,33 @@ The logo and favicon icon were chosen to reflect the styling of the website, so 
 
 #### Quiz Page
 
-- This gives the user an overview of career coaching experiences from past students in written form as well as video format.
-- The embedded YouTube playlist will not automatically play, and can be opened directly on YouTube as well, if the user wishes to do so.
-- The embedded YouTube videos can directly be played on the website, if the user wishes to do so, which is a great experience for the user as no extra tab or window needs to be opened.
-- This section will  allow the user to get an insight on further benefits of using career coaching services and should entice the user to book a call.
+- The quiz page contains the quiz question, quiz image, answer options, a retake and next button, score and question counter, as well as a progress bar. In addition it features direct feedback upon option selection.
+- The quiz question is displayed on top with the quiz image right underneath, so the user has a nice overview of the task.
+- The image is clickable, and upon click is enlarged while the background has a dark overlay to focus the attention on the image. This option should help the user have a clearer view of the image if needed.
+- Upon clicking on the image or the X icon on the top right of the image, it is closed and the user can continue answering the quiz question. As the image opens in the same tab, it provides better user experience with less clicks.
+- The options for the quiz answers show a hover effect which makes for an easier option selection for the user.
+- Before an option is chosen, the next button is disabled, so that the user cannot progress in the quiz before choosing an option.
+- Upon click on an option the next button is enabled again, and the user gets direct feedback whether or not the option was correct. The feedback is displayed in two ways:
+    - A colored background for the option. Red for the wrong answer and green for the correct answer.
+    - A written Feedback of "Correct" or "Wrong" is displayed underneath the options.
 
-  ![Testimonials section for UX Ventures website with different resolutions](/documentation/testimonials-screenshots.png)
+- The direct feedback should give better user experience and accessibility for the user.
+- Upon click on the "Next" button the user progresses to the next question.
+- When doing so, the progress bar underneath expands, the Correct Answers as well as the Question count is displayed and changes as the user progresses in the quiz.
+- This is additional feedback for the user, so they have a better overview of the quiz progress and their score. This benefits the user in deciding whether or not to retake the quiz before the quiz ends.
+- The Retake button is enabled all the time and can be clicked throughout the quiz. Upon click on the retake button a modal opens, asking for confirmation if the user is sure to retake the quiz.
+    - This extra security enables the user to avoid a misclick and lose the quiz by accident.
 
-#### Book Call Section
+- For better readability the Retake and Next buttons display an icon on top giving another visual cue on the meaning of the buttons which makes for a better user experience.
+
+![Quiz Page for Good Boy website on desktop](/documentation/features/quiz-desktop.png)
+![Quiz Page for Good Boy website on tablet](/documentation/features/quiz-tablet.png)
+![Quiz Page for Good Boy website on mobile](/documentation/features/quiz-mobile.png)
+
+![Landing Page slider for Good Boy website](/documentation/features/quiz-animation.gif)
+
+
+#### Confirmation Modal
 
 - This section will allow the user to directly book a carrer coaching call, or send a contact message first.
 - The career coaching call booking button is using the primary button design to entice the user to preferably book a call, versus sending a message. 
