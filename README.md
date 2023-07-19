@@ -259,6 +259,7 @@ The logo and favicon icon were chosen to reflect the styling of the website, so 
 
 ![Quiz Page Results Button for Good Boy website](/documentation/features/results-button.png)
 
+
 #### Confirmation Modal
 
 - The confirmation modal is opened upon click on any "Retake" button throughout the quiz experience.
@@ -276,14 +277,37 @@ The logo and favicon icon were chosen to reflect the styling of the website, so 
 ![Confirmation modal animationfor Good Boy Quiz](/documentation/features/confirmation-animation.gif)
 
 
+##### Results Page
+
+- The Results page contains a short congratulatory text with the results score and an results image.
+- The score displays the percentage of the correctly answered questions from the quiz.
+- Underneath there is another "Retake" option displayed as a button. Upon click the confirmation modal opens which gives the user the option to retake the quiz or stay on the results page.
+- There is also an icon displayed with hover effects for better accessibility and understanding of its meaning.
+- That icon opens another modal. A feedback modal where the user can leave feedback about the quiz.
+
+![Results Page for Good Boy Quiz on desktop](/documentation/features/results-desktop.png)
+![Results Page for Good Boy Quiz on tablet](/documentation/features/results-tablet.png)
+![Results Page for Good Boy Quiz on mobile](/documentation/features/results-mobile.png)
+![Results Page for Good Boy Quiz animation](/documentation/features/results-animation.gif)
 
 
-##### Book Call Button
+#### Feedback Modal
 
-- The book call button will open a new window that leads to a Google Calendar. The user will have the option to book a call slot in that calendar.
-- It is opening in a new window instead of a new tab to make sure that the user's attention will be on that newly opened window for better user experience. The user will need less clicks to book a call.
+- The Feedback Modal is opened when the user clicks on the ?-icon on the Results Page.
+- It shows a short title and fives bones, in a similar manner as a typical star-rating system. The bone icon was chosen to fit the theme of the dog quiz page for a more cohesive user experience.
+- The bones have a hover effect and upon click a feedback form is opened.
+- The user can type in comments in the feedback form field and send the form upon click on the "Send" button.
+- The form can be submitted without writing any comment by just choosing one to five bones to rate the quiz.
+- The Send button also features a hover effect.
+- Upon click on "Send" the "Thank You" section of that modal is displayed giving the user feedback that their submission has been sent.
+- The feedback modal can be closed by clicking on the x in the modal, or outside of the modal content to make it easier for the user to click the modal away if needed.
 
-    ![Book Call window for UX Ventures website](/documentation/book-call-window.png)
+![Feedback Modal for Good Boy Quiz on desktop](/documentation/features/feedback-desktop.png)
+![Feedback Modal  for Good Boy Quiz on tablet](/documentation/features/feedback-tablet.png)
+![Feedback Modal  for Good Boy Quiz on mobile](/documentation/features/feedback-mobile.png)
+![Feedback Modal for Good Boy Quiz animation](/documentation/features/feedback-animation.gif)
+
+
 
 #### Footer
 
@@ -294,6 +318,7 @@ The logo and favicon icon were chosen to reflect the styling of the website, so 
 ![Footer section for Good Boy Quiz website on desktop](/documentation/features/footer-tablet.png)
 ![Footer section for Good Boy Quiz website on desktop](/documentation/features/footer-mobile.png)
 ![Footer section for Good Boy Quiz with hover effect](/documentation/features/footer-hover.gif)
+
 
 #### 404 Error Page
 
