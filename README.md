@@ -322,10 +322,14 @@ The logo and favicon icon were chosen to reflect the styling of the website, so 
 
 #### 404 Error Page
 
-- The Thank You Page opens after a user submits a message via the contact form, so the user knows that the message was successfully sent.
-- The page includes a separate navigation with only the logo visible and a return to Home page button. This is done on purpose, to not overwhelm the user with too much content on the Thank You page.
+- The 404 Error Page is displayed when a user lands on a page or a link that does not currently exist.
+- The page follows the same design principles as the Quiz Page and displays a similar header and footer. Only the Instructions icon is missing as this is not relevant for the error page.
+- The page includes a short message and image confirming the 404 error.
+- Underneath the text the user will find a button that leads them back to the Landing Page. The button also has a hover effect for a cohesive user experience.
 
-  ![Book Call section for UX Ventures website with different resolutions](/documentation/thankyou.png)
+![404 Error Page for Good Boy Quiz on desktop](/documentation/features/404-desktop.png)
+![404 Error Page for Good Boy Quiz on tablet](/documentation/features/404-tablet.png)
+![404 Error Page for Good Boy Quiz on mobile](/documentation/features/404-mobile.png)
 
 <br>
 
