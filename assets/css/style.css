@@ -230,6 +230,7 @@ button:disabled {
     transform: scale(1.1);
     transition: transform 0.3s ease;
     box-shadow: none;
+    cursor: pointer;
 }
 
 /* Modal styles */
@@ -294,6 +295,7 @@ button:disabled {
 .close-button:hover {
     color: #D87E4E;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 /* Quiz container */
@@ -357,6 +359,7 @@ button:disabled {
     transform: scale(1.5);
     color: #FBCEB1;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
   
 .overlay {
@@ -532,6 +535,7 @@ li.option.inactive {
 .rating-icons input:not(:checked)~label:hover,
 .rating-icons input:not(:checked)~label:hover~label {
     color: white;
+    cursor: pointer;
 }
 
 .rating-icons input:checked~label {
@@ -610,13 +614,15 @@ footer p {
 }
 
 footer a {
-    color: #D87E4E;
+    color: #353839;
     font-weight: bold;
     text-decoration: none;
 }
 
 footer a:hover {
     text-decoration: underline;
+    color: #D87E4E;
+    cursor: pointer;
 }
 
 /* Media queries */
