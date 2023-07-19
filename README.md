@@ -346,10 +346,9 @@ The logo and favicon icon were chosen to reflect the styling of the website, so 
 #### Further Improvements
 
 - Make sure to do further accessibility testing with tools like the [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/).
-- Include a fully functioning form without the help of tools like [Sheetmonkey](https://sheetmonkey.io/).
-- Improve commit messages by keeping them shorter, as I went above the character limit from time to time.
-- Also use the correct filepath when adding commits, instead of just using "add ."
-- Add favicon and custom 404 page in the future as well.
+- Include a fully functioning form.
+- 
+- 
 
 <br>
 
