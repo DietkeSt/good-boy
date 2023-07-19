@@ -232,6 +232,7 @@ The logo and favicon icon were chosen to reflect the styling of the website, so 
     - A written Feedback of "Correct" or "Wrong" is displayed underneath the options.
 
 - The direct feedback should give better user experience and accessibility for the user.
+- The options are also disabled and greyed out after selection, so the user cannot change the answer for the same question.
 - Upon click on the "Next" button the user progresses to the next question.
 - When doing so, the progress bar underneath expands, the Correct Answers as well as the Question count is displayed and changes as the user progresses in the quiz.
 - This is additional feedback for the user, so they have a better overview of the quiz progress and their score. This benefits the user in deciding whether or not to retake the quiz before the quiz ends.
@@ -246,6 +247,17 @@ The logo and favicon icon were chosen to reflect the styling of the website, so 
 
 ![Overview of Quiz Page for Good Boy website](/documentation/features/quiz-animation.gif)
 
+##### Quiz Details
+
+- The quiz contains 11 questions, but is limited to 10 questions.
+- The questions are randomized to make sure the user has a harder time to guess the dog breeds upon retaking the quiz.
+- The feedback is given right away after selecting an answer.
+- Upon click on the next button the next question is displayed.
+- The score is counted throughout the quiz as well as the quiz questions.
+- Once the user reaches 10 questions the "Next" button is displayed as "Results" instead.
+- Upon clicking on "Results" the user is taken to the Results Page.
+
+![Quiz Page Results Button for Good Boy website](/documentation/features/results-button.png)
 
 #### Confirmation Modal
 
@@ -262,6 +274,8 @@ The logo and favicon icon were chosen to reflect the styling of the website, so 
 ![Confirmation modal for Good Boy Quiz on tablet](/documentation/features/confirmation-tablet.png)
 ![Confirmation modal for Good Boy Quiz on mobile](/documentation/features/confirmation-mobile.png)
 ![Confirmation modal animationfor Good Boy Quiz](/documentation/features/confirmation-animation.gif)
+
+
 
 
 ##### Book Call Button
