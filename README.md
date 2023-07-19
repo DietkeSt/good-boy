@@ -394,21 +394,23 @@ See followed guide on [YouTube](https://www.youtube.com/watch?v=rw3eZ6XodN8&ab_c
 
 2. **Responsiveness test:**
 
-   - With [Responsive Viewer](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb) Chrome extension:
+- With [Responsive Viewer](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb) Chrome extension:
   
-        ![Responsive Viewer testing image](documentation/responsive-viewer-test.png)
+    ![Responsive Viewer landing](documentation/responsiveness/responsive-viewer-landing.png)
+    ![Responsive Viewer quiz](documentation/responsiveness/responsive-viewer-quiz.png)
+    ![Responsive Viewer modal](documentation/responsiveness/responsive-viewer-modal.png)
+    ![Responsive Viewer rating](documentation/responsiveness/responsive-viewer-rating.png)
+    ![Responsive Viewer 404](documentation/responsiveness/responsive-viewer-404.png)
         
-        Video of Responsive Viewer testing can be seen [here](https://drive.google.com/file/d/1mIZ2ADsKHXGSmtG08jh-rykGGGG1tS9x/view?usp=sharing)
+    Video of Responsive Viewer testing can be seen [here](https://drive.google.com/file/d/18s4XliQGXrxwz0YvLslgHCO2HPrxaVw0/view?usp=sharing)
     
-   - [DevTools](https://developer.chrome.com/docs/devtools/):
+- [DevTools](https://developer.chrome.com/docs/devtools/):
    
-        ![DevTools responsiveness testing image desktop](documentation/devtool-test1.png)
-
-        ![DevTools responsiveness testing image tablet](documentation/devtool-test2.png)
-
-        ![DevTools responsiveness testing image mobile](documentation/devtool-test3.png)
-        
-        Video of DevTools testing can be seen [here](https://drive.google.com/file/d/1V6tL2tVCKPUREmTmNhuY_raBfSHR8TZS/view?usp=sharing)
+    ![DevTools responsiveness landing](documentation/responsiveness/devtools-landing.gif)
+    ![DevTools responsiveness quiz](documentation/responsiveness/devtools-quiz.gif)
+    ![DevTools responsiveness quiz](documentation/responsiveness/devtools-results.gif)
+    ![DevTools responsiveness quiz](documentation/responsiveness/devtools-rating.gif)
+    ![DevTools responsiveness quiz](documentation/responsiveness/devtools-404.gif)
 
     The website was working as expected in several responsiveness testing tools.
    
