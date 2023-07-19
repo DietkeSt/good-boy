@@ -97,7 +97,7 @@ header {
 }
 
 /* Buttons */
-button {
+#home-btn {
     font-family: "Indie Flower", Open-Sans;
     color: #353839;
     border-color: #353839;
@@ -120,7 +120,7 @@ button {
     margin: 0 auto;
 }
 
-button:hover {
+#home-btn:hover {
     background-color: #D87E4E;
     border-color: white;
     color: white;
@@ -129,7 +129,7 @@ button:hover {
     transition: all 0.2s ease;
 }
 
-button i {
+#home-btn i {
     padding-right: 0.5em;
 }
 
