@@ -416,56 +416,14 @@ See followed guide on [YouTube](https://www.youtube.com/watch?v=rw3eZ6XodN8&ab_c
    
 3. **All links were tested as well, and are opening as expected:**
  
-    #### Navigation
-
-   - **Logo**: By clicking on the logo the user is redirected to index.html.
-
-        - Test passed.
-   - **Home**: By clicking on Home the user is redirected to index.html.
-
-        - Test passed.
-   - **About**: By clicking on About the user is redirected to about section.
-
-        - Test passed.
-   - **Testimonials**: By clicking on Testimonials the user is redirected to testimonials section.
-
-        - Test passed.
-   - **Book Call**: By clicking on Book Call the user is redirected to book-call section.
-
-        - Test passed.
-    
-    #### Testimonial Section
-    
-   - **YouTube Video**: By clicking on the play button, the video start. By clicking on "Watch on Youtube" the user is redirected to [Youtube Playlist](https://www.youtube.com/watch?v=RE25PyaUTiU&list=PL9G_LUWtBLYO18IPrNxlQck5Sf8BLBzp1) in an external tab.
-
-        - Test passed.
-
-    #### Book Call Section
- 
-   - **Book Call Button**: By clicking on the Book Call button a new window with a Google Calendar booking option is opening for the user.
-
-        - Test passed.
-   - **Form Submit Button**: By clicking on Send Message after the form is correctly filled out the user is redirected to thankyou.html
-
-        - Test passed.
-
     #### Footer
+
+- **Dietke Steindel**: By clicking on the name in the footer the user is redirected to https://github.com/DietkeSt/ and the window opens in a new tab.
+
+     
+    #### 404 Error Page
     
-   - **Developer GitHub**: By clicking on Dietke Steindel the user is redirected to https://github.com/DietkeSt/ which opens in a new tab.
-
-        - Test passed.
-   - **Social Media**: By clicking on the LinkedIn icon the user is redirected to https://www.linkedin.com/company/ux-ventures-ltd/ which opens in a new tab.
-
-        - Test passed.
-
-    #### Thank You Page
-    
-   - **Developer GitHub**: By clicking on the logo the user is redirected to index.html
-
-        - Test passed.
-   - **Social Media**: By clicking on the logo the user is redirected to index.html
-
-        - Test passed.
+- **Go Back to Homepahe**: By clicking on the back button, the user is redirected to /good-boy/.
 
 <br>
 
