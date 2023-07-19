@@ -450,18 +450,7 @@ See followed guide on [YouTube](https://www.youtube.com/watch?v=rw3eZ6XodN8&ab_c
     
 #### CSS
 
-- No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/).
-
-    ![css validator testing image](/documentation/css-validator.png)
-
-- 7 warnings were found when passing through the official (Jigsaw) validator.
-
-    ![css validator testing warning image](/documentation/css-validator-warnings.png)
-
-    - 3 warnings regarding button background-color and border-color being the same value.
-      - **Comment**: This was intended as only the background-color should change upon hover, not the border-color.
-
-    - 4 warnings regarding the use of calc variables: "Due to their dynamic nature, CSS variables are currently not statically checked".
+- No errors were found when passing Goody Boy Quiz and 404 Page through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/).
 
 
 #### JS
