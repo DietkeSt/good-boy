@@ -356,6 +356,18 @@ The logo and favicon icon were chosen to reflect the styling of the website, so 
 
 <br>
 
+### Accessibility Testing
+
+**[Wave](https://wave.webaim.org/report#/https://dietkest.github.io/good-boy/)**:
+
+No errors, but 1 Alert.
+
+![Wave Accessibility test result](/documentation/compatibility/wave-test.png)
+
+The Alert states "Missing Fieldset" for the radio buttons. However, I decided to use the radio buttons to convert them into a rating option for the user. Using fieldset would interfere with that option.
+
+See followed guide on [YouTube](https://www.youtube.com/watch?v=rw3eZ6XodN8&ab_channel=CodingNepal).
+
 ### Functionality & Responsiveness
 
 1. **Browser test for functionality:**
