@@ -419,7 +419,6 @@ See followed guide on [YouTube](https://www.youtube.com/watch?v=rw3eZ6XodN8&ab_c
     #### Footer
 
 - **Dietke Steindel**: By clicking on the name in the footer the user is redirected to https://github.com/DietkeSt/ and the window opens in a new tab.
-
      
     #### 404 Error Page
     
@@ -463,6 +462,11 @@ See followed guide on [YouTube](https://www.youtube.com/watch?v=rw3eZ6XodN8&ab_c
       - **Comment**: This was intended as only the background-color should change upon hover, not the border-color.
 
     - 4 warnings regarding the use of calc variables: "Due to their dynamic nature, CSS variables are currently not statically checked".
+
+
+#### JS
+
+https://jshint.com/
 
 <br>
 
