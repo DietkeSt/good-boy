@@ -30,9 +30,9 @@
         </div>
         <!-- Clickable text that opens the instructions modal -->
         <div class="instructions-landing">
-            <p title="Click to find out How To Play" aria-label="When clicking this icon a module with instruction on How To Play is opened.">
+            <a title="Click to find out How To Play" aria-label="When clicking this icon a module with instruction on How To Play is opened.">
                 <i class="fa-solid fa-circle-info"></i>
-            </p>
+            </a>
         </div>
     </header>
     <main>
@@ -60,10 +60,9 @@
         <div id="quiz-container" style="display: none;">
             <h2 id="question">Question</h2>
             <div id="image-container">
-                <a id="question-image-link" title="Click to enlarge image" aria-label="Click to enlarge image if needed (Opens in same window with overlay)">
-                    <span class="close-button" title="Click to close enlarged image" aria-label="Click here to close the opened image">×</span>
+                <a id="question-image-link" aria-label="Click to enlarge image if needed">
                     <div class="overlay"></div>
-                    <img src="" id="question-image" alt="">
+                    <img src="placeholder" id="question-image" alt="placeholder" title="Click to enlarge image">
                 </a>
             </div>
             <div id="quiz-section2">
@@ -111,7 +110,7 @@
                     <p>As a reward, here is a cute puppy for you:</p>
                 </div>
                 <div class="result-reward">
-                    <img id="result-image" src="" alt="Sitting dog with heart eyes">
+                    <img id="result-image" src="assets/images/result-puppy.png" alt="Sitting dog with heart eyes">
                 </div>
             </div>
             <div class="result-button">
@@ -119,15 +118,15 @@
             </div>
             <!-- Clickable text that opens the Feedback section modal -->
             <div class="feedback-icon">
-                <p title="Click to leave Feedback about the Quiz." aria-label="Click to leave Feedback about the Quiz (Opens a modal window)">
+                <a title="Click to leave Feedback about the Quiz." aria-label="Click to leave Feedback about the Quiz (Opens a modal window)">
                     <i class="fa-solid fa-circle-question"></i>
-                </p>
+                </a>
             </div>
         </div>
         <!-- Instructions modal -->
         <div class="modal" id="instructions-modal">
             <div class="modal-content">
-                <span class="close-button" aria-label="Click here to close the opened modal">&times;</span>
+                <a class="close-button" aria-label="Click here to close the opened modal">&times;</a>
                 <h3>Instructions on How To Play</h3>
                 <ol>
                     <li>Please enter your <strong>Name</strong>.</li>
@@ -157,7 +156,7 @@
         <!-- Feedback section modal-->
         <div class= "modal" id="feedback-form">
             <div class="modal-content">
-                <span class="close-button" aria-label="Click here to close the opened modal">&times;</span>
+                <a class="close-button" aria-label="Click here to close the opened modal">&times;</a>
                 <div class="rating-thanks">
                     <h3>Thanks for your feedback!</h3>
                 </div>
