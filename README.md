@@ -408,9 +408,9 @@ See followed guide on [YouTube](https://www.youtube.com/watch?v=rw3eZ6XodN8&ab_c
    
     ![DevTools responsiveness landing](documentation/responsiveness/devtools-landing.gif)
     ![DevTools responsiveness quiz](documentation/responsiveness/devtools-quiz.gif)
-    ![DevTools responsiveness quiz](documentation/responsiveness/devtools-results.gif)
-    ![DevTools responsiveness quiz](documentation/responsiveness/devtools-rating.gif)
-    ![DevTools responsiveness quiz](documentation/responsiveness/devtools-404.gif)
+    ![DevTools responsiveness results](documentation/responsiveness/devtools-results.gif)
+    ![DevTools responsiveness rating](documentation/responsiveness/devtools-rating.gif)
+    ![DevTools responsiveness 404](documentation/responsiveness/devtools-404.gif)
 
     The website was working as expected in several responsiveness testing tools.
    
@@ -433,10 +433,10 @@ See followed guide on [YouTube](https://www.youtube.com/watch?v=rw3eZ6XodN8&ab_c
 - No errors or warnings found when passing through the official [W3C validator](https://validator.w3.org/)
 
     - **Main Page**
-    ![html validator testing image](/documentation/validators/html-validator.png)
+    ![html validator testing main page](/documentation/validators/html-validator.png)
 
     - **404 Page**
-    ![html validator testing image](/documentation/validators/404-html-validator.png)
+    ![html validator testing 404 page](/documentation/validators/404-html-validator.png)
 
     
 #### CSS
@@ -444,17 +444,17 @@ See followed guide on [YouTube](https://www.youtube.com/watch?v=rw3eZ6XodN8&ab_c
 - No errors were found when passing Good Boy Quiz and 404 Page through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/).
 
 - **Main Page**
-![html validator testing image](/documentation/validators/css-validator.png)
+![css validator testing main page](/documentation/validators/css-validator.png)
 
 - **404 Page**
-![html validator testing image](/documentation/validators/404-css-validator.png)
+![css validator testing 404 page](/documentation/validators/404-css-validator.png)
 
 
 #### JS
 
-https://jshint.com/
+No errors were found when passing through the [JSHint Code Quality Tool](https://jshint.com/).
 
-- Shows that line 210 function is not used, however, its is used in line 171 for the displayQuestion function.
+![Javascript validator testing](/documentation/validators/js-validator.png)
 
 <br>
 
