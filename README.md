@@ -432,16 +432,22 @@ See followed guide on [YouTube](https://www.youtube.com/watch?v=rw3eZ6XodN8&ab_c
 
 - No errors or warnings found when passing through the official [W3C validator](https://validator.w3.org/)
 
-    - **index.html**
+    - **Main Page**
     ![html validator testing image](/documentation/validators/html-validator.png)
 
-    - **404.html**
+    - **404 Page**
     ![html validator testing image](/documentation/validators/404-html-validator.png)
 
     
 #### CSS
 
-- No errors were found when passing Goody Boy Quiz and 404 Page through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/).
+- No errors were found when passing Good Boy Quiz and 404 Page through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/).
+
+- **Main Page**
+![html validator testing image](/documentation/validators/css-validator.png)
+
+- **404 Page**
+![html validator testing image](/documentation/validators/404-css-validator.png)
 
 
 #### JS
