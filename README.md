@@ -422,7 +422,7 @@ See followed guide on [YouTube](https://www.youtube.com/watch?v=rw3eZ6XodN8&ab_c
      
     #### 404 Error Page
     
-- **Go Back to Homepahe**: By clicking on the back button, the user is redirected to /good-boy/.
+- **Go Back to Homepage**: By clicking on the back button, the user is redirected to /good-boy/.
 
 <br>
 
@@ -430,22 +430,13 @@ See followed guide on [YouTube](https://www.youtube.com/watch?v=rw3eZ6XodN8&ab_c
 
 #### HTML
 
-[W3C validator](https://validator.w3.org/)
+- No errors or warnings found when passing through the official [W3C validator](https://validator.w3.org/)
 
-1. index.html
+    - **index.html**
+    ![html validator testing image](/documentation/validators/html-validator.png)
 
-- Two errors when testing with official HTML W3C validator:
- 
-    ![html validator testing image](/documentation/validators/html-error.png)
-
-    The errors appear due to dynamic content created by JS that is filling the source link and the alt for the images. The source and alt must not be empty.
-
-    Due to the nature of how the website works, this is intended.
-
-2. 404.html
-
-- No errors were found.
-
+    - **404.html**
+    ![html validator testing image](/documentation/validators/404-html-validator.png)
 
     
 #### CSS
