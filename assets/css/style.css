@@ -89,7 +89,7 @@ header {
     justify-content: flex-end;
 }
 
-.instructions-landing:hover p {
+.instructions-landing:hover a {
     cursor: pointer;
     color: #D87E4E;
     transition: all 0.3s ease;
@@ -312,11 +312,7 @@ button:disabled {
     display: block;
     object-fit: contain;
     padding: 1em 0;
-}
-
-#question-image-link {
     cursor: pointer;
-    position: relative;
 }
 
 #quiz-section2 {
@@ -340,15 +336,6 @@ button:disabled {
     z-index: 1;
     position: relative;
     transition: all 0.3s ease-in-out;
-}
-
-#image-container .close-button {
-    visibility: hidden;
-    position: absolute;
-    top: -25%;
-    right: -25%;
-    z-index: 2;
-    color: #D87E4E;  
 }
 
 #image-container.zoomed:hover .close-button {
@@ -491,7 +478,7 @@ li.option.inactive {
     height: auto;
 }
 
-.feedback-icon:hover p {
+.feedback-icon:hover a {
     cursor: pointer;
     color: #D87E4E;
     transition: all 0.3s ease;
