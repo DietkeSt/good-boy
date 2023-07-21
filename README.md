@@ -486,18 +486,27 @@ No errors were found when passing through the [JSHint Code Quality Tool](https:/
 
 ### Fixed Bugs
 
-- The image files links for the background images would not properly load, so had to adjust links for the background images to display correctly on deployment.
-- On mobile resolution, the hero text was not centered. This was caused by margin set for the container which I removed.
-- On mobile, the embedded iframe did not have the correct margin set for the column display. Corrected the top margin for cohesive experience for the user.
-- Footer would not display any styling, this was caused by a missing CSS closing tag for the book-call section. Adding the missing tag solved the issue.
-- To enhance readability fixed the background color of the footer to a darker shade.
+1. Upon submission the quiz would not start due to a missing result container in the HTML code, after adding it, it was working as expected again.
+
+2. After adding a confirmation modal, the "No" option did not close the modal as expected. 
+    - Adding a similar function like for the instructions modal did not resolve the issue.
+    - Further testing showed that two modals tried to use the same function.
+    - Renamed the function for the confirmation modal.
+    - After each modal had their own function, the closing of the modals worked as expected again.
+
+3. After shuffling the quiz array, I noticed that the same questions could be guessed several times.
+    - To disable the options after choosing one option, I added the "guessed" class.
+    - Once the class is applied, the other options are made inactive.
+    - This resolved the issue and makes for a more accurate quiz result in the end.
+
+4. When clicking retake or retake quiz, the page would show the landing page, but not reload the page. To solve this, I added a function to reload the page.
+
 
 <br>
 
 ### Unfixed Bugs
 
-- Kept Logo image in html, instead of uploading it as background image for the div. The margin would not work properly on the div.
-- Margin in Book-Call section for the ul is set to 5em, as the button would otherwise overlap with the text. Did not fix this further beyond the margin setting, as it consumed a lot of time to get to the bottom of why this issue was occuring.
+- 
 
 <br>
 
@@ -635,24 +644,3 @@ Shuffle Quiz: https://stackoverflow.com/questions/2450954/how-to-randomize-shuff
 Rating section: https://www.youtube.com/watch?v=rw3eZ6XodN8&ab_channel=CodingNepal
 Disable textarea reasizing: https://www.w3docs.com/snippets/css/how-to-disable-the-resizing-of-the-textarea-element.html
 Set alt for JS image: https://stackoverflow.com/questions/15471688/adding-alt-attribute-to-image-in-javascript
-
-
-
-
-Bug:
-
-Upon submission the quiz would not start due to a missing result container in the HTML code, after adding it, it was working as expected again.
-
-After adding a confirmation modal, the "No" option did not work as expected. Tried adding similar functions as for the instructions modal to close it and had to add an event listener for the "No" option, however, this did not resolve the issue.
-Upon testing, found out that the issue is that two modals are being used and try to access the same closeModal function. I had to rename the function for the confirmation modal and adjust the call for the No button and that resolved the issue. The confirmation modal is now closing as expected when clicking the "no" option.
-
-Upon adding styling for the modal buttons, the modals kept on opening on page load. The issue was that I added the wrong display type to the modal class which causes the event listeners not to work anymore. Fixing the display type to none solved the issue.
-
-After randomizing the quiz questions, I noticed that I could guess several times for one question. To disabled that function, I added the "guessed" property to the quiz and upon option selection the other options are made inactive. This resolved the issue and makes for a more accurate quiz result in the end.
-
-When clicking retake or retake quiz, the page would load the landing page, but not actually restart the quiz. To solve this, I added the reloaded function.
-
-JSHInt:
-
-212	checkAnswer
--> This is actually being used to check if the answer has been guessed and adds +1 to the score if guess correctly, so this is needed.
