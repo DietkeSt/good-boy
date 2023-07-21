@@ -462,25 +462,24 @@ No errors were found when passing through the [JSHint Code Quality Tool](https:/
 
 - Checked with [lighthouse in devtools](https://developer.chrome.com/docs/lighthouse/overview/):
 
-    #### index.html:
+    #### Main Page:
 
   -   Desktop check was all above 90%:
-     ![Book Call section for UX Ventures website with different resolutions](/documentation/lighthouse-desktop.png)
+     ![Good Boy Quiz Desktop lighthouse check](/documentation/lighthouse/lighthouse-desktop.png)
      
-  - Mobile test shows only 83% in Best Practices:
-    ![Book Call section for UX Ventures website with different resolutions](/documentation/lighthouse-mobile.png)
+  - Mobile check all above 90%, except Performance:
+    ![Good Boy Quiz Mobile lighthouse check](/documentation/lighthouse/lighthouse-mobile.png)
 
-    - Found issues to be related to embeded video playlist and logo.
-    - However, I could not verify any interference with  accessibility, or performance:
-     ![Book Call section for UX Ventures website with different resolutions](/documentation/lighthouse-mobile-bestpractices.png)
+    - Issues mainly related to render blocking resources. Google Fonts and FontAwesome scripts are in the header of the website, but they are critical for loading the font and visible icons, so did not fix this further.
+     ![Good Boy Quiz lighthouse render blocking details](/documentation/lighthouse/lighthouse-render-blocking.png)
 
-   #### thankyou.html:
+   #### 404 Page:
 
   -   Desktop check was all above 90%:
-     ![Book Call section for UX Ventures website with different resolutions](/documentation/lighthouse-desktop-thankyou.png)
+     ![Good Boy Quiz 404 Desktop lighthouse check](/documentation/lighthouse/lighthouse-desktop-404.png)
      
   - Mobile check was all above 90%:
-    ![Book Call section for UX Ventures website with different resolutions](/documentation/lighthouse-mobile-thankyou.png)
+    ![Good Boy Quiz 404 Mobile lighthouse check](/documentation/lighthouse/lighthouse-mobile-404.png)
 
 
 <br>
