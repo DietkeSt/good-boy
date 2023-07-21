@@ -1,3 +1,4 @@
+/* jshint esversion: 6 */
 // Quiz questions and options
 const quiz = [
     {
@@ -93,7 +94,6 @@ const quiz = [
 const questionElement = document.getElementById("question");
 const imageElement = document.getElementById("question-image");
 const imageContainer = document.getElementById("image-container");
-const imageLink = document.getElementById("question-image-link");
 const optionsElement = document.getElementById("options");
 const feedbackElement = document.getElementById("feedback");
 const nextButton = document.getElementById("next-btn");
@@ -168,7 +168,9 @@ function displayQuestion() {
         const li = document.createElement("li");
         li.textContent = option;
         li.classList.add("option");
-        li.setAttribute("onclick", `checkAnswer(${index})`);
+        li.addEventListener("click", () => {
+            checkAnswer(index);
+        });
         optionsElement.appendChild(li);
     });
 
@@ -192,6 +194,44 @@ function displayQuestion() {
     } else {
         nextButtonText.textContent = "Next";
     }
+
+    // Check the selected answer
+    function checkAnswer(selectedIndex) {
+        const currentQuiz = quiz[currentQuestion];
+        const correctIndex = currentQuiz.answer;
+
+        // Check if the question has already been guessed
+        if (currentQuiz.guessed) {
+            return;
+        }
+
+        // Mark the question as guessed
+        currentQuiz.guessed = true;
+
+        // Highlight the selected option
+        for (let i = 0; i < options.length; i++) {
+            if (i === selectedIndex) {
+                options[i].classList.add("selected");
+            } else {
+                options[i].classList.remove("selected");
+                options[i].classList.add("inactive");
+                options[i].removeAttribute("onclick");
+            }
+        }
+
+        // Check if the selected answer is correct
+        if (selectedIndex === correctIndex) {
+            document.getElementById("feedback").textContent = "Correct!";
+            options[selectedIndex].classList.add("correct-answer");
+            score++;
+        } else {
+            document.getElementById("feedback").textContent = "Wrong!";
+            options[selectedIndex].classList.add("wrong-answer");
+        }
+
+        // Enable the next button
+        document.getElementById("next-btn").disabled = false;
+    }
 }
 
 // Event listener to enlarge image and show overlay on click
@@ -205,44 +245,6 @@ imageContainer.addEventListener("click", function () {
         imageElement.setAttribute("title", "Click to enlarge image");
       }
   });
-
-// Check the selected answer
-function checkAnswer(selectedIndex) {
-    const currentQuiz = quiz[currentQuestion];
-    const correctIndex = currentQuiz.answer;
-
-    // Check if the question has already been guessed
-    if (currentQuiz.guessed) {
-        return;
-    }
-
-    // Mark the question as guessed
-    currentQuiz.guessed = true;
-
-    // Highlight the selected option
-    for (let i = 0; i < options.length; i++) {
-        if (i === selectedIndex) {
-            options[i].classList.add("selected");
-        } else {
-            options[i].classList.remove("selected");
-            options[i].classList.add("inactive");
-            options[i].removeAttribute("onclick");
-        }
-    }
-
-    // Check if the selected answer is correct
-    if (selectedIndex === correctIndex) {
-        document.getElementById("feedback").textContent = "Correct!";
-        options[selectedIndex].classList.add("correct-answer");
-        score++;
-    } else {
-        document.getElementById("feedback").textContent = "Wrong!";
-        options[selectedIndex].classList.add("wrong-answer");
-    }
-
-    // Enable the next button
-    document.getElementById("next-btn").disabled = false;
-}
 
 // Proceed to the next question
 function nextQuestion() {
