@@ -341,14 +341,12 @@ The logo and favicon icon were chosen to reflect the styling of the website, so 
 
 #### Additional Quizzes
 
--  I think adding several quizzes will help the user gain more information about dog breeds.
+- I think adding several quizzes will help the user gain more information about dog breeds.
 
 #### Further Improvements
 
-- Make sure to do further accessibility testing with tools like the [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/).
 - Include a fully functioning form.
-- 
-- 
+- Add several result images, that change depending on the percentage rating.
 
 <br>
 
@@ -533,7 +531,7 @@ To push the code to Github from Codeanywhere, the following command can be used 
 
 To make a local copy of this project in [VSCode](https://code.visualstudio.com/), these steps can be followed:
 
-1. Navigate here <https://github.com/DietkeSt/ux-ventures.git>, and click on "Code > Local > HTTPS"
+1. Navigate here <https://github.com/DietkeSt/good-boy.git>, and click on "Code > Local > HTTPS"
     
 2. Click on "Download ZIP"
 ![Clone repository](/documentation/clone-repository.png)
@@ -552,31 +550,32 @@ To make a local copy of this project in [VSCode](https://code.visualstudio.com/)
 
 #### W3Schools
 
-- Flex Direction code found here: <https://www.w3schools.com/cssref/css3_pr_flex-direction.php>
+- [How to add a favicon](https://www.w3schools.com/html/html_favicon.asp)
+- [How to create a progress bar](https://www.w3schools.com/howto/howto_js_progressbar.asp)
+- [Info about event listeners](https://www.w3schools.com/js/js_htmldom_eventlistener.asp)
+- [How to create modals](https://www.w3schools.com/howto/howto_css_modals.asp)
 
 #### StackOverflow
 
-- Box-sizing borderbox: <https://stackoverflow.com/questions/24605308/how-to-add-space-between-buttons-and-its-borders>
-- Flex box: <https://stackoverflow.com/questions/48464444/how-to-display-3-items-per-row-in-flexbox>
-- Current year in footer: <https://stackoverflow.com/questions/4562587/shortest-way-to-print-current-year-in-a-website>
-- Open in new window, not tab: <https://stackoverflow.com/questions/12939928/make-a-link-open-a-new-window-not-tab>
+- [Current year in footer](https://stackoverflow.com/questions/4562587/shortest-way-to-print-current-year-in-a-website)
+- [Image slider with fade animation](https://stackoverflow.com/questions/51238836/css-image-slider-with-fade-in)
+- [Image slider with JS fading animation](https://stackoverflow.com/questions/24344805/animating-multiple-objects-simultaneously-in-angularjs-produces-choppy-animation)
+- [Confirmation modal function](https://stackoverflow.com/questions/51863334/something-like-confirmare-u-sure-javascript)
+- [How to shuffle Quiz](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
+- [Set alt for JS image](https://stackoverflow.com/questions/15471688/adding-alt-attribute-to-image-in-javascript)
 
-#### FreeFrontend
+#### YouTube
 
-- Hero Animation code found here: <https://freefrontend.com/css-hero-effects/>
-- Blockquote styling found here: <https://freefrontend.com/css-quote-styles/>
-
-#### Developer.Mozilla
-
-- Z-index usage guide found here: <https://developer.mozilla.org/en-US/docs/Web/CSS/z-index>
-- Width calculator guide found here: <https://developer.mozilla.org/en-US/docs/Web/CSS/calc>
+- [How to create a Modal](https://www.youtube.com/watch?v=ywtkJkxJsdg)
+- [Quiz video guide by James Quick](https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&ab_channel=JamesQQuick)
+- [Rating modal creation](https://www.youtube.com/watch?v=rw3eZ6XodN8&ab_channel=CodingNepal)
 
 #### Others
 
-- Tested using [bootstrap button](https://getbootstrap.com/docs/5.1/components/buttons/), but removed again.  
-- [SheetMonkey](https://sheetmonkey.io/) for form submission action and redirect.
-- Found info on using titles in html on [W3Doc](https://www.w3docs.com/snippets/html/how-to-add-a-mouseover-text-with-html.html).
-- Followed along [Kevin Powell's video](https://www.youtube.com/watch?v=8QKOaTYvYUA) to create responsive navigation bar for mobile.
+- [Make sticky footer](https://materializecss.com/footer.html)
+- [Hide and display elements with the help of JS](https://www.geeksforgeeks.org/hide-or-show-elements-in-html-using-display-property/)
+- [Transform CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate)
+- [Disable textarea reasizing](https://www.w3docs.com/snippets/css/how-to-disable-the-resizing-of-the-textarea-element.html)
 
 <br>
 
@@ -592,55 +591,26 @@ To make a local copy of this project in [VSCode](https://code.visualstudio.com/)
 
 ### Media
 
-- The [Logo](/assets/images/logo.png) was created by myself (Dietke Steindel) with the help of paint and Canva due to knowledge of the business and requirements of the logo.
-- The [Book-call image of Kim Steindel](/assets/images/book-call.jpg) was used with Kim's approval.
-- The [Hero image](https://www.pexels.com/de-de/foto/weisses-druckerpapier-196645/) was found on open source website Pexels.com.
+- The [Good Boy Logo](assets/images/goodboy-logo.png) and [Favicon](assets/images/goodboy-favicon.png) was created by [Rohim - Flaticon](https://www.flaticon.com/free-icons/puppy).
+- The [404 Page Puppy Image](assets/images/404-puppy.png) was created by [Rohim - Flaticon](https://www.flaticon.com/free-icons/puppy).
+- The [Results Page Puppy Image](assets/images/result-puppy.png) was created by [Rohim - Flaticon](https://www.flaticon.com/free-icons/puppy).
+- [Dog-1](assets/images/dog-1.png) was created by [Anna Shvets - pexels.com](https://www.pexels.com/de-de/foto/hande-hund-niedlich-hunde-4587998/)
+- [Dog-2](assets/images/dog-2.png) was created by [Anna Shvets - pexels.com](https://www.pexels.com/de-de/foto/brauner-und-weisser-hund-der-gelben-schal-tragt-4588052/)
+- [Dog-3](assets/images/dog-3.png) was created by [Alexandra Novitskaya - pexels.com](https://www.pexels.com/de-de/foto/hund-tragt-grunen-pelzmantel-2951921/)
+- [Dog-4](assets/images/dog-4.png) was created by [Dominika Roseclay - pexels.com](https://www.pexels.com/de-de/foto/nahaufnahmefoto-des-roten-dackels-895259/)
+- [Dog-5](assets/images/dog-5.png) was created by [La Miko - pexels.com](https://www.pexels.com/de-de/foto/person-die-schwarzweiss-siberian-husky-halt-3671300/)
+- [Dog-6](assets/images/dog-6.png) was created by [Nataliya Vaitkevich - pexels.com](https://www.pexels.com/de-de/foto/laptop-tier-hund-niedlich-5122188/)
+- [Dog-7](assets/images/dog-7.png) was created by [Anna Shvets - pexels.com](https://www.pexels.com/de-de/foto/schemel-liebe-herz-hand-4588047/)
+- [Dog-8](assets/images/dog-8.png) was created by [Anna Shvets - pexels.com](https://www.pexels.com/de-de/foto/tier-haustier-bezaubernd-tierfotografie-4588441/)
+- [Dog-9](assets/images/dog-9.png) was created by [Milica Popovic - pexels.com](https://www.pexels.com/de-de/foto/brown-saluki-1573919/)
+- [Dog-10](assets/images/dog-10.png) was created by [Marco Biribò - pexels.com](https://www.pexels.com/de-de/foto/tier-hund-haustier-gahnen-16634310/)
+- [Dog-11](assets/images/dog-11.png) was created by [Julian Kirschner - pexels.com](https://www.pexels.com/de-de/foto/nahaufnahmefoto-des-dalmatinischen-hundes-3117157/)
 
+The dog image names are very generic. This is done on purpose to avoid the visitor seeing the dog breed name before guessing.
 <br>
 
 ### Acknowledgement
 
-- Thanks to my husband, (the carrer coach) **Kim Steindel**, for providing written content for the website.
 - Thanks to my mentor, **Iuliia Konovalova**, for providing great guidance and tips for this project.
 - Thanks to Code Institute Slack community for feedback and help.
-
-
-Credits:
-
-Pexels:
-
-French bulldog: https://www.pexels.com/de-de/foto/hande-hund-niedlich-hunde-4587998/
-Shiba Inu: https://www.pexels.com/de-de/foto/brauner-und-weisser-hund-der-gelben-schal-tragt-4588052/
-American Staffordshire: https://www.pexels.com/de-de/foto/hund-tragt-grunen-pelzmantel-2951921/
-Dachshund: https://www.pexels.com/de-de/foto/nahaufnahmefoto-des-roten-dackels-895259/
-Siberian Husky: https://www.pexels.com/de-de/foto/person-die-schwarzweiss-siberian-husky-halt-3671300/
-Corgi: https://www.pexels.com/de-de/foto/laptop-tier-hund-niedlich-5122188/
-Shar Pei: https://www.pexels.com/de-de/foto/schemel-liebe-herz-hand-4588047/
-Cat: https://www.pexels.com/de-de/foto/tier-haustier-bezaubernd-tierfotografie-4588441/
-Brown Saluki: https://www.pexels.com/de-de/foto/brown-saluki-1573919/
-Dalmation: https://www.pexels.com/de-de/foto/nahaufnahmefoto-des-dalmatinischen-hundes-3117157/
-German Shepherd: https://www.pexels.com/de-de/foto/tier-hund-haustier-gahnen-16634310/
-
-
-Flaticon:
-
-Paw icons created by Freepik: https://www.flaticon.com/free-icon/footprint-shape_58840
-
-Code:
-
-Favicon: https://www.w3schools.com/html/html_favicon.asp
-Image slider with fade animation: https://stackoverflow.com/questions/51238836/css-image-slider-with-fade-in
-Image slider with JS fading animation: https://stackoverflow.com/questions/24344805/animating-multiple-objects-simultaneously-in-angularjs-produces-choppy-animation
-Sticky footer: https://materializecss.com/footer.html
-Modal: https://www.youtube.com/watch?v=ywtkJkxJsdg
-https://www.w3schools.com/howto/howto_css_modals.asp
-Event listener: https://www.w3schools.com/js/js_htmldom_eventlistener.asp
-Hide and display elements with the help of JS: https://www.geeksforgeeks.org/hide-or-show-elements-in-html-using-display-property/
-Confirmation modal function: https://stackoverflow.com/questions/51863334/something-like-confirmare-u-sure-javascript
-Progress bar guide: https://www.w3schools.com/howto/howto_js_progressbar.asp
-How to make a quiz video guide by James Quick: https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&ab_channel=JamesQQuick
-Transform CSS: https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate
-Shuffle Quiz: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
-Rating section: https://www.youtube.com/watch?v=rw3eZ6XodN8&ab_channel=CodingNepal
-Disable textarea reasizing: https://www.w3docs.com/snippets/css/how-to-disable-the-resizing-of-the-textarea-element.html
-Set alt for JS image: https://stackoverflow.com/questions/15471688/adding-alt-attribute-to-image-in-javascript
+- Thanks to the Code Institute Tutors for assisting with code queries.
