@@ -4,7 +4,7 @@
 const quiz = [
     {
         question: "Which breed of dog is this?",
-        image: "./assets/images/dog-1.png",
+        image: "./assets/images/dog-1.webp",
         alt: "Image of dog whose ears are being held by human hands",
         options: ["French Bulldog", "Poodle", "Labrador Retriever"],
         answer: 0,
@@ -12,7 +12,7 @@ const quiz = [
     },
     {
         question: "What type of dog is this?",
-        image: "./assets/images/dog-2.png",
+        image: "./assets/images/dog-2.webp",
         alt: "Image of dog with half closed eyes wearing a yellow hat",
         options: ["Alsation", "Husky", "Shiba Inu"],
         answer: 2,
@@ -20,7 +20,7 @@ const quiz = [
     },
     {
         question: "Can you identify the breed of this dog?",
-        image: "./assets/images/dog-3.png",
+        image: "./assets/images/dog-3.webp",
         alt: "Image of dog looking sideway wearing green fake fur",
         options: ["Golden Retriever", "American Staffordshire", "Dalmatian"],
         answer: 1,
@@ -28,7 +28,7 @@ const quiz = [
     },
     {
         question: "I'm curious about the breed of this dog. Any idea?",
-        image: "./assets/images/dog-4.png",
+        image: "./assets/images/dog-4.webp",
         alt: "Image of small dog looking into the camera with big eyes",
         options: ["Bulldog", "Shih Tzu", "Dachshund"],
         answer: 2,
@@ -36,7 +36,7 @@ const quiz = [
     },
     {
         question: "Do you know which dog breed this is?",
-        image: "./assets/images/dog-5.png",
+        image: "./assets/images/dog-5.webp",
         alt: "Image of happy dog who is getting nose rubs from a human",
         options: ["Labrador Retriever", "Siberian Husky", "Chihuahua"],
         answer: 1,
@@ -44,7 +44,7 @@ const quiz = [
     },
     {
         question: "Could you tell me the specific breed of this dog?",
-        image: "./assets/images/dog-6.png",
+        image: "./assets/images/dog-6.webp",
         alt: "Image of dog chilling on the bed with a laptop in front of it",
         options: ["Corgi", "Beagle", "Rottweiler"],
         answer: 0,
@@ -52,7 +52,7 @@ const quiz = [
     },
     {
         question: "I'm wondering about the breed of this particular dog. Any thoughts?",
-        image: "./assets/images/dog-7.png",
+        image: "./assets/images/dog-7.webp",
         alt: "Image of dog wearing a birthday hat looking at a tiny heart that is being held by a woman",
         options: ["Great Dane", "Shar Pei", "Australian Shepherd"],
         answer: 1,
@@ -60,7 +60,7 @@ const quiz = [
     },
     {
         question: "Can you help me determine the breed of this adorable dog?",
-        image: "./assets/images/dog-8.png",
+        image: "./assets/images/dog-8.webp",
         alt: "Image of a cat that has no hair and is held by a woman",
         options: ["Border Cattie", "French Catdog", "Silly you... this is a cat!"],
         answer: 2,
@@ -68,7 +68,7 @@ const quiz = [
     },
     {
         question: "What is the breed of this lovely canine?",
-        image: "./assets/images/dog-9.png",
+        image: "./assets/images/dog-9.webp",
         alt: "Image of brown dog with floppy ears looking into the camera",
         options: ["Doberman Pinscher", "Saluki", "Cavalier King Charles Spaniel"],
         answer: 1,
@@ -76,7 +76,7 @@ const quiz = [
     },
     {
         question: "I'd love to know the breed of this dog. Any guesses?",
-        image: "./assets/images/dog-10.png",
+        image: "./assets/images/dog-10.webp",
         alt: "Image of a big dog that is yawning and lying down on stairs",
         options: ["German Shepherd", "Saint Bernard", "Jack Russell Terrier"],
         answer: 0,
@@ -84,7 +84,7 @@ const quiz = [
     },
     {
         question: "Could you please enlighten me about the breed of this dog?",
-        image: "./assets/images/dog-11.png",
+        image: "./assets/images/dog-11.webp",
         alt: "Image of blue eyed white dog that has black spots all over its body",
         options: ["Bernese Mountain Dog", "Maltese", "Dalmatian"],
         answer: 2,
