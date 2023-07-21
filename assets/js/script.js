@@ -200,9 +200,9 @@ imageContainer.addEventListener("click", function () {
   
     // Change the title when the image is zoomed
         if (imageContainer.classList.contains("zoomed")) {
-        imageLink.setAttribute("title", "Click to close enlarged image");
+        imageElement.setAttribute("title", "Click to close enlarged image");
       } else {
-        imageLink.setAttribute("title", "Click to enlarge image");
+        imageElement.setAttribute("title", "Click to enlarge image");
       }
   });
 
@@ -300,7 +300,7 @@ function closeConfirmationModal() {
 // Event listener to handle the restart quiz click event
 restartButton.addEventListener("click", retakeQuiz);
 
-// Event listener to handle the restart quiz click event
+// Event listener to handle the restart quiz click event on results page
 restartResultButton.addEventListener("click", retakeQuiz);
 
 // Function to restart the quiz
@@ -315,7 +315,6 @@ function restartQuiz() {
 
 // Event listener for "No" option in the modal
 noButton.addEventListener("click", closeConfirmationModal);
-
 
 // Event listener for "Yes" option in the modal
 yesButton.addEventListener("click", restartQuiz);
