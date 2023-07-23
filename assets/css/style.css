@@ -470,6 +470,9 @@ li.option.inactive {
 #result-container img {
     max-height: 20vh;
     max-width: 75vw;
+}
+
+#result-image {
     padding-top: 1em;
 }
 
