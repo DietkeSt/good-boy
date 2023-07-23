@@ -347,6 +347,8 @@ The logo and favicon icon were chosen to reflect the styling of the website, so 
 
 - Include a fully functioning form.
 - Add several result images, that change depending on the percentage rating.
+- Adding a timer could be useful to make the quiz more difficult in future.
+- Be more specific in git add commands.
 
 <br>
 
