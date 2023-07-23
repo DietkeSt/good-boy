@@ -345,10 +345,11 @@ The logo and favicon icon were chosen to reflect the styling of the website, so 
 
 #### Further Improvements
 
-- Include a fully functioning form.
+- Include a fully functioning form that collects the data submitted.
 - Add several result images, that change depending on the percentage rating.
 - Adding a timer could be useful to make the quiz more difficult in future.
-- Be more specific in git add commands.
+- I will be more specific in git add commands.
+- I will split up the README.md and add separate .md for the testing section for a better overview.
 
 <br>
 
@@ -466,10 +467,12 @@ See followed guide on [YouTube](https://www.youtube.com/watch?v=rw3eZ6XodN8&ab_c
 - No errors or warnings found when passing through the official [W3C validator](https://validator.w3.org/)
 
     - **Main Page**
-    ![html validator testing main page](/documentation/validators/html-validator.png)
+
+        ![html validator testing main page](/documentation/validators/html-validator.png)
 
     - **404 Page**
-    ![html validator testing 404 page](/documentation/validators/404-html-validator.png)
+
+        ![html validator testing 404 page](/documentation/validators/404-html-validator.png)
 
     
 #### CSS
@@ -477,10 +480,12 @@ See followed guide on [YouTube](https://www.youtube.com/watch?v=rw3eZ6XodN8&ab_c
 - No errors were found when passing Good Boy Quiz and 404 Page through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/).
 
 - **Main Page**
-![css validator testing main page](/documentation/validators/css-validator.png)
+
+    ![css validator testing main page](/documentation/validators/css-validator.png)
 
 - **404 Page**
-![css validator testing 404 page](/documentation/validators/404-css-validator.png)
+
+    ![css validator testing 404 page](/documentation/validators/404-css-validator.png)
 
 
 #### JS
