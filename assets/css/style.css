@@ -470,6 +470,7 @@ li.option.inactive {
 #result-container img {
     max-height: 20vh;
     max-width: 75vw;
+    padding-top: 1em;
 }
 
 #result-container button {
@@ -478,8 +479,23 @@ li.option.inactive {
     height: auto;
 }
 
-.feedback-icon:hover a {
+.result-box p {
+    padding-bottom: 0;
+}
+
+.feedback-icon {
     cursor: pointer;
+    padding-top: 1em;
+}
+
+#rating-text {
+    padding: 0;
+    font-size: 75%;
+    font-weight: 600;
+}
+
+#rating-text:hover {
+    text-decoration: underline;
     color: #D87E4E;
     transition: all 0.3s ease;
 }
