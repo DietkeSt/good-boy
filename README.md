@@ -506,7 +506,7 @@ No errors were found when passing through the [JSHint Code Quality Tool](https:/
 
 ### Unfixed Bugs
 
-- 
+- No further bugs found.
 
 <br>
 
