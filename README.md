@@ -426,6 +426,39 @@ See followed guide on [YouTube](https://www.youtube.com/watch?v=rw3eZ6XodN8&ab_c
 
 <br>
 
+### Manual Testing
+
+| feature | action | expected result | tested | passed | comments |
+| --- | --- | --- | --- | --- | --- |
+| Header | | | | | |
+| Instructions Icon | Click on the icon | The instructions modal is opening | Yes | Yes | - |
+| Instructions Modal | Click on the "x" icon | The modal is closing | Yes | Yes | - |
+| | Click outside of the modal | The modal is closing | Yes | Yes | - |
+| Footer | Click on "Dietke Steindel" link | The user is redirected to Github page | Yes | Yes | - |
+| Landing Page Form | Click on "Start Quiz" button | The user sees an error to fill out the field | Yes | Yes | - |
+| | Click on "Start Quiz" button after typing in the name | The user is redirected to the Quiz | Yes | Yes | - |
+| Quiz Container | | | | | |
+| Quiz Image | Click on the image | The image is enlarged with darkened overlay of the rest of the page | Yes | Yes | - |
+| | Click on enlarged image | The enlarged image and overlay is closed | Yes | Yes | - |
+| Quiz Options | Hover over options | The button color changes | Yes | Yes | - |
+| | Click on option | The button color indicate right or wrong | Yes | Yes | Additionally, there is feedback displayed underneath the options and the none-chosen options appear inactive, the next button is enabled |
+| Retake button | Click on the "Retake" button | The confirmation modal is opening | Yes | Yes | - |
+| Next button | Click on the "Next" button before option is chosen | Nothing happens, the button is disabled | Yes | Yes | - |
+| | Click on the "Next" button after option is chosen | The user is redirected to the next quiz question | Yes | Yes | Additionally, the "Correct Answers" and "Questions" counter, and the progress bar is updated |
+| Confirmation Modal | Click on the "Yes" button | The user is redirected to the landing page | Yes | Yes | - |
+| | Click on the "No" button | The modal closes | Yes | Yes | - |
+| | Click outside of the modal | The modal is closing | Yes | Yes | - |
+| Result container | | | | | |
+| Retake Quiz button | Click on the "Retake Quiz" button | Opens the confirmation modal | Yes | Yes | - |
+| Feedback option | Click on "Leave Feedback" | Opens the Feedback Form modal | Yes | Yes | - |
+| Feedback Form Modal | Clicking on the bones | Opens the ratings container of the modal | Yes | Yes | User has the option to change the rating before submitting |
+| | Click on the "x" icon | The modal is closing | Yes | Yes | - |
+| | Click outside of the modal | The modal is closing | Yes | Yes | - |
+| | Click on "Send" button | The ratings container is closed and the thanks container is displayed | Yes | Yes | If user doesn't enter any message, the form is still sent |
+| 404 Page | Click on the "Go back to the homepage" button | The user is redirected to the landing page | Yes | Yes | - |
+
+<br>
+
 ### Validator Testing
 
 #### HTML
