@@ -446,15 +446,6 @@ feedbackIcon.addEventListener("click", openFeedbackModal);
 function closeFeedbackModal() {
     const feedbackModal = document.getElementById("feedback-form");
     feedbackModal.style.display = "none";
-  
-    // Reset the feedback form to its initial state
-    const ratingsContainer = document.querySelector(".ratings-container");
-    const ratingThanks = document.querySelector(".rating-thanks");
-    const feedbackForm = document.querySelector("#feedback-form form");
-  
-    ratingsContainer.style.display = "flex";
-    ratingThanks.style.display = "none";
-    feedbackForm.reset();
     }
   
 // Event listener for the close button in the feedback modal
