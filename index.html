@@ -38,8 +38,12 @@
     <main>
         <!-- Landing page section -->
         <div id="landing-page">
-            <h2>Welcome to the Good Boy Quiz</h2>
-            <p>You think you know all of the Good Boys out there? Test your knowledge now!</p>
+            <h2>
+                Welcome to the Good Boy Quiz
+            </h2>
+            <p>
+                You think you know all of the Good Boys out there? Test your knowledge now!
+            </p>
             <div class="image-container">
                 <div id="image-slider">
                     <a href="assets/images/dog-1.png" class=""><img src="assets/images/dog-1.png" alt="French bulldog being pulled by the ears"></a>
@@ -51,14 +55,16 @@
             <form id="username-form">
                 <label for="username" aria-label="Please enter your Name in this field to be able to start the quiz."></label>
                 <input type="text" id="username" required placeholder="Enter your name here..." >
-                <button type="submit" class="start-quiz-btn"
-                    aria-label="By clicking this button the Quiz is started after you entered your username (opens in the same page)">Start
-                    Quiz</button>
+                <button type="submit" class="start-quiz-btn" aria-label="By clicking this button the Quiz is started after you entered your username (opens in the same page)">
+                    Start Quiz
+                </button>
             </form>
         </div>
         <!-- Quiz section -->
         <div id="quiz-container" style="display: none;">
-            <h2 id="question">Question</h2>
+            <h2 id="question">
+                Question
+            </h2>
             <div id="image-container">
                 <a id="question-image-link" aria-label="Click to enlarge image if needed">
                     <div class="overlay"></div>
@@ -95,7 +101,9 @@
         </div>
         <!-- Results section -->
         <div id="result-container" style="display: none;">
-            <h2>Quiz Result</h2>
+            <h2>
+                Quiz Result
+            </h2>
             <div class="result-box">
                 <div class="result-intro">
                     <p>
@@ -117,7 +125,9 @@
                 <a aria-label="Click to leave Feedback about the Quiz (Opens a modal window)">
                     <img id="rating-image" src="assets/images/rating-icon.png" alt="Star rating icons in speech bubble">
                     <br>
-                    <p id="rating-text">Leave Feedback</p>
+                    <p id="rating-text">
+                        Leave Feedback
+                    </p>
                 </a>
             </div>
         </div>
@@ -125,26 +135,46 @@
         <div class="modal" id="instructions-modal">
             <div class="modal-content">
                 <a class="close-button" aria-label="Click here to close the opened modal">&times;</a>
-                <h3>Instructions on How To Play</h3>
+                <h3>
+                    Instructions on How To Play
+                </h3>
                 <ol>
-                    <li>Please enter your <strong>Name</strong>.</li>
-                    <li>Click on the <strong>Start Quiz</strong> button.</li>
-                    <li>Guess the correct dog breed by clicking on the option with the correct <strong>Breed
-                            Name</strong>.</li>
-                    <li>Click the <strong>Next</strong> button.</li>
-                    <li>Repeat until 10 Questions are answered and the <strong>Results</strong> button is enabled.</li>
-                    <li>Click <strong>Results</strong> to see your final score!</li>
-                    <li>You can retake the quiz anytime by clicking the <strong>Retake</strong> button.</li>
+                    <li>
+                        Please enter your <strong>Name</strong>.
+                    </li>
+                    <li>
+                        Click on the <strong>Start Quiz</strong> button.
+                    </li>
+                    <li>
+                        Guess the correct dog breed by clicking on the option with the correct <strong>Breed Name</strong>.
+                    </li>
+                    <li>
+                        Click the <strong>Next</strong> button.
+                    </li>
+                    <li>
+                        Repeat until 10 Questions are answered and the <strong>Results</strong> button is enabled.
+                    </li>
+                    <li>
+                        Click <strong>Results</strong> to see your final score!
+                    </li>
+                    <li>
+                        You can retake the quiz anytime by clicking the <strong>Retake</strong> button.
+                    </li>
                 </ol>
-                <p><strong>Hint:</strong> You can click on the images to enlarge them for a better view. Clicking on the enlarged image again will lead you back to the quiz.</p>
+                <p>
+                    <strong>Hint:</strong> You can click on the images to enlarge them for a better view. Clicking on the enlarged image again will lead you back to the quiz.
+                </p>
             </div>
         </div>
         <!-- Confirmation modal to confirm whether or not to retake the quiz -->
         <div id="confirmation-modal" class="modal">
             <div class="modal-content">
-                <h3>Are you sure you want to re-take the quiz?</h3>
-                <p>All progress will be lost upon re-taking the quiz and you will need to enter your name again to start
-                    the quiz from the beginning.</p>
+                <h3>
+                    Are you sure you want to re-take the quiz?
+                </h3>
+                <p>
+                    All progress will be lost upon re-taking the quiz and you will need to enter your name again to start the quiz from the beginning.
+                </p>
                 <div class="modal-buttons">
                     <button id="yes-button" aria-label="Click here to confirm that you want to retake the quiz (Restarts the quiz and reloads the page)">Yes</button>
                     <button id="no-button" aria-label="Click here to confirm that you do not want to retake the quiz (Closes the modal)">No</button>
@@ -156,10 +186,14 @@
             <div class="modal-content">
                 <a class="close-button" aria-label="Click here to close the opened modal">&times;</a>
                 <div class="rating-thanks">
-                    <h3>Thanks for your feedback!</h3>
+                    <h3>
+                        Thanks for your feedback!
+                    </h3>
                 </div>
                 <div class="ratings-container">
-                    <h3>How happy are you with the quiz?</h3>
+                    <h3>
+                        How happy are you with the quiz?
+                    </h3>
                     <div class="rating-icons">
                         <input type="radio" name="rating" id="rating-5">
                         <label for="rating-5" class="fa-solid fa-bone" aria-label="Icon to rate 5 out of 5 bones"></label>
@@ -177,7 +211,9 @@
                                 <textarea placeholder="Enter additional comments here..." aria-label="Text area to add additional feedback comments"></textarea>
                             </div>
                             <div class="feedback-btn">
-                                <button type="submit" aria-label="Click here to send feedback (Opens Thank You section in same modal)">Send</button>
+                                <button type="submit" aria-label="Click here to send feedback (Opens Thank You section in same modal)">
+                                    Send
+                                </button>
                             </div>
                         </form>
                     </div>
