@@ -590,6 +590,7 @@ In order to make a local copy of this project, you can clone it. In your IDE Ter
 - The [Good Boy Logo](assets/images/goodboy-logo.png) and [Favicon](assets/images/goodboy-favicon.png) was created by [Rohim - Flaticon](https://www.flaticon.com/free-icons/puppy).
 - The [404 Page Puppy Image](assets/images/404-puppy.png) was created by [Rohim - Flaticon](https://www.flaticon.com/free-icons/puppy).
 - The [Results Page Puppy Image](assets/images/result-puppy.png) was created by [Rohim - Flaticon](https://www.flaticon.com/free-icons/puppy).
+- The [Rating Icon](assets/images/rating-icon.png) was created by [IwitoStudio - Flaticon](https://www.flaticon.com/free-icon/rating_10741381).
 - [Dog-1](assets/images/dog-1.png) was created by [Anna Shvets - pexels.com](https://www.pexels.com/de-de/foto/hande-hund-niedlich-hunde-4587998/)
 - [Dog-2](assets/images/dog-2.png) was created by [Anna Shvets - pexels.com](https://www.pexels.com/de-de/foto/brauner-und-weisser-hund-der-gelben-schal-tragt-4588052/)
 - [Dog-3](assets/images/dog-3.png) was created by [Alexandra Novitskaya - pexels.com](https://www.pexels.com/de-de/foto/hund-tragt-grunen-pelzmantel-2951921/)
