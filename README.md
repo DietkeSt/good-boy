@@ -521,28 +521,22 @@ To push the code to Github from Codeanywhere, the following command can be used 
 
 #### On [GitHub](https://github.com/)
 
-1. Navigate to the GitHub repository for UX Ventures.
+1. Navigate to the GitHub repository for [Good Boy](https://github.com/DietkeSt/good-boy).
 2. Click on the "Settings" tab and navigate to "Pages."
 3. Select "Deploy from branch" for "Source."
 4. Choose the "main" branch and save the changes.
 5. It takes a few minutes until the deployed website is created and visible.
 
-- Deployed website can be found here: https://dietkest.github.io/ux-ventures/ 
+- Deployed website can be found here: https://dietkest.github.io/good-boy/ 
 
 #### Local deployment
 
-To make a local copy of this project in [VSCode](https://code.visualstudio.com/), these steps can be followed:
+In order to make a local copy of this project, you can clone it. In your IDE Terminal, type the following command to clone my repository:
 
-1. Navigate here <https://github.com/DietkeSt/good-boy.git>, and click on "Code > Local > HTTPS"
-    
-2. Click on "Download ZIP"
-![Clone repository](/documentation/clone-repository.png)
+- git clone https://github.com/DietkeSt/good-boy.git
 
-3. Navigate to the folder you want to open by using cd
-![cd file](/documentation/vscode-cd.png)
+- Alternatively, if you use Gitpod, you can click [here](https://gitpod.io/#https://github.com/DietkeSt/good-boy.git), which will start the Gitpod workspace for you.
 
-4. Then, type code and the pathfile
-![code filepath](/documentation/vscode-code.png)
 
 <br>
 
