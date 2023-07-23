@@ -118,11 +118,10 @@ let score = 0;
 let username = "";
   
   
-/* Shuffle Function 
-
-This function shuffles the quiz array to avoid the same array when retaking the quiz
-
-*/
+/** 
+ * Shuffle Function 
+ * This function shuffles the quiz array to avoid the same array when retaking the quiz
+ */
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -135,13 +134,12 @@ function shuffle(array) {
 usernameForm.addEventListener("submit", startQuiz);
 
 
-/* Start Quiz Function
-
-This function will show the quiz section, 
-shuffles the questions,
-and limits the number of question to 10.
-
-*/
+/**
+ * Start Quiz Function
+ * This function will show the quiz section, 
+ * shuffles the questions,
+ * and limits the number of question to 10.
+ */ 
 function startQuiz(event) {
     event.preventDefault();
     username = document.getElementById("username").value;
@@ -165,20 +163,18 @@ function startQuiz(event) {
 }
 
 
-/* Display Questions Function
-
-This function displays current question and options,
-disables the next button until an option is selected,
-displays the currect score, question, and progress bar,
-checks for last question to change "Next" to "Results.
-
-It also includes the checkAnswer function, which checks if the answer is true,
-checks if the question has already been guessed,
-highlights the selected option, gives it a class, 
-and enables the next button.
-
-*/
-
+/** 
+ * Display Questions Function
+ * 
+ * This function displays current question and options,
+ * disables the next button until an option is selected,
+ * displays the currect score, question, and progress bar,
+ * checks for last question to change "Next" to "Results.
+ * It also includes the checkAnswer function, which checks if the answer is true,
+ * checks if the question has already been guessed,
+ * highlights the selected option, gives it a class, 
+ * and enables the next button.
+ */
 function displayQuestion() {
 
     // Clear previous options
@@ -274,11 +270,10 @@ imageContainer.addEventListener("click", function () {
   });
 
 
-/* Next Question Function
-
-This functions checks if the quiz is completed or not to either showResult or displayQuestion.
-
-*/
+/**
+ * Next Question Function
+ * This functions checks if the quiz is completed or not to either showResult or displayQuestion.
+ */
 function nextQuestion() {
     currentQuestion++;
 
@@ -297,13 +292,12 @@ nextButton.addEventListener("click", nextQuestion);
 restartButton.addEventListener("click", retakeQuiz);
 
 
-/* Show Result Function
-
-This function shows the Result section,
-it also calls the username and percentage, 
-and the result image.
-
-*/
+/**
+ * Show Result Function
+ * This function shows the Result section,
+ * it also calls the username and percentage, 
+ * and the result image.
+ */
 function showResult() {
     document.getElementById("quiz-container").classList.add("complete");
     document.getElementById("quiz-container").style.display = "none";
@@ -321,11 +315,10 @@ function showResult() {
 restartResultButton.addEventListener("click", retakeQuiz);
 
 
-/* Retake Quiz Function
-
-This function shows the confirmation modal.
-
-*/
+/**
+ * Retake Quiz Function
+ * This function shows the confirmation modal.
+ */
 function retakeQuiz() {
     const modal = document.getElementById("confirmation-modal");
     modal.style.display = "flex";
@@ -344,11 +337,10 @@ function retakeQuiz() {
 }
 
 
-/* Close Confirmation Modal Function
-
-This function hides the confirmation modal.
-
-*/
+/**
+ * Close Confirmation Modal Function
+ * This function hides the confirmation modal.
+ */
 function closeConfirmationModal() {
     const modal = document.getElementById("confirmation-modal");
     modal.style.display = "none";
@@ -361,12 +353,11 @@ noButton.addEventListener("click", closeConfirmationModal);
 yesButton.addEventListener("click", restartQuiz);
 
 
-/* Restart Quiz Function
-
-This function hides the modal and shows the landing page,
-it also reloads the page to create a new quiz array.
-
-*/
+/**
+ * Restart Quiz Function
+ * This function hides the modal and shows the landing page,
+ * it also reloads the page to create a new quiz array.
+ */
 function restartQuiz() {
     const modal = document.getElementById("confirmation-modal");
     modal.style.display = "none";
@@ -377,11 +368,10 @@ function restartQuiz() {
 }
 
 
-/* Show Lannding Page Function
-
-This function shows the landing page.
-
-*/
+/**
+ * Show Lannding Page Function
+ * This function shows the landing page.
+ */
 function showLandingPage() {
     document.getElementById("landing-page").style.display = "flex";
     document.getElementById("quiz-container").style.display = "none";
@@ -389,11 +379,10 @@ function showLandingPage() {
 }
 
 
-/* Open Instructions Modal Function
-
-This function opens the instructions modal.
-
-*/
+/**
+ * Open Instructions Modal Function
+ * This function opens the instructions modal.
+ */
 function openModal() {
     const modal = document.getElementById("instructions-modal");
     modal.style.display = "block";
@@ -411,11 +400,10 @@ function openModal() {
     addCloseModalClickListener();
 }
 
-/* Close Instructions Modal Function
-
-This function hides the instructions modal.
-
-*/
+/**
+ * Close Instructions Modal Function
+ * This function hides the instructions modal.
+ */
 function closeModal() {
     const modal = document.getElementById("instructions-modal");
     modal.style.display = "none";
@@ -426,11 +414,10 @@ instructionsElement.addEventListener("click", openModal);
 closeInstructionButton.addEventListener("click", closeModal);
 
 
-/* Open Feedback Modal Function
-
-This function opens the feedback modal.
-
-*/
+/**
+ * Open Feedback Modal Function
+ * This function opens the feedback modal.
+ */
 function openFeedbackModal() {
     const feedbackModal = document.getElementById("feedback-form");
     feedbackModal.style.display = "block";
@@ -452,11 +439,10 @@ function openFeedbackModal() {
 feedbackIcon.addEventListener("click", openFeedbackModal);
   
 
-/* Close Feedback Modal Function
-
-This function closes the feedback modal.
-
-*/
+/**
+ * Close Feedback Modal Function
+ * This function closes the feedback modal.
+ */
 function closeFeedbackModal() {
     const feedbackModal = document.getElementById("feedback-form");
     feedbackModal.style.display = "none";
@@ -475,11 +461,10 @@ function closeFeedbackModal() {
 closeFeedbackButton.addEventListener("click", closeFeedbackModal);
 
   
-/* Feedback Submission Function 
-
-This function shows the Thanks section once the feedback has been submitted.
-
-*/
+/**
+ * Feedback Submission Function 
+ * This function shows the Thanks section once the feedback has been submitted.
+ */
 window.addEventListener("DOMContentLoaded", function () {
     const feedbackBtn = document.querySelector(".feedback-btn");
     const ratingThanks = document.querySelector(".rating-thanks");
@@ -493,12 +478,11 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 
 
-/* Zoom Effect Function
-
-This function adds the zoom-effect class on mouseover,
-and removes it again on mouseout.
-
-*/
+/**
+ * Zoom Effect Function
+ * This function adds the zoom-effect class on mouseover,
+ * and removes it again on mouseout.
+ */
 document.addEventListener("DOMContentLoaded", function () {
     const instructionsText = document.querySelector(".instructions-landing i");
     const startQuizButton = document.querySelector(".start-quiz-btn");
@@ -520,11 +504,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-/* Image Slider Function
-
-This function is responsible for image slider and fade effect on landing page.
-
-*/
+/**
+ * Image Slider Function
+ * This function is responsible for image slider and fade effect on landing page.
+ */
 window.addEventListener("DOMContentLoaded", function () {
     const stage = document.getElementById("image-slider");
     const images = stage.getElementsByTagName("a");
